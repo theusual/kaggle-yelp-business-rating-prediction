@@ -1,0 +1,382 @@
+category,cat_tot_count,cat_avg_stars
+Sporting Goods,80.0,3.8875
+Bikes,30.0,4.0
+Shopping,1198.0,3.7545909849749584
+Food,1368.0,3.803728070175439
+Grocery,259.0,3.629343629343629
+Bagels,56.0,3.580357142857143
+Delis,124.0,3.649193548387097
+Restaurants,3960.0,3.5200757575757575
+Women's Clothing,106.0,3.891509433962264
+Fashion,357.0,3.7436974789915967
+Music & DVDs,20.0,3.65
+"Books, Mags, Music & Video",80.0,3.7375
+Event Planning & Services,356.0,3.646067415730337
+Venues & Event Spaces,59.0,3.906779661016949
+Art Schools,5.0,4.1
+Specialty Schools,26.0,4.153846153846154
+Jewelry,44.0,4.181818181818182
+Accessories,54.0,3.990740740740741
+Education,50.0,3.92
+Sandwiches,328.0,3.6707317073170733
+Musical Instruments & Teachers,14.0,3.9285714285714284
+Mexican,569.0,3.5360281195079084
+Pizza,393.0,3.5229007633587788
+Hotels & Travel,305.0,3.4754098360655736
+Hotels,233.0,3.4313304721030042
+Department Stores,133.0,3.417293233082707
+Window Washing,4.0,4.75
+Home Services,240.0,3.6666666666666665
+Burgers,219.0,3.3812785388127855
+Kitchen & Bath,15.0,4.266666666666667
+Home & Garden,184.0,3.921195652173913
+"Beer, Wine & Spirits",79.0,4.037974683544304
+Plumbing,19.0,3.9210526315789473
+Bars,477.0,3.5324947589098534
+Nightlife,587.0,3.5672913117546847
+Lounges,91.0,3.5604395604395602
+Buffets,110.0,3.227272727272727
+Dim Sum,4.0,3.625
+Chinese,266.0,3.4530075187969924
+Drugstores,88.0,3.3238636363636362
+Shopping Centers,31.0,3.338709677419355
+Breweries,25.0,3.7
+American (New),316.0,3.6503164556962027
+Active Life,419.0,4.031026252983294
+Dog Parks,15.0,3.6666666666666665
+Amateur Sports Teams,10.0,3.7
+Parks,70.0,4.128571428571429
+Pediatric Dentists,11.0,4.136363636363637
+Health & Medical,285.0,4.028070175438597
+Dentists,76.0,4.171052631578948
+Performing Arts,46.0,4.369565217391305
+Arts & Entertainment,268.0,3.8973880597014925
+Dance Studios,9.0,4.611111111111111
+Fitness & Instruction,158.0,4.1044303797468356
+Thrift Stores,33.0,3.8484848484848486
+"Used, Vintage & Consignment",45.0,3.911111111111111
+Caterers,40.0,3.675
+Italian,250.0,3.694
+Hair Salons,91.0,4.263736263736264
+Beauty & Spas,520.0,3.9461538461538463
+Hiking,15.0,4.6
+Cinema,50.0,3.69
+Antiques,28.0,4.107142857142857
+Auto Repair,157.0,3.799363057324841
+Automotive,384.0,3.6705729166666665
+Oil Change Stations,28.0,3.3392857142857144
+Cheesesteaks,8.0,3.6875
+Lighting Fixtures & Equipment,7.0,4.142857142857143
+Furniture Stores,57.0,3.7982456140350878
+Home Decor,44.0,4.034090909090909
+Veterinarians,71.0,4.098591549295775
+Pets,179.0,4.136871508379889
+Pubs,41.0,3.597560975609756
+British,6.0,3.9166666666666665
+Contractors,22.0,4.0227272727272725
+Arcades,11.0,3.227272727272727
+Videos & Video Game Rental,15.0,3.6333333333333333
+Banks & Credit Unions,18.0,3.0
+Financial Services,22.0,3.25
+Mortgage Brokers,3.0,2.6666666666666665
+Real Estate,62.0,3.1129032258064515
+Tires,77.0,3.564935064935065
+Japanese,120.0,3.5458333333333334
+Bakeries,144.0,3.8333333333333335
+American (Traditional),442.0,3.339366515837104
+Fast Food,278.0,3.1636690647482015
+Guns & Ammo,5.0,4.0
+Dive Bars,42.0,3.7261904761904763
+Doctors,90.0,3.7666666666666666
+Family Practice,14.0,4.071428571428571
+Accountants,3.0,5.0
+Professional Services,43.0,3.953488372093023
+Coffee & Tea,287.0,3.8484320557491287
+Wine Bars,54.0,4.0092592592592595
+Mobile Phones,45.0,2.7333333333333334
+Cards & Stationery,12.0,4.208333333333333
+Arts & Crafts,74.0,3.77027027027027
+Flowers & Gifts,49.0,4.030612244897959
+Men's Clothing,55.0,3.7818181818181817
+Shoe Stores,35.0,3.7857142857142856
+Florists,27.0,3.8333333333333335
+Hot Dogs,55.0,3.6363636363636362
+Baby Gear & Furniture,17.0,3.7058823529411766
+Breakfast & Brunch,180.0,3.6055555555555556
+Diners,55.0,3.390909090909091
+Pet Stores,48.0,3.9375
+General Dentistry,53.0,4.226415094339623
+Barbers,53.0,4.349056603773585
+Local Services,200.0,3.785
+Shipping Centers,25.0,3.12
+Printing Services,23.0,3.782608695652174
+Sushi Bars,92.0,3.608695652173913
+Tex-Mex,58.0,3.6293103448275863
+Sports Bars,124.0,3.217741935483871
+Pet Services,82.0,4.189024390243903
+Building Supplies,25.0,3.48
+Naturopathic/Holistic,5.0,4.3
+Eyelash Service,7.0,4.785714285714286
+Nail Salons,181.0,3.5939226519337018
+Gyms,82.0,3.725609756097561
+Trainers,52.0,3.8076923076923075
+Health Markets,33.0,4.090909090909091
+Ethnic Food,36.0,4.013888888888889
+Specialty Food,148.0,4.20945945945946
+Mediterranean,83.0,3.7048192771084336
+Photographers,9.0,4.944444444444445
+Electronics,32.0,3.3125
+Ice Cream & Frozen Yogurt,209.0,3.8157894736842106
+Gay Bars,23.0,3.5434782608695654
+Fish & Chips,12.0,3.0833333333333335
+Party Supplies,7.0,4.0
+Costumes,8.0,4.0625
+Party & Event Planning,17.0,4.088235294117647
+Comfort Food,10.0,3.55
+Optometrists,24.0,4.333333333333333
+Eyewear & Opticians,21.0,4.071428571428571
+Libraries,20.0,4.05
+Public Services & Government,56.0,3.517857142857143
+Resorts,7.0,3.7142857142857144
+Sports Wear,16.0,3.84375
+Day Spas,79.0,3.9556962025316458
+Donuts,62.0,3.564516129032258
+Bridal,11.0,4.045454545454546
+Skin Care,52.0,4.1923076923076925
+Tanning,20.0,4.1
+Seafood,83.0,3.5060240963855422
+Cajun/Creole,14.0,3.9285714285714284
+Airports,7.0,3.2857142857142856
+Vegan,19.0,4.0
+Hair Removal,39.0,4.102564102564102
+Art Supplies,16.0,3.75
+Reflexology,3.0,4.5
+Pet Groomers,30.0,4.066666666666666
+Greek,73.0,3.643835616438356
+Gas & Service Stations,33.0,3.621212121212121
+Golf,66.0,3.878787878787879
+Makeup Artists,5.0,4.7
+Cosmetology Schools,5.0,3.6
+Caribbean,17.0,3.7058823529411766
+Vegetarian,34.0,3.8970588235294117
+Auto Parts & Supplies,21.0,3.7857142857142856
+Barbeque,81.0,3.549382716049383
+Art Galleries,28.0,4.357142857142857
+Cheese Shops,6.0,4.583333333333333
+Colleges & Universities,15.0,3.533333333333333
+Dry Cleaning & Laundry,55.0,3.481818181818182
+Food Delivery Services,15.0,3.3666666666666667
+Tours,18.0,4.5
+Bookstores,38.0,3.6973684210526314
+Middle Eastern,34.0,3.8823529411764706
+Discount Store,6.0,3.8333333333333335
+Yoga,42.0,4.4523809523809526
+Juice Bars & Smoothies,43.0,4.023255813953488
+Massage,48.0,4.125
+Elementary Schools,6.0,3.9166666666666665
+Middle Schools & High Schools,4.0,3.25
+Home Cleaning,11.0,3.727272727272727
+Office Cleaning,4.0,4.125
+Wholesale Stores,14.0,4.035714285714286
+Cafes,42.0,3.7857142857142856
+Car Wash,57.0,3.1666666666666665
+Music Venues,55.0,3.8
+Dance Clubs,35.0,3.2857142857142856
+French,26.0,3.8461538461538463
+Motorcycle Dealers,5.0,3.0
+Hardware Stores,48.0,3.875
+Real Estate Agents,5.0,5.0
+Wineries,3.0,3.6666666666666665
+Latin American,19.0,3.9473684210526314
+Tobacco Shops,26.0,4.096153846153846
+Office Equipment,11.0,3.409090909090909
+Asian Fusion,74.0,3.668918918918919
+Self Storage,5.0,3.7
+Food Stands,12.0,4.166666666666667
+Adult,5.0,3.9
+Indian,37.0,3.581081081081081
+Pakistani,16.0,3.53125
+Medical Spas,14.0,3.75
+Apartments,42.0,2.7142857142857144
+Persian/Iranian,3.0,3.8333333333333335
+Thai,75.0,3.76
+Candy Stores,17.0,4.294117647058823
+Obstetricians & Gynecologists,14.0,3.8214285714285716
+Tree Services,5.0,4.1
+Professional Sports Teams,5.0,4.0
+Hawaiian,30.0,3.6
+Tennis,6.0,3.6666666666666665
+Swimming Pools,9.0,4.111111111111111
+Web Design,6.0,4.583333333333333
+Garage Door Services,5.0,4.4
+Chiropractors,26.0,4.730769230769231
+Filipino,12.0,3.7083333333333335
+Airlines,11.0,2.8181818181818183
+Transportation,22.0,3.272727272727273
+Cooking Schools,4.0,3.375
+Ethiopian,4.0,4.25
+Wedding Planning,10.0,4.15
+Farmers Market,27.0,4.0
+Hobby Shops,18.0,3.861111111111111
+Comic Books,8.0,3.6875
+Toy Stores,18.0,3.861111111111111
+Convenience Stores,54.0,3.7777777777777777
+Cosmetics & Beauty Supply,60.0,3.6666666666666665
+Vietnamese,52.0,3.5576923076923075
+Shades & Blinds,3.0,4.5
+Fabric Stores,14.0,3.607142857142857
+Endodontists,4.0,4.0
+Cosmetic Dentists,19.0,4.026315789473684
+Pawn Shops,4.0,3.375
+Casinos,6.0,3.5833333333333335
+Basque,3.0,3.6666666666666665
+Spanish,6.0,3.5833333333333335
+Oral Surgeons,5.0,3.7
+Community Service/Non-Profit,11.0,4.090909090909091
+Graphic Design,6.0,4.833333333333333
+Appliances,15.0,3.0
+Steakhouses,95.0,3.610526315789474
+Orthodontists,8.0,4.0625
+Car Rental,15.0,3.3
+Mountain Biking,3.0,3.8333333333333335
+Pool Halls,10.0,3.65
+Lingerie,14.0,3.7857142857142856
+Windshield Installation & Repair,6.0,3.5
+Auto Glass Services,22.0,3.75
+Horseback Riding,7.0,4.785714285714286
+Auto Detailing,16.0,3.25
+Car Stereo Installation,8.0,3.4375
+Nurseries & Gardening,16.0,4.3125
+Southern,14.0,3.5714285714285716
+Solar Installation,3.0,4.833333333333333
+Heating & Air Conditioning/HVAC,17.0,4.235294117647059
+Movers,9.0,3.888888888888889
+Mattresses,4.0,3.375
+Medical Centers,14.0,3.5714285714285716
+Post Offices,15.0,2.933333333333333
+Carpet Cleaning,9.0,4.0
+Desserts,74.0,3.9594594594594597
+Karaoke,15.0,3.533333333333333
+Chicken Wings,43.0,3.3488372093023258
+Car Dealers,32.0,3.203125
+Irish,13.0,3.6153846153846154
+Street Vendors,15.0,4.266666666666667
+Television Service Providers,5.0,2.5
+Internet Service Providers,16.0,2.625
+Boating,6.0,3.9166666666666665
+Rafting/Kayaking,3.0,4.0
+Festivals,17.0,3.323529411764706
+Gluten-Free,27.0,3.685185185185185
+Soul Food,10.0,3.65
+Keys & Locksmiths,7.0,4.571428571428571
+German,5.0,3.8
+Gelato,7.0,4.428571428571429
+Children's Clothing,15.0,3.9
+Pool Cleaners,8.0,3.6875
+Internal Medicine,5.0,3.7
+Pet Boarding/Pet Sitting,37.0,4.391891891891892
+Martial Arts,9.0,4.611111111111111
+Pilates,9.0,4.555555555555555
+Halal,5.0,4.1
+Hospitals,15.0,3.3666666666666667
+Dog Walkers,6.0,4.416666666666667
+Stadiums & Arenas,24.0,3.8541666666666665
+Maternity Wear,4.0,3.625
+Pet Training,15.0,3.6333333333333333
+Local Flavor,40.0,4.25
+Weight Loss Centers,4.0,4.25
+Creperies,8.0,4.0625
+Sewing & Alterations,24.0,4.020833333333333
+Cuban,7.0,3.642857142857143
+Amusement Parks,23.0,3.608695652173913
+Bowling,21.0,3.619047619047619
+Landmarks & Historical Buildings,10.0,3.95
+Museums,21.0,4.142857142857143
+Child Care & Day Care,7.0,4.357142857142857
+Preschools,5.0,4.0
+Korean,25.0,3.5
+Urgent Care,19.0,3.3421052631578947
+Computers,19.0,3.473684210526316
+Jazz & Blues,9.0,4.111111111111111
+Gastropubs,9.0,3.9444444444444446
+Mini Golf,4.0,3.0
+Churches,12.0,4.583333333333333
+Religious Organizations,13.0,4.615384615384615
+Towing,4.0,4.125
+Adult Entertainment,5.0,2.9
+Mongolian,12.0,3.4166666666666665
+Dance Schools,4.0,4.75
+Do-It-Yourself Food,7.0,4.0
+Mass Media,14.0,3.5714285714285716
+Radio Stations,8.0,3.8125
+Handyman,7.0,5.0
+Zoos,3.0,3.8333333333333335
+Pediatricians,15.0,4.066666666666666
+Laser Hair Removal,11.0,3.590909090909091
+Tattoo,6.0,4.833333333333333
+Acupuncture,6.0,4.916666666666667
+Physical Therapy,11.0,4.636363636363637
+Outlet Stores,9.0,3.388888888888889
+Soup,10.0,3.7
+Real Estate Services,8.0,4.375
+Chocolatiers & Shops,10.0,4.3
+Insurance,3.0,4.166666666666667
+Photography Stores & Services,9.0,2.9444444444444446
+Body Shops,17.0,4.352941176470588
+Turkish,3.0,3.8333333333333335
+Tapas Bars,4.0,3.875
+Seafood Markets,4.0,4.125
+Electricians,7.0,5.0
+Fondue,4.0,3.875
+Lawyers,4.0,5.0
+Massage Therapy,7.0,4.5
+Lakes,5.0,4.2
+Landscaping,13.0,4.0
+Bike Rentals,13.0,4.153846153846154
+Taxis,3.0,3.6666666666666665
+Furniture Reupholstery,3.0,4.333333333333333
+Food Trucks,3.0,4.833333333333333
+Playgrounds,6.0,4.416666666666667
+Dermatologists,10.0,3.8
+IT Services & Computer Repair,14.0,4.107142857142857
+Airport Shuttles,3.0,3.6666666666666665
+Parking,5.0,4.1
+Smog Check Stations,3.0,2.8333333333333335
+Salad,9.0,3.5
+Pest Control,13.0,3.5
+Social Clubs,3.0,4.833333333333333
+Animal Shelters,7.0,4.357142857142857
+Polish,4.0,4.375
+Allergists,4.0,3.375
+Ear Nose & Throat,4.0,3.0
+Appliances & Repair,8.0,3.6875
+Property Management,5.0,2.6
+Leather Goods,3.0,3.0
+Home Inspectors,3.0,4.0
+Swimming Lessons/Schools,4.0,4.625
+Meat Shops,10.0,4.2
+Shoe Repair,13.0,4.384615384615385
+Sports Clubs,5.0,3.5
+Hookah Bars,3.0,3.8333333333333335
+Fruits & Veggies,8.0,4.5
+Outdoor Gear,8.0,4.1875
+Hair Stylists,3.0,4.666666666666667
+Departments of Motor Vehicles,6.0,3.0
+Comedy Clubs,4.0,4.375
+Podiatrists,3.0,4.5
+Peruvian,3.0,3.5
+Tea Rooms,6.0,4.416666666666667
+Interior Design,4.0,3.375
+Watch Repair,3.0,4.5
+Flooring,4.0,3.875
+Recreation Centers,3.0,4.166666666666667
+Gun/Rifle Ranges,3.0,3.8333333333333335
+Skating Rinks,4.0,3.25
+Travel Services,4.0,2.625
+Bed & Breakfast,3.0,4.166666666666667
+Watches,3.0,3.0
+Public Transportation,3.0,3.6666666666666665
+Afghan,3.0,4.0
+Boot Camps,3.0,5.0
+Brazilian,3.0,3.6666666666666665
+Print Media,3.0,3.5

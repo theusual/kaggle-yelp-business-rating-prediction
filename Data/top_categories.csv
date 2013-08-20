@@ -1,0 +1,422 @@
+category,cat_count,cat_avg_stars
+Restaurants,149319,3.74141268
+Food,31011,3.940112229
+Nightlife,28389,3.708462514
+Bars,25484,3.714218456
+American (New),22696,3.854989422
+Mexican,18880,3.632997881
+American (Traditional),16692,3.563758389
+Pizza,13614,3.813675088
+Shopping,13236,3.795344619
+Italian,11909,3.91773002
+Breakfast & Brunch,11208,3.806745182
+Sandwiches,10384,3.888867488
+Burgers,8434,3.659511385
+Coffee & Tea,7789,4.021571649
+Arts & Entertainment,7457,3.86708691
+Hotels & Travel,6863,3.542977855
+Sushi Bars,6845,3.641583869
+Chinese,6832,3.569818501
+Event Planning & Services,6759,3.729733728
+Steakhouses,5633,3.802201705
+Active Life,5567,3.975574713
+Japanese,5553,3.685698847
+Beauty & Spas,5205,4.006149116
+Lounges,5041,3.732142857
+Grocery,4796,3.858632193
+Hotels,4680,3.652350427
+Ice Cream & Frozen Yogurt,4361,4.016284404
+Mediterranean,4334,3.90751845
+Sports Bars,4291,3.328285182
+Pubs,4258,3.873120301
+Wine Bars,4237,4.074598678
+Asian Fusion,4002,3.711644178
+Thai,3926,3.815843097
+Bakeries,3900,3.908205128
+Seafood,3809,3.729254202
+Fashion,3719,3.709408602
+Barbeque,3692,3.655471289
+Delis,3594,3.798831386
+Vegetarian,3314,3.968014484
+Specialty Food,3228,4.160780669
+Fast Food,3221,3.399378882
+Automotive,2974,3.669468729
+Vietnamese,2843,3.838959212
+Music Venues,2617,3.845183486
+Breweries,2492,3.874398074
+Desserts,2387,3.945142379
+Buffets,2368,3.453125
+Greek,2333,3.775300172
+"Beer, Wine & Spirits",2236,4.040697674
+Tex-Mex,2107,3.655597723
+Health & Medical,2106,3.992877493
+Fitness & Instruction,1897,3.963099631
+Hot Dogs,1887,3.980922099
+Home Services,1858,3.67868676
+Latin American,1857,4.007000539
+Cinema,1649,3.762886598
+Local Services,1646,3.906439854
+Home & Garden,1594,3.913425345
+French,1570,3.910828025
+Indian,1563,3.678822777
+Vegan,1554,4.086872587
+Diners,1496,3.612967914
+Pets,1442,4.201803051
+Nail Salons,1427,3.667834618
+Dive Bars,1406,3.711237553
+Day Spas,1381,4.056480811
+Parks,1356,4.215339233
+Department Stores,1344,3.433035714
+Hawaiian,1316,3.840425532
+Bagels,1305,3.648275862
+Irish,1296,3.699074074
+Gluten-Free,1267,3.621152328
+Southern,1189,3.837678722
+"Books, Mags, Music & Video",1155,4.058008658
+Shopping Centers,1147,3.513513514
+Auto Repair,1135,3.834361233
+British,1107,4.179765131
+Venues & Event Spaces,1098,3.671220401
+Middle Eastern,1071,4.080298786
+Gyms,1067,3.60262418
+Women's Clothing,1066,3.820825516
+Health Markets,1064,4.009398496
+Caribbean,1063,3.777046096
+Cafes,1058,3.875236295
+Donuts,979,3.882533197
+Soul Food,933,4.027867095
+Ethnic Food,920,4.102173913
+Sporting Goods,916,3.93231441
+Dance Clubs,898,3.162583519
+Museums,869,4.292289988
+Stadiums & Arenas,846,3.937352246
+Airports,837,3.27479092
+Chicken Wings,813,3.300123001
+Hair Salons,763,4.173001311
+Caterers,754,3.818302387
+Drugstores,729,3.355281207
+Korean,728,3.67032967
+Gastropubs,705,4.195744681
+Arts & Crafts,704,3.860795455
+Pet Services,700,4.245714286
+Performing Arts,686,4.138483965
+Trainers,681,3.543318649
+Men's Clothing,645,3.702325581
+Cajun/Creole,640,3.99375
+Doctors,619,3.649434572
+Tires,616,3.694805195
+Yoga,614,4.315960912
+Dentists,614,4.239413681
+Public Services & Government,607,3.728171334
+Furniture Stores,602,3.852159468
+Golf,599,3.839732888
+Transportation,587,2.865417376
+Local Flavor,578,3.960207612
+Karaoke,570,3.410526316
+Massage,566,4.206713781
+Pakistani,565,3.638938053
+Pet Stores,556,4.131294964
+Cosmetics & Beauty Supply,546,3.736263736
+"Used, Vintage & Consignment",539,3.758812616
+Car Wash,533,3.12945591
+Juice Bars & Smoothies,530,4.103773585
+Skin Care,517,4.199226306
+Art Galleries,512,4.26171875
+Education,496,3.824596774
+Veterinarians,495,4.137373737
+Home Decor,487,3.901437372
+Accessories,471,3.978768577
+Real Estate,463,2.991360691
+Shoe Stores,463,3.671706263
+Mongolian,462,3.614718615
+Amusement Parks,461,3.620390456
+Bookstores,455,4.013186813
+Resorts,454,3.832599119
+Gay Bars,451,3.56097561
+General Dentistry,448,4.254464286
+Flowers & Gifts,443,3.993227991
+Farmers Market,436,4.126146789
+Barbers,435,4.296551724
+Hiking,433,4.418013857
+Gelato,423,4.309692671
+Mobile Phones,421,2.755344418
+Soup,419,3.632458234
+Bikes,399,4.040100251
+German,394,3.817258883
+Convenience Stores,384,3.723958333
+Jewelry,379,4.176781003
+Dry Cleaning & Laundry,376,3.609042553
+Cuban,367,3.561307902
+Tours,364,4.159340659
+Cheesesteaks,361,3.800554017
+Airlines,349,2.446991404
+Antiques,341,4.017595308
+Creperies,339,4.197640118
+Dim Sum,332,3.644578313
+Apartments,331,2.619335347
+Music & DVDs,326,4.110429448
+Bowling,322,3.534161491
+Electronics,321,3.295950156
+Hair Removal,318,4.100628931
+Tapas/Small Plates,317,3.911671924
+Hardware Stores,315,3.8
+Computers,311,3.633440514
+Food Stands,310,4.5
+Pet Groomers,298,4.251677852
+Food Delivery Services,295,3.474576271
+Fondue,293,3.873720137
+Professional Services,291,3.859106529
+Filipino,279,3.82078853
+Arcades,276,3.18115942
+Outlet Stores,271,3.439114391
+Ethiopian,270,4.103703704
+Musical Instruments & Teachers,266,4.071428571
+Wholesale Stores,264,4.174242424
+Tea Rooms,260,4.376923077
+Candy Stores,258,4.313953488
+Toy Stores,258,4.085271318
+Sports Wear,255,3.97254902
+IT Services & Computer Repair,254,3.960629921
+Spanish,254,3.519685039
+Halal,248,4.181451613
+Pet Boarding/Pet Sitting,244,4.327868852
+Polish,244,4.459016393
+Thrift Stores,241,3.796680498
+Car Dealers,240,3.329166667
+Dog Parks,239,3.849372385
+Florists,236,3.855932203
+Botanical Gardens,232,4.456896552
+Salad,230,3.443478261
+Gas & Service Stations,229,3.406113537
+Libraries,227,4.246696035
+Brazilian,222,4.202702703
+Specialty Schools,219,4.01369863
+Climbing,215,4.358139535
+Fish & Chips,208,3.3125
+Fruits & Veggies,208,4.278846154
+Building Supplies,207,3.458937198
+Sewing & Alterations,196,4.066326531
+Wedding Planning,192,4.046875
+Financial Services,189,3.492063492
+Piano Bars,179,3.636871508
+Landmarks & Historical Buildings,179,3.832402235
+Heating & Air Conditioning/HVAC,176,4.443181818
+Festivals,175,3.28
+Scandinavian,174,4.350574713
+Outdoor Gear,174,4.074712644
+Zoos,173,3.976878613
+Party & Event Planning,171,3.883040936
+Tobacco Shops,171,4.052631579
+Cosmetic Dentists,171,4.134502924
+Shipping Centers,169,3.24852071
+Auto Parts & Supplies,167,3.862275449
+Pool Halls,167,3.413173653
+Tanning,165,4
+Oil Change Stations,164,3.262195122
+Public Transportation,164,3.62195122
+Modern European,164,3.981707317
+Hobby Shops,163,4.079754601
+Meat Shops,161,4.397515528
+Chiropractors,160,4.725
+Casinos,158,3.284810127
+Amateur Sports Teams,153,3.823529412
+Optometrists,151,4.238410596
+Printing Services,150,3.68
+Street Vendors,148,4.290540541
+Eyewear & Opticians,147,4
+Baby Gear & Furniture,145,3.662068966
+Auto Glass Services,144,3.6875
+Contractors,138,4.123188406
+Kitchen & Bath,138,4.210144928
+Mini Golf,137,3.116788321
+Car Rental,137,2.98540146
+Banks & Credit Unions,137,3.02919708
+Colleges & Universities,137,3.481751825
+Children's Clothing,135,3.911111111
+Auto Detailing,134,3.462686567
+Nurseries & Gardening,133,4.353383459
+Art Supplies,131,3.770992366
+Body Shops,130,4.423076923
+Urgent Care,129,3.348837209
+Persian/Iranian,124,3.879032258
+Pet Training,123,3.821138211
+Appliances,123,3.040650407
+Fabric Stores,123,3.569105691
+Hospitals,123,3.552845528
+Turkish,122,3.942622951
+Family Practice,118,3.949152542
+Videos & Video Game Rental,118,3.805084746
+Kosher,117,4.025641026
+Cards & Stationery,117,4.205128205
+Comedy Clubs,116,4.034482759
+Champagne Bars,115,3.226086957
+Taiwanese,112,3.714285714
+Physical Therapy,110,4.5
+Cambodian,106,4.424528302
+Bridal,106,3.924528302
+Internet Service Providers,105,2.676190476
+Bike Rentals,104,4.009615385
+Mass Media,103,3.660194175
+Chocolatiers & Shops,103,4.252427184
+Religious Organizations,102,4.421568627
+Cheese Shops,102,4.549019608
+Basque,98,3.346938776
+Costumes,98,4.244897959
+Medical Centers,97,3.845360825
+Lingerie,96,3.614583333
+Landscaping,96,3.802083333
+Pilates,94,4.446808511
+Afghan,94,3.978723404
+Plumbing,94,3.936170213
+Shoe Repair,94,4.372340426
+Post Offices,94,3.010638298
+Obstetricians & Gynecologists,93,3.47311828
+Churches,93,4.47311828
+Pest Control,92,3.945652174
+Pediatricians,91,4.142857143
+Swimming Pools,91,4.076923077
+Do-It-Yourself Food,91,3.769230769
+Guns & Ammo,90,3.955555556
+Piercing,90,4.755555556
+Comfort Food,88,3.704545455
+Office Equipment,87,3.287356322
+Wineries,87,3.770114943
+Medical Spas,86,3.61627907
+Comic Books,85,3.941176471
+Photography Stores & Services,84,3.380952381
+Photographers,84,4.821428571
+Tapas Bars,82,4
+Jazz & Blues,81,3.827160494
+Lighting Fixtures & Equipment,81,4.049382716
+Carpet Cleaning,79,4.164556962
+Tattoo,78,4.602564103
+Home Cleaning,77,3.597402597
+Community Service/Non-Profit,76,4.092105263
+Animal Shelters,74,4.581081081
+Playgrounds,73,4.616438356
+Discount Store,73,3.602739726
+Rafting/Kayaking,72,3.736111111
+Horseback Riding,71,4.647887324
+Orthodontists,71,4.169014085
+Electricians,71,4.957746479
+Lakes,70,4.071428571
+Dermatologists,69,3.565217391
+Parking,69,3.753623188
+Dance Studios,69,4.623188406
+Movers,67,3.791044776
+Pediatric Dentists,67,4.104477612
+Professional Sports Teams,65,4.123076923
+Handyman,65,4.846153846
+Car Stereo Installation,64,3.296875
+Pool Cleaners,63,3.920634921
+Real Estate Services,63,4.555555556
+Departments of Motor Vehicles,62,3.016129032
+Eyelash Service,61,4.770491803
+Martial Arts,60,4.483333333
+Laser Hair Removal,60,3.6
+Keys & Locksmiths,60,4.233333333
+Massage Therapy,56,4.625
+Travel Services,55,2.563636364
+Art Schools,55,3.836363636
+Radio Stations,53,3.849056604
+Peruvian,52,3.692307692
+Maternity Wear,51,3.549019608
+Appliances & Repair,49,3.551020408
+Child Care & Day Care,49,4.163265306
+Elementary Schools,49,4.06122449
+Skating Rinks,48,3.395833333
+Airport Shuttles,47,3.212765957
+Herbs & Spices,47,4.744680851
+Boating,47,4.063829787
+Oral Surgeons,45,4.177777778
+Party Supplies,44,3.909090909
+Recreation Centers,42,4.071428571
+Cooking Schools,41,3.609756098
+Go Karts,41,3.268292683
+African,41,4.268292683
+Preschools,40,4.325
+Adult,39,3.923076923
+Lawyers,39,4.358974359
+Watch Repair,38,4.447368421
+Makeup Artists,38,4.552631579
+Swimming Lessons/Schools,38,4.578947368
+Acupuncture,37,4.783783784
+Internal Medicine,36,3.694444444
+Vinyl Records,36,3.972222222
+Sports Clubs,36,3.361111111
+Windshield Installation & Repair,35,3.228571429
+Naturopathic/Holistic,35,4.2
+Self Storage,35,3.8
+Print Media,34,3.470588235
+Real Estate Agents,34,4.735294118
+Adult Entertainment,34,2.764705882
+Graphic Design,33,4.757575758
+Insurance,33,4.515151515
+Flooring,33,3.484848485
+Barre Classes,33,4.515151515
+Pawn Shops,33,3.757575758
+Middle Schools & High Schools,33,3.515151515
+Cosmetology Schools,33,3.787878788
+Reflexology,32,4.46875
+Weight Loss Centers,32,4.21875
+Property Management,32,3
+Mattresses,32,3.40625
+Gun/Rifle Ranges,32,4.15625
+Window Washing,32,4.375
+Motorcycle Dealers,31,3.064516129
+Home Theatre Installation,30,4.966666667
+Dog Walkers,30,4.5
+Framing,29,4.275862069
+Towing,28,4
+Burmese,28,4.285714286
+Accountants,28,4.714285714
+Tennis,28,3.535714286
+Interior Design,28,3.214285714
+Television Service Providers,28,2.642857143
+Lebanese,27,4.592592593
+Shades & Blinds,27,4.666666667
+Campgrounds,27,4.296296296
+Web Design,26,4.576923077
+Leather Goods,26,3.461538462
+Seafood Markets,26,3.923076923
+Mortgage Brokers,25,2.32
+Personal Shopping,25,4.32
+Home Inspectors,25,4.44
+Hot Tub & Pool,24,3.916666667
+Tree Services,24,4.041666667
+Mountain Biking,23,3.869565217
+Painters,23,4.869565217
+Allergists,22,3.454545455
+Boot Camps,22,4.681818182
+Ear Nose & Throat,22,2.727272727
+Watches,22,3.727272727
+Hair Stylists,21,4.380952381
+Taxis,21,3.285714286
+Horse Racing,21,3.476190476
+Solar Installation,21,4.476190476
+Counseling & Mental Health,20,3.2
+Windows Installation,20,3.75
+Internet Cafes,20,4.35
+Endodontists,20,4.15
+Gift Shops,20,4
+Garage Door Services,19,4.315789474
+Social Clubs,19,4.578947368
+Furniture Reupholstery,19,4.315789474
+Dance Schools,19,4.631578947
+Bed & Breakfast,18,4.222222222
+Podiatrists,18,4.333333333
+Cosmetic Surgeons,18,2.833333333
+Opera & Ballet,18,4.555555556
+Financial Advising,17,4.941176471
+Disc Golf,17,4.529411765
+Office Cleaning,17,4.117647059
+Truck Rental,17,3.823529412
+Live/Raw Food,16,3.8125
+Couriers & Delivery Services,16,3.5
+Limos,16,3.75
+Hookah Bars,16,4
+Smog Check Stations,15,3.066666667
+Nutritionists,15,4.6
+Carpeting,15,3.666666667
+Bankruptcy Law,15,4.666666667
+General Litigation,15,4.4

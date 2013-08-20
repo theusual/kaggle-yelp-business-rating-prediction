@@ -23,8 +23,8 @@ submission_no = '4'
 #--load training and test data frames--#
 dfTrn, dfTest, dfIdLookupTable = munge.load_data_frames()
 
-#--load sent score data frames--#
-#dfTrnSent, dfTestSent = munge.load_sent_score()
+#--load avg stars for top categories --#
+dfTopCats, dfTopCatsBusAvg = munge.load_category_avgs()
 
 #--Data Cleaning--#
 dfTrn,dfTest = munge.data_cleaning(dfTrn,dfTest)
@@ -42,11 +42,11 @@ dfAll = munge.load_combined_data_frames(dfTrn,dfTest)
 dfTrn_All,dfTest_All,dfTest_NoBusStars,dfTest_NoUsrStars,dfTest_NoBusUsrStars,dfTest_NoUsr,dfTest_NoUsrBusStars,dfTest_Tot_BusStars,dfTest_Benchmark_BusMean,dfTest_Benchmark_UsrMean,dfTest_Benchmark_BusUsrMean, dfTest_Master,dfTest_MissingUsers = munge.data_merge(dfTrn,dfTest,dfAll,dfIdLookupTable)
 
 #----------------------------------------#
-#--------- Feature Selection-------------#
+#--------- Feature Selection-------------#`
 #----------------------------------------#
 
 #--Add handcrafted (calculated) features--#
-dfTrn_All, dfTest_All, dfTest_NoBusStars, dfTest_NoUsrStars, dfTest_NoBusUsrStars, dfTest_NoUsr, dfTest_NoUsrBusStars, dfTest_Master = features.handcraft(dfTrn_All,dfTest_All,dfTest_NoBusStars,dfTest_NoUsrStars,dfTest_NoBusUsrStars,dfTest_NoUsr,dfTest_NoUsrBusStars, dfTest_Master,dfTest_MissingUsers)
+dfTrn_All, dfTest_All, dfTest_NoBusStars, dfTest_NoUsrStars, dfTest_NoBusUsrStars, dfTest_NoUsr, dfTest_NoUsrBusStars, dfTest_Master = features.handcraft(dfTrn_All,dfTest_All,dfTest_NoBusStars,dfTest_NoUsrStars,dfTest_NoBusUsrStars,dfTest_NoUsr,dfTest_NoUsrBusStars, dfTest_Master,dfTest_MissingUsers, dfTopCats,dfTopCatsBusAvg)
 
 #--Remove outliers from sets prior to ML and vectorizing
 ##Remove review count outlier (airport?)
@@ -233,9 +233,9 @@ train.save_predictions_benchmark(dfTest_Benchmark_BusUsrMean,'bus_usr_mean',subm
 train.save_model(clf,clf_name)
 
 #--Save a dataframe to CSV--#
-filename = 'Data/'+datetime.now().strftime("%d-%m-%y_%H%M")+'--DatasetTestMaster-calc)checkins'+'.csv'
+filename = 'Data/'+datetime.now().strftime("%d-%m-%y_%H%M")+'--DatasetTestMaster-catavgs'+'.csv'
 #del dfTest_Master['business_id'];del dfTest_Master['user_id'];
-dfTest_Master.ix[:,['RecommendationId','calc_total_checkins']].to_csv(filename, index=False)
+dfTest_Master.ix[:,['RecommendationId','calc_cat_avg','calc_cat_avg_bus_avg']].to_csv(filename, index=False)
 
 #--Save predictions to CSV--#
 filename = 'Data/'+datetime.now().strftime("%d-%m-%y_%H%M")+'--Pred_ChkBus&Open_LinReg'+'.csv'

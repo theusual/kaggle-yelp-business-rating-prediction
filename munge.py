@@ -36,15 +36,18 @@ def load_data_frames():
     dfIdLookupTable = utils.load_data_csv_to_df(dataDirectory+'IdLookupTable.csv')
     return dfTrn, dfTest, dfIdLookupTable
 
-def load_sent_score():
+def load_category_avgs():
     #-------------------------------------------------------
-    #Load pre-calculated sentiment scores for each review
+    #Load pre-calculated category averages for the popular categories
     #-------------------------------------------------------
-    dfTrnSent = pd.read_csv("Data/yelp_training_set_sent_score.csv",
-                       names = ['sent_score','review_id'])
-    dfTestSent = pd.read_csv("Data/yelp_test_set_sent_score.csv",
-                        names = ['sent_score', 'review_id'])
-    return dfTrnSent, dfTestSent
+    file_path = "Data/top_categories.csv"
+    dfTopCats = pd.read_csv(file_path)
+    dfTopCats = dfTopCats.set_index('category')
+
+    file_path = "Data/top_categories_bus_avg.csv"
+    dfTopCatsBusAvg = pd.read_csv(file_path)
+    dfTopCatsBusAvg = dfTopCatsBusAvg.set_index('category')
+    return dfTopCats, dfTopCatsBusAvg
 
 def data_cleaning(dfTrn,dfTest):
     #----------------------------------------------------------------------------------------------
