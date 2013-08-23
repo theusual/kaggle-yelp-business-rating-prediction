@@ -1,4 +1,10 @@
 # ignore the PyCharm settings directory
+
 .idea/**
+
+Submits/**
+
 # ignore any JSON data files (file size too large)
+
+
 *.json
