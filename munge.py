@@ -22,10 +22,10 @@ def load_data_frames():
                     "yelp_training_set_business.json",
                     "yelp_training_set_user.json",
                     "yelp_training_set_checkin.json"]
-    dataFilesTest = ["yelp_test_set_review.json",
-                    "yelp_test_set_business.json",
-                    "yelp_test_set_user.json",
-                    "yelp_test_set_checkin.json"]
+    dataFilesTest = ["final_test_set_review.json",
+                    "final_test_set_business.json",
+                    "final_test_set_user.json",
+                    "final_test_set_checkin.json"]
     dfTrn = []
     dfTest = []
 
@@ -60,7 +60,8 @@ def data_cleaning(dfTrn,dfTest):
     #Clean bad characters
     dfTrn[2]['name'] = [x.encode("utf-8") if type(x) != float else x for x in dfTrn[2]['name']]
     dfTest[2]['name'] = [x.encode("utf-8") if type(x) != float else x for x in dfTest[2]['name']]
-
+    dfTrn[1]['name'] = [x.encode("utf-8") if type(x) != float else x for x in dfTrn[1]['name']]
+    dfTest[1]['name'] = [x.encode("utf-8") if type(x) != float else x for x in dfTest[1]['name']]
     #----Convert any data types------------
 
     #----Flatten any nested columns--------
@@ -87,7 +88,7 @@ def data_cleaning(dfTrn,dfTest):
     del dfTrn[1]['full_address'];del dfTest[1]['full_address']
     del dfTrn[1]['neighborhoods'];
     del dfTrn[1]['city'];del dfTest[1]['city']
-    del dfTrn[1]['name'];del dfTest[1]['name']
+    #del dfTrn[1]['name'];del dfTest[1]['name']
     del dfTrn[2]['type'];del dfTest[2]['type']
     del dfTrn[3]['type'];del dfTest[3]['type']
 
@@ -192,7 +193,9 @@ def data_merge(dfTrn,dfTest,dfAll, dfIdLookupTable):
     dfTest_Master = dfTest_Master.merge(dfAll[3],how='left', on='business_id')
 
     ##Create set of reviews in training set that match user IDs in test review set but are not contained in the training user set
-    dfTest_MissingUsers = dfTest[0].merge(dfTrn[2],how='left', on='user_id');del dfTest_MissingUsers['business_id']
+    dfTemp = pd.DataFrame(dfTest[0]['user_id'].unique())
+    dfTemp.columns = ['user_id']
+    dfTest_MissingUsers = dfTemp.merge(dfTrn[2],how='left', on='user_id')#;del dfTest_MissingUsers['business_id']
     dfTest_MissingUsers = dfTest_MissingUsers[np.isnan(dfTest_MissingUsers['user_average_stars'])]
     dfTest_MissingUsers = dfTest_MissingUsers.merge(dfTrn[0],on='user_id',how='inner')
     del dfTest_MissingUsers['user_average_stars'];del dfTest_MissingUsers['user_name'];del dfTest_MissingUsers['user_review_count'];del dfTest_MissingUsers['user_votes']

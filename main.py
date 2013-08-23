@@ -13,7 +13,7 @@ from sklearn import (metrics, cross_validation, linear_model, ensemble, preproce
 from scipy.sparse import coo_matrix, hstack, vstack
 
 #--Set current submission number--#
-submission_no = '4'
+submission_no = '99'
 
 ###def main():
 #----------------------------------------#
@@ -233,9 +233,9 @@ train.save_predictions_benchmark(dfTest_Benchmark_BusUsrMean,'bus_usr_mean',subm
 train.save_model(clf,clf_name)
 
 #--Save a dataframe to CSV--#
-filename = 'Data/'+datetime.now().strftime("%d-%m-%y_%H%M")+'--DatasetTestMaster-catavgs'+'.csv'
+filename = 'Data/'+datetime.now().strftime("%d-%m-%y_%H%M")+'--DatasetTestMissingUsersCorrected'+'.csv'
 #del dfTest_Master['business_id'];del dfTest_Master['user_id'];
-dfTest_Master.ix[:,['RecommendationId','calc_cat_avg','calc_cat_avg_bus_avg']].to_csv(filename, index=False)
+dfTest_Master.ix[:,['RecommendationId','calc_user_avg_stars','calc_user_rev_count']].to_csv(filename, index=False)
 
 #--Save predictions to CSV--#
 filename = 'Data/'+datetime.now().strftime("%d-%m-%y_%H%M")+'--Pred_ChkBus&Open_LinReg'+'.csv'
