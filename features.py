@@ -13,7 +13,7 @@ import numpy as np
 import pandas as pd
 from datetime import datetime
 
-def handcraft(dfTrn_All, dfTest_All, dfTest_NoBusStars, dfTest_NoUsrStars,dfTest_NoBusUsrStars ,dfTest_NoUsr , dfTest_NoUsrBusStars, dfTest_Master,dfTest_MissingUsers,dfTopCats,dfTopCatsBusAvg):
+def handcraft(dfTrn_All, dfTest_All, dfTest_Master,dfTest_MissingUsers,dfTopCats,dfTopCatsBusAvg): # dfTest_NoBusStars, dfTest_NoUsrStars,dfTest_NoBusUsrStars ,dfTest_NoUsr , dfTest_NoUsrBusStars,
     #----------------------------------------------------------
     #Add hand-crafted features
     #----------------------------------------------------------
@@ -69,6 +69,7 @@ def handcraft(dfTrn_All, dfTest_All, dfTest_NoBusStars, dfTest_NoUsrStars,dfTest
         i+=1
     dfTest_All['calc_total_checkins'] = pd.Series(tempDict)
     i=0;tempDict = {}
+    '''
     for key in dfTest_NoBusStars.chk_checkin_info:
         total = 0
         #print key, type(key)
@@ -119,6 +120,7 @@ def handcraft(dfTrn_All, dfTest_All, dfTest_NoBusStars, dfTest_NoUsrStars,dfTest
         i+=1
     dfTest_NoUsrBusStars['calc_total_checkins'] = pd.Series(tempDict)
     i=0;tempDict = {}
+    '''
     for key in dfTest_Master.chk_checkin_info:
         total = 0
         #print key, type(key)
@@ -189,10 +191,12 @@ def handcraft(dfTrn_All, dfTest_All, dfTest_NoBusStars, dfTest_NoUsrStars,dfTest
 
     #Remove data fields used in calculations that are no longer needed
     del dfTrn_All['chk_checkin_info'];del dfTest_All['chk_checkin_info']
+    '''
     del dfTest_NoBusStars['chk_checkin_info'];del dfTest_NoUsrStars['chk_checkin_info']
     del dfTest_NoBusUsrStars['chk_checkin_info'];del dfTest_NoUsr['chk_checkin_info']
+    '''
 
-    return dfTrn_All, dfTest_All, dfTest_NoBusStars, dfTest_NoUsrStars, dfTest_NoBusUsrStars, dfTest_NoUsr, dfTest_NoUsrBusStars, dfTest_Master  #return our beautiful homemade features
+    return dfTrn_All, dfTest_All,dfTest_Master  #return our beautiful homemade features     #dfTest_NoBusStars, dfTest_NoUsrStars, dfTest_NoBusUsrStars, dfTest_NoUsr, dfTest_NoUsrBusStars,
 
 def vectorize(dfTrn_All,dfTest_All,dfTest_NoBusStars,dfTest_NoUsrStars,dfTest_NoBusUsrStars,dfTest_NoUsr,dfTest_NoUsrBusStars, feature):
     #-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------

@@ -26,6 +26,9 @@ dfTrn, dfTest, dfIdLookupTable = munge.load_data_frames()
 #--load avg stars for top categories --#
 dfTopCats, dfTopCatsBusAvg = munge.load_category_avgs()
 
+#--load avg stars for bus names --#
+dfBusNames = munge.load_bus_name_avgs()
+
 #--Data Cleaning--#
 dfTrn,dfTest = munge.data_cleaning(dfTrn,dfTest)
 
@@ -39,14 +42,14 @@ dfTrn,dfTest = munge.data_compression(dfTrn,dfTest)
 dfAll = munge.load_combined_data_frames(dfTrn,dfTest)
 
 #--Data merging to create data subsets for training and testing--#
-dfTrn_All,dfTest_All,dfTest_NoBusStars,dfTest_NoUsrStars,dfTest_NoBusUsrStars,dfTest_NoUsr,dfTest_NoUsrBusStars,dfTest_Tot_BusStars,dfTest_Benchmark_BusMean,dfTest_Benchmark_UsrMean,dfTest_Benchmark_BusUsrMean, dfTest_Master,dfTest_MissingUsers = munge.data_merge(dfTrn,dfTest,dfAll,dfIdLookupTable)
+dfTrn_All,dfTest_All, dfTest_Master,dfTest_MissingUsers = munge.data_merge(dfTrn,dfTest,dfAll,dfIdLookupTable) #dfTest_NoBusStars,dfTest_NoUsrStars,dfTest_NoBusUsrStars,dfTest_NoUsr,dfTest_NoUsrBusStars,dfTest_Tot_BusStars,dfTest_Benchmark_BusMean,dfTest_Benchmark_UsrMean,dfTest_Benchmark_BusUsrMean,
 
 #----------------------------------------#
 #--------- Feature Selection-------------#`
 #----------------------------------------#
 
 #--Add handcrafted (calculated) features--#
-dfTrn_All, dfTest_All, dfTest_NoBusStars, dfTest_NoUsrStars, dfTest_NoBusUsrStars, dfTest_NoUsr, dfTest_NoUsrBusStars, dfTest_Master = features.handcraft(dfTrn_All,dfTest_All,dfTest_NoBusStars,dfTest_NoUsrStars,dfTest_NoBusUsrStars,dfTest_NoUsr,dfTest_NoUsrBusStars, dfTest_Master,dfTest_MissingUsers, dfTopCats,dfTopCatsBusAvg)
+dfTrn_All, dfTest_All, dfTest_Master = features.handcraft(dfTrn_All,dfTest_All, dfTest_Master,dfTest_MissingUsers, dfTopCats,dfTopCatsBusAvg) # dfTest_NoBusStars, dfTest_NoUsrStars, dfTest_NoBusUsrStars, dfTest_NoUsr, dfTest_NoUsrBusStars,
 
 #--Remove outliers from sets prior to ML and vectorizing
 ##Remove review count outlier (airport?)
@@ -93,126 +96,30 @@ vecTest_NoUsrBusStars_Cats,dfTest_NoUsrBusStars, topCats = features.vectorize_bu
 #clf = svm.SVC(kernel = 'linear',cache_size = 6000.0) #use .ravel(), kernel='rbf','linear'
 n_neighbors = 200; clf = neighbors.KNeighborsRegressor(n_neighbors, weights='uniform', algorithm = 'kd_tree');clf_name='KNN_200' #use .toarray
 
-#---------Begin Model Specific Sections-------------#
-#--------------_Master Model------------------------#
+#--------------Machine Learning (woohoo, we finally got to the good stuff)------------------------#
 #quant_features = ['user_average_stars','user_review_count','calc_total_checkins','bus_stars','bus_review_count']
-quant_features = ['calc_total_checkins','bus_review_count']
-mtxTrn,mtxTest = features.standardize(dfTrn_All,dfTest_Master,quant_features)
+quant_features = ['bus_name_avg']
+dfTrn_ML= dfTrn_BusNames_Grtr1; dfTest_ML= dfTest_BusNames_Grtr1;
+mtxTrn,mtxTest = features.standardize(dfTrn_ML,dfTest_ML,quant_features)
 #--Combine the standardized quant features and the vectorized categorical features--#
-mtxTrn = hstack([mtxTrn,vecTrn_BusOpen])  #,vecTrn_Cats,vecTrn_Zip,
-mtxTest = hstack([mtxTest,vecTest_Master_BusOpen]) #vecTest_Master_Cats,vecTest_Master_Zip,
+#mtxTrn = hstack([mtxTrn,vecTrn_BusOpen])  #vecTrn_BusOpen,vecTrn_Cats,vecTrn_Zip,
+#mtxTest = hstack([mtxTest,vecTest_BusOpen]) #vecTest_Master_Cats,vecTest_Master_Zip,
 #--Test without the vecZip and vecCats--#
 #mtxTrn = hstack([mtxTrn,vecTrn_BusOpen])
 #mtxTest = hstack([mtxTest,vecTest_Master_BusOpen])
 #--select target--#
-mtxTarget = dfTrn_All.ix[:,['rev_stars']].as_matrix()
+mtxTarget = dfTrn_ML.ix[:,['rev_stars']].as_matrix()
 
 #--Use classifier for cross validation--#
-#train.cross_validate(mtxTrn.toarray(),mtxTarget,clf,folds=4,SEED=42,test_size=.15)
+train.cross_validate(mtxTrn,mtxTarget,clf,folds=10,SEED=42,test_size=.15)  #may require mtxTrn.toarray()
 
 #--Use classifier for predictions--#
-dfTest_Master, clf = train.predict(mtxTrn.toarray(),mtxTarget,mtxTest.toarray(),dfTest_Master,clf,clf_name)
+dfTest_ML, clf = train.predict(mtxTrn,mtxTarget,mtxTest,dfTest_ML,clf,clf_name) #may require mtxTest.toarray()
 
 #--Save predictions to file--#
-train.save_predictions(dfTest_Master,clf_name,'_All',submission_no)
+train.save_predictions(dfTest_ML,clf_name,'_BusName_ColdGrtr1',submission_no)
 
-#--------------_All Model---------------------------#
-#--Select quant features to be used and standardize them (remove the mean and scale to unit variance)--#
-quant_features = ['user_average_stars','user_review_count','calc_total_checkins','bus_stars','bus_review_count']
-mtxTrn,mtxTest = features.standardize(dfTrn_All,dfTest_All,quant_features)
-#--Combine the standardized quant features and the vectorized categorical features--#
-#mtxTrn = hstack([mtxTrn,vecTrn_Cats,vecTrn_Zip,vecTrn_BusOpen])
-#mtxTest = hstack([mtxTest,vecTest_All_Cats,vecTest_All_Zip,vecTest_All_BusOpen])
-#--Test without the vecZip and vecCats--#
-mtxTrn = hstack([mtxTrn,vecTrn_BusOpen])
-mtxTest = hstack([mtxTest,vecTest_All_BusOpen])
-#--select target--#
-mtxTarget = dfTrn_All.ix[:,['rev_stars']].as_matrix()
-#--Use classifier for cross validation--#
-#train.cross_validate(mtxTrn.toarray(),mtxTarget,clf,folds=4,SEED=42,test_size=.15)
-
-#--Use classifier for predictions--#
-dfTest_All, clf = train.predict(mtxTrn.toarray(),mtxTarget,mtxTest.toarray(),dfTest_All,clf,clf_name)
-#--Save predictions to file--#
-train.save_predictions(dfTest_All,clf_name,'_All',submission_no)
-
-#--------------_NoBusStars Model---------------------------#
-quant_features = ['user_average_stars','user_review_count','calc_total_checkins','bus_review_count']
-mtxTrn,mtxTest = features.standardize(dfTrn_All,dfTest_NoBusStars,quant_features)
-#mtxTrn = hstack([mtxTrn,vecTrn_Cats,vecTrn_Zip,vecTrn_BusOpen])
-#mtxTest = hstack([mtxTest,vecTest_NoBusStars_Cats,vecTest_NoBusStars_Zip,vecTest_NoBusStars_BusOpen])
-mtxTrn = hstack([mtxTrn,vecTrn_BusOpen])
-mtxTest = hstack([mtxTest,vecTest_NoBusStars_BusOpen])
-mtxTarget = dfTrn_All.ix[:,['rev_stars']].as_matrix()
-#--Use classifier for cross validation--#
-#train.cross_validate(mtxTrn.toarray(),mtxTarget,clf,folds=4,SEED=42,test_size=.15)
-
-#----For submission----#
-dfTest_NoBusStars, clf = train.predict(mtxTrn.toarray(),mtxTarget,mtxTest.toarray(),dfTest_NoBusStars,clf,clf_name)
-train.save_predictions(dfTest_NoBusStars,clf_name,'_NoBusStars',submission_no)
-
-#--------------_NoUsrStars Model---------------------------#
-quant_features = ['user_review_count','calc_total_checkins','bus_stars','bus_review_count']
-mtxTrn,mtxTest = features.standardize(dfTrn_All,dfTest_NoUsrStars,quant_features)
-#Combine the standardized quant features and the vectorized categorical features
-#mtxTrn = hstack([mtxTrn,vecTrn_Cats,vecTrn_Zip,vecTrn_BusOpen])
-#mtxTest = hstack([mtxTest,vecTest_NoUsrStars_Cats,vecTest_NoUsrStars_Zip,vecTest_NoUsrStars_BusOpen])
-mtxTrn = hstack([mtxTrn,vecTrn_BusOpen])
-mtxTest = hstack([mtxTest,vecTest_NoUsrStars_BusOpen])
-mtxTarget = dfTrn_All.ix[:,['rev_stars']].as_matrix()
-#--Use classifier for cross validation--#
-#train.cross_validate(mtxTrn.toarray(),mtxTarget,clf,folds=4,SEED=42,test_size=.15)
-
-#----For submission----#
-dfTest_NoUsrStars, clf = train.predict(mtxTrn.toarray(),mtxTarget,mtxTest.toarray(),dfTest_NoUsrStars,clf,clf_name)
-train.save_predictions(dfTest_NoUsrStars,clf_name,'_NoUsrStars',submission_no)
-
-#--------------_NoBusUsrStars Model---------------------------#
-quant_features = ['user_review_count','calc_total_checkins','bus_review_count']
-mtxTrn,mtxTest = features.standardize(dfTrn_All,dfTest_NoBusUsrStars,quant_features)
-mtxTrn = hstack([mtxTrn,vecTrn_Cats,vecTrn_Zip,vecTrn_BusOpen])
-mtxTest = hstack([mtxTest,vecTest_NoBusUsrStars_Cats,vecTest_NoBusUsrStars_Zip,vecTest_NoBusUsrStars_BusOpen])
-#mtxTrn = hstack([mtxTrn,vecTrn_BusOpen])
-#mtxTest = hstack([mtxTest,vecTest_NoBusUsrStars_BusOpen])
-mtxTarget = dfTrn_All.ix[:,['rev_stars']].as_matrix()
-#--Use classifier for cross validation--#
-#train.cross_validate(mtxTrn.toarray(),mtxTarget,clf,folds=4,SEED=42,test_size=.15)
-
-#----For submission----#
-dfTest_NoBusUsrStars, clf = train.predict(mtxTrn.toarray(),mtxTarget,mtxTest.toarray(),dfTest_NoBusUsrStars,clf,clf_name)
-train.save_predictions(dfTest_NoBusUsrStars,clf_name,'_NoBusUsrStars',submission_no)
-
-#--------------_NoUsr Model---------------------------#
-quant_features = ['calc_total_checkins','bus_stars','bus_review_count']
-mtxTrn,mtxTest = features.standardize(dfTrn_All,dfTest_NoUsr,quant_features)
-#mtxTrn = hstack([mtxTrn,vecTrn_Cats,vecTrn_Zip,vecTrn_BusOpen])
-#mtxTest = hstack([mtxTest,vecTest_NoUsr_Cats,vecTest_NoUsr_Zip,vecTest_NoUsr_BusOpen])
-mtxTrn = hstack([mtxTrn,vecTrn_BusOpen])
-mtxTest = hstack([mtxTest,vecTest_NoUsr_BusOpen])
-mtxTarget = dfTrn_All.ix[:,['rev_stars']].as_matrix()
-#--Use classifier for cross validation--#
-#train.cross_validate(mtxTrn.toarray(),mtxTarget,clf,folds=4,SEED=42,test_size=.15)
-
-#----For submission----#
-dfTest_NoUsr, clf = train.predict(mtxTrn.toarray(),mtxTarget,mtxTest.toarray(),dfTest_NoUsr,clf,clf_name)
-train.save_predictions(dfTest_NoUsr,clf_name,'_NoUsr',submission_no)
-
-#--------------_NoUsrBusStars Model---------------------------#
-quant_features = ['calc_total_checkins','bus_review_count']
-mtxTrn,mtxTest = features.standardize(dfTrn_All,dfTest_NoUsrBusStars,quant_features)
-mtxTrn = hstack([mtxTrn,vecTrn_Cats,vecTrn_Zip,vecTrn_BusOpen])
-mtxTest = hstack([mtxTest,vecTest_NoUsrBusStars_Cats,vecTest_NoUsrBusStars_Zip,vecTest_NoUsrBusStars_BusOpen])
-#mtxTrn = hstack([mtxTrn,vecTrn_BusOpen])
-#mtxTest = hstack([mtxTest,vecTest_NoUsrBusStars_BusOpen])
-mtxTarget = dfTrn_All.ix[:,['rev_stars']].as_matrix()
-#--Use classifier for cross validation--#
-#train.cross_validate(mtxTrn.toarray(),mtxTarget,clf,folds=4,SEED=42,test_size=.15)
-
-#----For submission----#
-dfTest_NoUsrBusStars, clf = train.predict(mtxTrn.toarray(),mtxTarget,mtxTest.toarray(),dfTest_NoUsrBusStars,clf,clf_name)
-train.save_predictions(dfTest_NoUsrBusStars,clf_name,'_NoUsrBusStars',submission_no)
-
-#---------End Model Specific Sections-------------#
+#---------End Machine Learning Section-------------#
 
 #------------------------------Optional Steps----------------------------------#
 #--Memory cleanup prior to running the memory intensive classifiers--#
@@ -233,9 +140,10 @@ train.save_predictions_benchmark(dfTest_Benchmark_BusUsrMean,'bus_usr_mean',subm
 train.save_model(clf,clf_name)
 
 #--Save a dataframe to CSV--#
-filename = 'Data/'+datetime.now().strftime("%d-%m-%y_%H%M")+'--DatasetTestMissingUsersCorrected'+'.csv'
+filename = 'Data/'+datetime.now().strftime("%d-%m-%y_%H%M")+'--FinalDataset--OldUserTest'+'.csv'
 #del dfTest_Master['business_id'];del dfTest_Master['user_id'];
-dfTest_Master.ix[:,['RecommendationId','calc_user_avg_stars','calc_user_rev_count']].to_csv(filename, index=False)
+#dfTest_Master.ix[:,['RecommendationId','calc_user_avg_stars','calc_user_rev_count']].to_csv(filename, index=False)
+dfTest_Old[2].to_csv(filename, index=False)
 
 #--Save predictions to CSV--#
 filename = 'Data/'+datetime.now().strftime("%d-%m-%y_%H%M")+'--Pred_ChkBus&Open_LinReg'+'.csv'

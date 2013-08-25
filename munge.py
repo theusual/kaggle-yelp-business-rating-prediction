@@ -26,13 +26,20 @@ def load_data_frames():
                     "final_test_set_business.json",
                     "final_test_set_user.json",
                     "final_test_set_checkin.json"]
+    dataFilesTest_Old = ["yelp_test_set_review.json",
+                    "yelp_test_set_business.json",
+                    "yelp_test_set_user.json",
+                    "yelp_test_set_checkin.json"]
     dfTrn = []
     dfTest = []
+    dfTest_Old = []
 
     for file in dataFilesTrn:
         dfTrn.append( pd.DataFrame( utils.load_data_json(dataDirectory+file) ) )
     for file in dataFilesTest:
         dfTest.append( pd.DataFrame( utils.load_data_json(dataDirectory+file) ) )
+    for file in dataFilesTest_Old:
+        dfTest_Old.append( pd.DataFrame( utils.load_data_json(dataDirectory+file) ) )
     dfIdLookupTable = utils.load_data_csv_to_df(dataDirectory+'IdLookupTable.csv')
     return dfTrn, dfTest, dfIdLookupTable
 
@@ -49,6 +56,21 @@ def load_category_avgs():
     dfTopCatsBusAvg = dfTopCatsBusAvg.set_index('category')
     return dfTopCats, dfTopCatsBusAvg
 
+def load_bus_name_avgs():
+    #-------------------------------------------------------
+    #Load pre-calculated bus name avg's
+    #-------------------------------------------------------
+    file_path = "Data/bus_name_avg.csv"
+    dfBusNames = pd.read_csv(file_path)
+    #dfBusNames = dfBusNames.set_index('bus_name')
+
+    return dfBusNames
+
+def load_gender_db():
+    file_path = "Data/top_categories.csv"
+    dfTopCats = pd.read_csv(file_path)
+    dfTopCats = dfTopCats.set_index('category')
+
 def data_cleaning(dfTrn,dfTest):
     #----------------------------------------------------------------------------------------------
     #Clean the data of inconsistencies, bad date fields, bad data types, nested columns, etc.
@@ -62,6 +84,7 @@ def data_cleaning(dfTrn,dfTest):
     dfTest[2]['name'] = [x.encode("utf-8") if type(x) != float else x for x in dfTest[2]['name']]
     dfTrn[1]['name'] = [x.encode("utf-8") if type(x) != float else x for x in dfTrn[1]['name']]
     dfTest[1]['name'] = [x.encode("utf-8") if type(x) != float else x for x in dfTest[1]['name']]
+
     #----Convert any data types------------
 
     #----Flatten any nested columns--------
@@ -135,14 +158,14 @@ def data_merge(dfTrn,dfTest,dfAll, dfIdLookupTable):
     #-------------------------------------------------------------------
 
     ## Pull RecommendationId from IdLookupTable for test reviews prior to other merges
-    dfTest[0] = dfTest[0].merge(dfIdLookupTable,how='inner',on=['user_id','business_id'])
+    #dfTest[0] = dfTest[0].merge(dfIdLookupTable,how='inner',on=['user_id','business_id'])
 
     ##Aggregated subsets
     ####Group all reviews that have a business with a star rating
     dfTest_Tot_BusStars = dfTest[0].merge(dfTrn[1],how='inner',on='business_id')
-    del dfTest_Tot_BusStars['RecommendationId']
+    #del dfTest_Tot_BusStars['RecommendationId']
     dfTest_Tot_UsrStars = dfTest[0].merge(dfTrn[2],how='inner',on='user_id')
-    del dfTest_Tot_UsrStars['RecommendationId']
+    #del dfTest_Tot_UsrStars['RecommendationId']
 
     ##Create benchmark columns for merging with all other data subets
     global_rev_mean = dfTrn[0].rev_stars.mean()
@@ -252,4 +275,66 @@ def data_merge(dfTrn,dfTest,dfAll, dfIdLookupTable):
     dfTest_NoUsrBusStars = dfTest_NoUsrBusStars.merge(dfAll[3],how='left', on='business_id')
     del dfTest_NoUsrBusStars['bus_stars']; del dfTest_NoUsrBusStars['user_average_stars'];del dfTest_NoUsrBusStars['user_review_count']
 
-    return dfTrn_All,dfTest_All,dfTest_BusStars,dfTest_NoUsrStars,dfTest_NoBusUsrStars,dfTest_NoUsr,dfTest_NoUsrBusStars,dfTest_Tot_BusStars,dfTest_Benchmark_BusMean,dfTest_Benchmark_UsrMean,dfTest_Benchmark_BusUsrMean, dfTest_Master,dfTest_MissingUsers  #---return our new babies---#
+    #Create closed business set
+    dfTrn_Closed = dfTrn[0].merge(dfTrn[1],how='inner', on='business_id')
+    dfTrn_Closed = dfTrn_Closed[dfTrn_Closed['bus_open'] == False]
+    #Create open business set for comparison
+    dfTrn_Open = dfTrn[0].merge(dfTrn[1],how='inner', on='business_id')
+    dfTrn_Open = dfTrn_Open[dfTrn_Open['bus_open'] == True]
+
+    #Create _All set with >20 review counts
+    dfTrn_All_20 = dfTrn_All[dfTrn_All['bus_review_count'] >= 20]
+    dfTrn_All_20 = dfTrn_All_20[dfTrn_All_20['user_review_count'] >= 20]
+
+    dfTest_All_20 = dfTest_All[dfTest_All['bus_review_count'] >= 20]
+    Usr_5dfTest_All_20 = dfTest_All_20[dfTest_All_20['user_review_count'] >= 20]
+
+    #Create _Usr set with >5 review counts
+    dfTrn_Usr_5 = dfTrn_All[dfTrn_All['user_review_count'] >= 5]
+    dfTrn_Usr_5['calc_cat_avg'] = dfTrn_Usr_5.calc_cat_avg.fillna(3.766723066)
+    dfTest_Usr_5 = dfTest_Master[dfTest_Master['user_review_count'] >= 5]
+    dfTest_Usr_5 = dfTest_Usr_5[np.isnan(dfTest_Usr_5['bus_stars'])]
+    dfTest_Usr_5 = dfTest_Usr_5[dfTest_Usr_5['user_average_stars'] > 0]
+    dfTest_Usr_5['calc_cat_avg'] = dfTest_Usr_5.calc_cat_avg.fillna(3.766723066)
+
+    #Create _Bus set with >5 review counts
+    dfTrn_Bus_5 = dfTrn_All[dfTrn_All['bus_review_count'] >= 5]
+    dfTest_Bus_5 = dfTest_Master[dfTest_Master['bus_review_count'] >= 5]
+    dfTest_Bus_5 = dfTest_Bus_5[np.isnan(dfTest_Bus_5['user_average_stars'])]
+    dfTest_Bus_5 = dfTest_Bus_5[dfTest_Bus_5['bus_stars'] > 0]
+
+    #Create _BusNames set with businesses that are missing a bus_avg but have the same name as other businesses in the training set
+    dfTrn_BusNames = dfTrn_All.merge(dfBusNames[dfBusNames['name_counts'] > 1],how='inner',on='bus_name')
+    dfTest_BusNames = dfTest_Master[np.isnan(dfTest_Master.bus_stars)].merge(dfBusNames,how='inner',on='bus_name')
+
+    #Create _BusNames1 set with businesses that are in the busnames dataset with a count of 1 and are missing their business average
+    dfTrn_BusNames_1 = dfTrn_All.merge(dfBusNames[dfBusNames['name_counts'] == 2],how='inner',on='bus_name')
+    dfTest_BusNames_1 = dfTest_Master[np.isnan(dfTest_Master.bus_stars)].merge(dfBusNames,how='inner',on='bus_name')
+    dfTest_BusNames_1 = dfTest_BusNames_1[dfTest_BusNames_1['name_counts'] == 1]
+
+    #Create _BusNames2 set with businesses in the busnames dataset missing their bus avg, but with a bus names count > 1
+    dfTrn_BusNames_Grtr1 = dfTrn_All.merge(dfBusNames[dfBusNames['name_counts'] > 2],how='inner',on='bus_name')
+    dfTest_BusNames_Grtr1 = dfTest_Master[np.isnan(dfTest_Master.bus_stars)].merge(dfBusNames,how='inner',on='bus_name')
+    dfTest_BusNames_Grtr1 = dfTest_BusNames_Grtr1[dfTest_BusNames_Grtr1['name_counts'] > 1]
+
+    dfTrn_BusNames_Grtr5 = dfTrn_All.merge(dfBusNames[dfBusNames['name_counts'] > 5],how='inner',on='bus_name')
+    dfTrn_BusNames_Grtr5 = dfTrn_BusNames_2to5[dfTrn_BusNames_2to5['name_counts'] < 6]
+
+    #Create _BusNames_All subsets where user review counts are > 5 and user_avg_stars are present
+    dfTrn_BusNames_All_1 = dfTrn_BusNames_1[dfTrn_BusNames_1['user_review_count'] >= 5]
+    dfTrn_BusNames_All_Grtr1 = dfTrn_BusNames_Grtr1[dfTrn_BusNames_Grtr1['user_review_count'] >= 5]
+    dfTest_BusNames_All_1 = dfTest_BusNames_1[dfTest_BusNames_1.user_average_stars > 0]
+    dfTest_BusNames_All_1 = dfTest_BusNames_All_1[dfTest_BusNames_All_1.user_review_count >= 5]
+    dfTest_BusNames_All_Grtr1 = dfTest_BusNames_Grtr1[dfTest_BusNames_Grtr1.user_average_stars > 0]
+    dfTest_BusNames_All_Grtr1 = dfTest_BusNames_All_Grtr1[dfTest_BusNames_All_Grtr1.user_review_count >= 5]
+
+    #Create _BusNames_Cold subset where there are no user avg stars present, for training sets use dfTrn_BusNames_1 and _Grtr1
+    dfTest_BusNames_Cold_1 = dfTest_BusNames_1[np.isnan(dfTest_BusNames_1.user_average_stars)]
+    dfTest_BusNames_Cold_Grtr1 = dfTest_BusNames_Grtr1[np.isnan(dfTest_BusNames_Grtr1.user_average_stars)]
+
+    #Impute calc_user_avg_stars into user_avg_stars (example of how to join together 2 different data columns)
+    dfTemp1 = dfTest_BusNames_1[np.isnan(dfTest_BusNames_1['user_average_stars'])].user_average_stars
+    dfTemp2 = dfTest_BusNames_1[dfTest_BusNames_1['user_average_stars'] > 0]
+    dfTest_UsrCalc = dfTemp1.append(dfTemp2)
+
+    return dfTrn_All,dfTest_All, dfTest_Master,dfTest_MissingUsers  #dfTest_BusStars,dfTest_NoUsrStars,dfTest_NoBusUsrStars,dfTest_NoUsr,dfTest_NoUsrBusStars,dfTest_Tot_BusStars,dfTest_Benchmark_BusMean,,dfTest_Benchmark_UsrMean,dfTest_Benchmark_BusUsrMean

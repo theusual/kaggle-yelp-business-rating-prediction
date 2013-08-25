@@ -90,15 +90,15 @@ def predict(mtxTrn,mtxTarget,mtxTest,dfTest,clf,clfname):
 
 def save_predictions(dfTest,clf_name,model_name,submission_no):
     timestamp = datetime.now().strftime("--%d-%m-%y_%H%M")
-    filename = 'Submissions/'+'Submission'+submission_no+timestamp+'--'+clf_name+'--'+model_name+'.csv'
+    filename = 'Submits/'+'Submission'+submission_no+timestamp+'--'+clf_name+'--'+model_name+'.csv'
 
     #-perform any manual predictions cleanup that may be necessary-#
     ##convert any predictions below 1.2 to 1.2's and any predictions above 4.8 to 4.8's
-    dfTest['predictions_'+clf_name] = [x[0] if x > 1.3 and x < 4.85 else 1.3 for x in dfTest['predictions_'+clf_name]]
-    dfTest['predictions_'+clf_name] = [x if x < 4.85 else 4.85 for x in dfTest['predictions_'+clf_name]]
+    dfTest['predictions_'+clf_name] = [x if x < 1.3 else x[0] for x in dfTest['predictions_'+clf_name]] #may require x[0]
+    dfTest['predictions_'+clf_name] = [x if x > 4.85 else x for x in dfTest['predictions_'+clf_name]]
 
     #save predictions
-    dfTest.ix[:,['RecommendationId','predictions_'+clf_name]].to_csv(filename,cols=['RecommendationId','stars'], index=False)
+    dfTest.ix[:,['review_id','predictions_'+clf_name]].to_csv(filename,cols=['review_id','stars'], index=False)
     print 'Submission file saved as ',filename
     
 def save_predictions_benchmark(dfTest_Benchmark,benchmark_name,submission_no):
