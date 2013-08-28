@@ -13,7 +13,7 @@ import numpy as np
 import pandas as pd
 from datetime import datetime
 
-def handcraft(dfTrn_All, dfTest_All, dfTest_Master,dfTest_MissingUsers,dfTopCats,dfTopCatsBusAvg): # dfTest_NoBusStars, dfTest_NoUsrStars,dfTest_NoBusUsrStars ,dfTest_NoUsr , dfTest_NoUsrBusStars,
+def handcraft(dfTrn_All, dfTest_All, dfTest_Master,dfTest_MissingUsers,dfTopCats,dfTopCatsBusAvg,dfAllBus_WithGroupedCats, dfBusNames): # dfTest_NoBusStars, dfTest_NoUsrStars,dfTest_NoBusUsrStars ,dfTest_NoUsr , dfTest_NoUsrBusStars,
     #----------------------------------------------------------
     #Add hand-crafted features
     #----------------------------------------------------------
@@ -158,8 +158,24 @@ def handcraft(dfTrn_All, dfTest_All, dfTest_Master,dfTest_MissingUsers,dfTopCats
                     dfTrn_All['calc_cat_count_bus_avg'][j] += 1
         j+=1
     dfTrn_All['calc_cat_avg_bus_avg'] = dfTrn_All['calc_cat_stars_bus_avg'] / dfTrn_All['calc_cat_count_bus_avg']
+    dfTrn_All['calc_cat_avg'] = dfTrn_All['calc_cat_avg'].fillna(3.766723066)
     del dfTrn_All['calc_cat_stars_bus_avg']
     del dfTrn_All['calc_cat_count_bus_avg']
+
+    dfTest_All['calc_cat_stars'] = 0.0
+    dfTest_All['calc_cat_count'] = 0.0
+    j=0
+    for row in dfTest_All.ix[:,['bus_categories']].values:
+        for list in row:
+            for i in list:
+                if i in dfTopCats.index.tolist():
+                    dfTest_All['calc_cat_stars'][j] += dfTopCats['cat_avg_stars'][i]
+                    dfTest_All['calc_cat_count'][j] += 1
+        j+=1
+    dfTest_All['calc_cat_avg'] = dfTest_All['calc_cat_stars'] / dfTest_All['calc_cat_count']
+    dfTest_All['calc_cat_avg'] = dfTest_All['calc_cat_avg'].fillna(3.766723066)
+    del dfTest_All['calc_cat_stars']
+    del dfTest_All['calc_cat_count']
 
     dfTest_Master['calc_cat_stars'] = 0.0
     dfTest_Master['calc_cat_count'] = 0.0
@@ -188,6 +204,14 @@ def handcraft(dfTrn_All, dfTest_All, dfTest_Master,dfTest_MissingUsers,dfTopCats
     dfTest_Master['calc_cat_avg_bus_avg'] = dfTest_Master['calc_cat_stars_bus_avg'] / dfTest_Master['calc_cat_count_bus_avg']
     del dfTest_Master['calc_cat_stars_bus_avg']
     del dfTest_Master['calc_cat_count_bus_avg']
+
+    #---Add the business names---#
+    dfTrn_All = dfTrn_All.merge(dfBusNames[dfBusNames['bus_name_counts'] > 1],how='outer',on='bus_name')
+    dfTest_Master = dfTest_Master.merge(dfBusNames,how='outer',on='bus_name')
+
+    #---Add the grouped cat averages---#
+    dfTrn_All = dfTrn_All.merge(dfAllBus_WithGroupedCats,how='left',on='business_id')
+    dfTest_Master = dfTest_Master.merge(dfAllBus_WithGroupedCats,how='left',on='business_id')
 
     #Remove data fields used in calculations that are no longer needed
     del dfTrn_All['chk_checkin_info'];del dfTest_All['chk_checkin_info']

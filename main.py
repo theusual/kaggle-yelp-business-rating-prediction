@@ -29,6 +29,9 @@ dfTopCats, dfTopCatsBusAvg = munge.load_category_avgs()
 #--load avg stars for bus names --#
 dfBusNames = munge.load_bus_name_avgs()
 
+#--load all bus set with grouped cat avg stars --#
+dfAllBus_WithGroupedCats = munge.load_all_bus_w_grp_cat_avgs()
+
 #--Data Cleaning--#
 dfTrn,dfTest = munge.data_cleaning(dfTrn,dfTest)
 
@@ -49,7 +52,7 @@ dfTrn_All,dfTest_All, dfTest_Master,dfTest_MissingUsers = munge.data_merge(dfTrn
 #----------------------------------------#
 
 #--Add handcrafted (calculated) features--#
-dfTrn_All, dfTest_All, dfTest_Master = features.handcraft(dfTrn_All,dfTest_All, dfTest_Master,dfTest_MissingUsers, dfTopCats,dfTopCatsBusAvg) # dfTest_NoBusStars, dfTest_NoUsrStars, dfTest_NoBusUsrStars, dfTest_NoUsr, dfTest_NoUsrBusStars,
+dfTrn_All, dfTest_All, dfTest_Master = features.handcraft(dfTrn_All,dfTest_All, dfTest_Master,dfTest_MissingUsers, dfTopCats,dfTopCatsBusAvg, dfAllBus_WithGroupedCats, dfBusNames) # dfTest_NoBusStars, dfTest_NoUsrStars, dfTest_NoBusUsrStars, dfTest_NoUsr, dfTest_NoUsrBusStars,
 
 #--Remove outliers from sets prior to ML and vectorizing
 ##Remove review count outlier (airport?)
@@ -98,8 +101,8 @@ n_neighbors = 200; clf = neighbors.KNeighborsRegressor(n_neighbors, weights='uni
 
 #--------------Machine Learning (woohoo, we finally got to the good stuff)------------------------#
 #quant_features = ['user_average_stars','user_review_count','calc_total_checkins','bus_stars','bus_review_count']
-quant_features = ['bus_name_avg']
-dfTrn_ML= dfTrn_BusNames_Grtr1; dfTest_ML= dfTest_BusNames_Grtr1;
+quant_features = ['grp_cat_avg_stars','bus_review_count']
+dfTrn_ML=dfTrn_GrpCatAvg_Cleaned; dfTest_ML= dfTest_GrpCatAvg_Cold;
 mtxTrn,mtxTest = features.standardize(dfTrn_ML,dfTest_ML,quant_features)
 #--Combine the standardized quant features and the vectorized categorical features--#
 #mtxTrn = hstack([mtxTrn,vecTrn_BusOpen])  #vecTrn_BusOpen,vecTrn_Cats,vecTrn_Zip,
@@ -111,13 +114,13 @@ mtxTrn,mtxTest = features.standardize(dfTrn_ML,dfTest_ML,quant_features)
 mtxTarget = dfTrn_ML.ix[:,['rev_stars']].as_matrix()
 
 #--Use classifier for cross validation--#
-train.cross_validate(mtxTrn,mtxTarget,clf,folds=10,SEED=42,test_size=.15)  #may require mtxTrn.toarray()
+train.cross_validate(mtxTrn,mtxTarget,clf,folds=10,SEED=42,test_size=.2)  #may require mtxTrn.toarray()
 
 #--Use classifier for predictions--#
 dfTest_ML, clf = train.predict(mtxTrn,mtxTarget,mtxTest,dfTest_ML,clf,clf_name) #may require mtxTest.toarray()
 
 #--Save predictions to file--#
-train.save_predictions(dfTest_ML,clf_name,'_BusName_ColdGrtr1',submission_no)
+train.save_predictions(dfTest_ML,clf_name,'_Cold_GrpCat_BusRevCnt_2',submission_no)
 
 #---------End Machine Learning Section-------------#
 
