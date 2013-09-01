@@ -101,8 +101,8 @@ n_neighbors = 200; clf = neighbors.KNeighborsRegressor(n_neighbors, weights='uni
 
 #--------------Machine Learning (woohoo, we finally got to the good stuff)------------------------#
 #quant_features = ['user_average_stars','user_review_count','calc_total_checkins','bus_stars','bus_review_count']
-quant_features = ['grp_cat_avg_stars','bus_review_count']
-dfTrn_ML=dfTrn_GrpCatAvg_Cleaned; dfTest_ML= dfTest_GrpCatAvg_Cold;
+quant_features = ['bus_stars','user_average_stars','bus_review_count', 'user_review_count','calc_total_checkins','calc_cat_avg']
+dfTrn_ML=dfTrn_All_5_8; dfTest_ML= dfTest_All_1_5;
 mtxTrn,mtxTest = features.standardize(dfTrn_ML,dfTest_ML,quant_features)
 #--Combine the standardized quant features and the vectorized categorical features--#
 #mtxTrn = hstack([mtxTrn,vecTrn_BusOpen])  #vecTrn_BusOpen,vecTrn_Cats,vecTrn_Zip,
@@ -120,7 +120,7 @@ train.cross_validate(mtxTrn,mtxTarget,clf,folds=10,SEED=42,test_size=.2)  #may r
 dfTest_ML, clf = train.predict(mtxTrn,mtxTarget,mtxTest,dfTest_ML,clf,clf_name) #may require mtxTest.toarray()
 
 #--Save predictions to file--#
-train.save_predictions(dfTest_ML,clf_name,'_Cold_GrpCat_BusRevCnt_2',submission_no)
+train.save_predictions(dfTest_ML,clf_name,'_All_1_5_KitchenSink',submission_no)
 
 #---------End Machine Learning Section-------------#
 

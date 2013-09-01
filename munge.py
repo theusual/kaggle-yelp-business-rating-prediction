@@ -321,31 +321,71 @@ def data_merge(dfTrn,dfTest,dfAll, dfIdLookupTable):
     dfTrn_Open = dfTrn[0].merge(dfTrn[1],how='inner', on='business_id')
     dfTrn_Open = dfTrn_Open[dfTrn_Open['bus_open'] == True]
 
+    #Create _BusNames1 set with businesses that are in the busnames dataset with a count of 1 and are missing their business average
+    dfTrn_BusNames_1 = dfTrn_All.merge(dfBusNames[dfBusNames['bus_name_counts'] == 2],how='inner',on='bus_name')
+    dfTest_BusNames_1 = dfTest_Master[np.isnan(dfTest_Master.bus_stars)].merge(dfBusNames,how='inner',on='bus_name')
+    dfTest_BusNames_1 = dfTest_BusNames_1[dfTest_BusNames_1['bus_name_counts'] == 1]
+
+    #Create _BusNames2 set with businesses in the busnames dataset missing their bus avg, but with a bus names count > 1
+    dfTrn_BusNames_Grtr1 = dfTrn_All.merge(dfBusNames[dfBusNames['bus_name_counts'] > 2],how='inner',on='bus_name')
+    dfTest_BusNames_Grtr1 = dfTest_Master[np.isnan(dfTest_Master.bus_stars)].merge(dfBusNames,how='inner',on='bus_name')
+    dfTest_BusNames_Grtr1 = dfTest_BusNames_Grtr1[dfTest_BusNames_Grtr1['bus_name_counts'] > 1]
+
+    dfTrn_BusNames_Grtr5 = dfTrn_All.merge(dfBusNames[dfBusNames['name_counts'] > 5],how='inner',on='bus_name')
+    dfTrn_BusNames_Grtr5 = dfTrn_BusNames_2to5[dfTrn_BusNames_2to5['name_counts'] < 6]
+
     #Create _All sets with grp cat avg's > 3 (excludes anything with a bus name avg)
     dfTrn_GrpCatAvg = dfTrn_All[dfTrn_All.grp_cat_counts > 3]
     dfTrn_GrpCatAvg = dfTrn_GrpCatAvg[np.isnan(dfTrn_GrpCatAvg.bus_name_counts)]
     dfTest_GrpCatAvg = dfTest_Master[dfTest_Master.grp_cat_counts > 3]
     dfTest_GrpCatAvg = dfTest_GrpCatAvg[np.isnan(dfTest_GrpCatAvg.bus_name_counts)]
 
-    #Create _All sets with cat cat avg's only (excludes anything with a bus name avg or a grp cat count > 3)
-    
+    #Create _All sets with cat avg's only (excludes anything with a bus name avg or a grp cat count > 3)
+    dfTrn_CatAvg = dfTrn_All[np.logical_or(dfTrn_All.grp_cat_counts < 4, np.isnan(dfTrn_All.grp_cat_counts))]
+    dfTrn_CatAvg = dfTrn_CatAvg[np.logical_or(np.isnan(dfTrn_CatAvg.bus_name_counts),dfTrn_CatAvg.bus_name_counts < 2)]
+    dfTest_CatAvg = dfTest_Master[np.logical_or(dfTest_Master.grp_cat_counts < 4, np.isnan(dfTest_Master.grp_cat_counts))]
+    dfTest_CatAvg = dfTest_CatAvg[np.logical_or(np.isnan(dfTest_CatAvg.bus_name_counts),dfTest_CatAvg.bus_name_counts < 2)]
+    dfTest_CatAvg = dfTest_CatAvg[np.logical_not(np.isnan(dfTest_CatAvg['bus_review_count']))]
 
     #Create _Cold subset with grp cat avg's but no bus names avg's  --- also create cleaned training set that matches the test data better (high bus_rev_cnt removed)
-    ## 2082 records in test set
-    dfTrn_GrpCatAvg_Cleaned = dfTrn_GrpCatAvg[dfTrn_GrpCatAvg['bus_review_count'] < 240]
-    dfTest_GrpCatAvg_Cold = dfTest_GrpCatAvg[np.isnan(dfTest_GrpCatAvg.user_average_stars)]
-
-    #Create _All sets bus_names, grp cat avg's, and calc cat avg's merged (in that order)
+    ## 1896 records in test set
+    dfTrn_CatAvg_Cold_Cleaned = dfTrn_CatAvg[dfTrn_CatAvg['bus_review_count'] < 240]
+    dfTest_CatAvg_Cold = dfTest_CatAvg[np.isnan(dfTest_CatAvg.user_average_stars)]
+    dfTest_CatAvg_Cold = dfTest_CatAvg_Cold[np.isnan(dfTest_CatAvg_Cold.bus_stars)]
+    dfTest_CatAvg_Cold = dfTest_CatAvg_Cold[np.isnan(dfTest_CatAvg_Cold.bus_name_counts)]
 
     #Create _All set with >20 review counts
     dfTrn_All_20 = dfTrn_All[np.logical_and(dfTrn_All['bus_review_count'] >= 20, dfTrn_All['user_review_count'] >= 20)]
     dfTest_All_20 = dfTest_All[np.logical_and(dfTest_All['bus_review_count'] >= 20, dfTest_All['user_review_count'] >= 20)]
 
-    #Create _All set with >=13 user reviews and >=8 bus reviews
+    #Create _All_8_13 set with >=13 user reviews and >=8 bus reviews
     dfTrn_All_8_13 = dfTrn_All[np.logical_and(dfTrn_All['bus_review_count'] >= 8, dfTrn_All['user_review_count'] >= 13)]
     dfTrn_All_8_13 = dfTrn_All_8_13[np.logical_or(dfTrn_All_8_13['user_review_count'] < 20, dfTrn_All_8_13['bus_review_count'] < 20)]
     dfTest_All_8_13 = dfTest_All[np.logical_and(dfTest_All['bus_review_count'] >= 8, dfTest_All['user_review_count'] >= 13)]
-    dfTest_All_8_13 = dfTest_All_8_13[np.logical_or(dfTest_All_8_13['user_review_count'] < 20, dfTest_All_8_13['bus_review_count'] < 20)]
+    dfTest_All_8_13 = dfTest_All_8_13[np.logical_or(dfTest_All_8_13['user_review_count'] < 20, dfTest_All_8_13['bus_review_count')] < 20)]
+
+    #Create _All_5_8 set with >=8 user reviews and >=5 bus reviews
+    dfTrn_All_5_8 = dfTrn_All[np.logical_and(dfTrn_All['bus_review_count'] >= 5, dfTrn_All['user_review_count'] >= 8)]
+    dfTrn_All_5_8 = dfTrn_All_5_8[np.logical_or(dfTrn_All_5_8['user_review_count'] < 15, dfTrn_All_5_8['bus_review_count'] < 10)]
+    dfTest_All_5_8 = dfTest_All[np.logical_and(dfTest_All['bus_review_count'] >= 5, dfTest_All['user_review_count'] >= 8)]
+    dfTest_All_5_8 = dfTest_All_5_8[np.logical_or(dfTest_All_5_8['user_review_count'] < 15, dfTest_All_5_8['bus_review_count'] < 10)]
+
+    #Create _All_1_5 set with >=5 user reviews and >=1 bus reviews
+    dfTrn_All_1_5 = dfTrn_All[np.logical_and(dfTrn_All['bus_review_count'] >= 1, dfTrn_All['user_review_count'] >= 5)]
+    dfTrn_All_1_5 = dfTrn_All_1_5[np.logical_or(dfTrn_All_1_5['user_review_count'] < 10, dfTrn_All_1_5['bus_review_count'] < 8)]
+    dfTest_All_1_5 = dfTest_All[np.logical_and(dfTest_All['bus_review_count'] >= 1, dfTest_All['user_review_count'] >= 5)]
+    dfTest_All_1_5 = dfTest_All_1_5[np.logical_or(dfTest_All_1_5['user_review_count'] < 10, dfTest_All_1_5['bus_review_count'] < 8)]
+
+    #Create _All_5_8_GrpAvg and _All_5_8_BusName sest with >=8 user reviews and >=5 bus reviews
+    dfTrn_All_5_8_BusName = dfTrn_All_5_8[dfTrn_All_5_8['bus_name_counts'] > 3]
+    dfTest_All_5_8_BusName = dfTest_All_5_8.merge(dfBusNames,how='inner',on='bus_name')
+    dfTest_All_5_8_BusName = dfTest_All_5_8_BusName[dfTest_All_5_8_BusName['bus_name_counts'] > 1]
+
+    dfTest_All_5_8_GrpAvg = dfTest_All_5_8.merge(dfAllBus_WithGroupedCats,how='left',on='business_id')
+    dfTest_All_5_8_GrpAvg = dfTest_All_5_8_GrpAvg.merge(dfBusNames,how='left',on='bus_name')
+    dfTest_All_5_8_GrpAvg = dfTest_All_5_8_GrpAvg[dfTest_All_5_8_GrpAvg['bus_name_counts'] == 1]
+    dfTest_All_5_8_GrpAvg = dfTest_All_5_8_GrpAvg[dfTest_All_5_8_GrpAvg['grp_cat_counts'] > 2]
+    dfTest_All_5_8_GrpAvg.grp_cat_avg_stars = dfTest_All_5_8_GrpAvg.grp_cat_avg_stars.fillna(3.80)
 
     #Create _Usr set with >5 review counts
     dfTrn_Usr_5 = dfTrn_All[dfTrn_All['user_review_count'] >= 5]
@@ -360,19 +400,6 @@ def data_merge(dfTrn,dfTest,dfAll, dfIdLookupTable):
     dfTest_Bus_5 = dfTest_Master[dfTest_Master['bus_review_count'] >= 5]
     dfTest_Bus_5 = dfTest_Bus_5[np.isnan(dfTest_Bus_5['user_average_stars'])]
     dfTest_Bus_5 = dfTest_Bus_5[dfTest_Bus_5['bus_stars'] > 0]
-
-    #Create _BusNames1 set with businesses that are in the busnames dataset with a count of 1 and are missing their business average
-    dfTrn_BusNames_1 = dfTrn_All.merge(dfBusNames[dfBusNames['bus_name_counts'] == 2],how='inner',on='bus_name')
-    dfTest_BusNames_1 = dfTest_Master[np.isnan(dfTest_Master.bus_stars)].merge(dfBusNames,how='inner',on='bus_name')
-    dfTest_BusNames_1 = dfTest_BusNames_1[dfTest_BusNames_1['bus_name_counts'] == 1]
-
-    #Create _BusNames2 set with businesses in the busnames dataset missing their bus avg, but with a bus names count > 1
-    dfTrn_BusNames_Grtr1 = dfTrn_All.merge(dfBusNames[dfBusNames['bus_name_counts'] > 2],how='inner',on='bus_name')
-    dfTest_BusNames_Grtr1 = dfTest_Master[np.isnan(dfTest_Master.bus_stars)].merge(dfBusNames,how='inner',on='bus_name')
-    dfTest_BusNames_Grtr1 = dfTest_BusNames_Grtr1[dfTest_BusNames_Grtr1['bus_name_counts'] > 1]
-
-    dfTrn_BusNames_Grtr5 = dfTrn_All.merge(dfBusNames[dfBusNames['name_counts'] > 5],how='inner',on='bus_name')
-    dfTrn_BusNames_Grtr5 = dfTrn_BusNames_2to5[dfTrn_BusNames_2to5['name_counts'] < 6]
 
     #Create _BusNames_All subsets where user review counts are > 5 and user_avg_stars are present
     dfTrn_BusNames_All_1 = dfTrn_BusNames_1[dfTrn_BusNames_1['user_review_count'] >= 5]
