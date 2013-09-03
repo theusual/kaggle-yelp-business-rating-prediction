@@ -2,8 +2,7 @@ __author__ = 'Bryan Gregory'
 __email__ = 'bryan.gregory1@gmail.com'
 __date__ = '07-06-2013'
 '''
-Calculate and extract features for ML
--This module is focused on calc and extraction of features for use in ML
+Train classifiers, perform cross validation, and make predictions
 '''
 
 import time

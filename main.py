@@ -1,7 +1,10 @@
 __author__ = 'Bryan Gregory'
 __email__ = 'bryan.gregory1@gmail.com'
 __date__ = '07-06-2013'
-
+'''
+Main section for performing all steps.  Written to be ran from IPython console, NOT ran as a stand alone program.
+Think of this as a collection of code snippets to be used at variosu times as one meanders through the data...
+'''
 import utils
 import munge
 import features
@@ -91,13 +94,13 @@ vecTest_NoUsrBusStars_Cats,dfTest_NoUsrBusStars, topCats = features.vectorize_bu
 #clf = linear_model.SGDRegressor(alpha=0.001, n_iter=800,shuffle=True); clfname='SGD_001_800'
 #clf = gaussian_process.GaussianProcess(corr='cubic', theta0=1e-2, thetaL=1e-4, thetaU=1e-1, random_start=100)   #doesn't work on large datasets
 #clf = linear_model.Ridge();clf_name = 'RidgeReg'
-#clf = linear_model.LinearRegression();clf_name = 'LinReg'
+clf = linear_model.LinearRegression();clf_name = 'LinReg'
 #clf = linear_model.ElasticNet()
 #clf = linear_model.Lasso();clf_name = 'Lasso'
 #clf = linear_model.LassoCV(cv=3);clf_name = 'LassoCV'
 #clf = svm.SVR(kernel = 'linear',cache_size = 6000.0) #use .ravel(), kernel='rbf','linear'
 #clf = svm.SVC(kernel = 'linear',cache_size = 6000.0) #use .ravel(), kernel='rbf','linear'
-n_neighbors = 200; clf = neighbors.KNeighborsRegressor(n_neighbors, weights='uniform', algorithm = 'kd_tree');clf_name='KNN_200' #use .toarray
+#n_neighbors = 200; clf = neighbors.KNeighborsRegressor(n_neighbors, weights='uniform', algorithm = 'kd_tree');clf_name='KNN_200' #use .toarray
 
 #--------------Machine Learning (woohoo, we finally got to the good stuff)------------------------#
 #quant_features = ['user_average_stars','user_review_count','calc_total_checkins','bus_stars','bus_review_count']

@@ -1,0 +1,1345 @@
+,cat_counts,cat_avg_stars
+-Mexican-Restaurants,362,3.5607734806629834
+-Pizza-Restaurants,155,3.5193548387096776
+-Chinese-Restaurants,138,3.61231884057971
+-Food-Coffee & Tea,131,3.8473282442748094
+-American (Traditional)-Restaurants,122,3.3237704918032787
+-Hotels & Travel-Event Planning & Services-Hotels,122,3.4959016393442623
+-American (New)-Restaurants,95,3.7157894736842105
+-Sandwiches-Restaurants,90,3.7666666666666666
+-Food-Ice Cream & Frozen Yogurt,88,3.8011363636363638
+-Restaurants-Italian,86,3.622093023255814
+-Burgers-Restaurants,71,3.4295774647887325
+-Food-Grocery,69,3.601449275362319
+-Beauty & Spas-Nail Salons,64,3.671875
+-Thai-Restaurants,57,3.789473684210526
+-Breakfast & Brunch-Restaurants,53,3.4716981132075473
+-Italian-Pizza-Restaurants,47,3.8297872340425534
+-Arts & Entertainment-Cinema,37,3.6216216216216215
+-Barbeque-Restaurants,36,3.6666666666666665
+-Auto Repair-Automotive,34,4.176470588235294
+-Vietnamese-Restaurants,33,3.590909090909091
+-Department Stores-Fashion-Shopping,33,3.712121212121212
+-Steakhouses-Restaurants,33,3.696969696969697
+-Japanese-Restaurants,32,3.46875
+-Fast Food-Restaurants,32,3.328125
+-Food-Donuts,31,3.4516129032258065
+-Bakeries-Food,31,3.838709677419355
+-Greek-Mediterranean-Restaurants,31,3.7580645161290325
+-Restaurants,31,3.193548387096774
+-Sushi Bars-Japanese-Restaurants,29,3.6551724137931036
+-Tex-Mex-Restaurants,28,3.7142857142857144
+-Active Life-Gyms-Trainers-Fitness & Instruction,26,3.25
+-Active Life-Parks,25,4.24
+-Burgers-Fast Food-Restaurants,25,3.24
+-Sushi Bars-Restaurants,24,3.6458333333333335
+-Buffets-Restaurants,24,3.2708333333333335
+-Delis-Sandwiches-Restaurants,23,3.652173913043478
+MISSING,23,3.5434782608695654
+-Food-Bagels-Delis-Restaurants,23,3.347826086956522
+-Car Wash-Automotive,23,3.108695652173913
+-Veterinarians-Pets,22,4.363636363636363
+-Buffets-Chinese-Restaurants,22,3.090909090909091
+-Breakfast & Brunch-American (Traditional)-Restaurants,21,3.5476190476190474
+"-Food-Beer, Wine & Spirits",21,4.238095238095238
+-Bars-Nightlife-Lounges,21,3.4523809523809526
+-Diners-Restaurants,20,3.2
+-Asian Fusion-Restaurants,20,3.55
+-Restaurants-Pizza-Italian,19,3.710526315789474
+-Bars-Restaurants-American (Traditional)-Sports Bars-Nightlife,18,3.138888888888889
+-Seafood-Restaurants,18,3.1666666666666665
+-Local Flavor,18,4.138888888888889
+-Food-Health Markets-Grocery-Specialty Food,18,4.027777777777778
+-Active Life-Golf,18,3.8333333333333335
+-Bars-Sports Bars-Nightlife,18,3.2222222222222223
+-Arts & Entertainment-Stadiums & Arenas,17,3.9705882352941178
+-Hair Salons-Beauty & Spas,16,4.1875
+-Bakeries-Food-Sandwiches-Restaurants,16,3.78125
+-Shopping Centers-Shopping,16,3.28125
+-Delis-Restaurants,16,3.65625
+-Hot Dogs-Restaurants,16,3.5625
+-Shopping-Cosmetics & Beauty Supply-Beauty & Spas,16,3.65625
+-Local Services-Dry Cleaning & Laundry,15,3.7666666666666666
+-Tires-Automotive,15,4.0
+-Active Life-Yoga-Fitness & Instruction,15,4.533333333333333
+-Bars-Nightlife,15,3.533333333333333
+-Greek-Restaurants,14,3.607142857142857
+-Department Stores-Grocery-Fashion-Shopping-Food-Mobile Phones,14,2.5714285714285716
+-Bars-American (New)-Nightlife-Restaurants,14,3.5357142857142856
+-Hotels & Travel-Event Planning & Services-Venues & Event Spaces-Hotels,13,3.4615384615384617
+-Barbers-Beauty & Spas,13,4.5
+-Food-Grocery-Shopping-Drugstores,13,3.3461538461538463
+-Food-Juice Bars & Smoothies,13,4.076923076923077
+-Shopping-Drugstores,13,3.0384615384615383
+-Dive Bars-Bars-Nightlife,13,3.923076923076923
+-Active Life-Gyms-Fitness & Instruction,12,4.0
+-Sporting Goods-Shopping,12,3.75
+-Latin American-Restaurants,12,4.041666666666667
+"-Food-Beer, Wine & Spirits-Grocery",11,4.2727272727272725
+"-Books, Mags, Music & Video-Shopping-Bookstores",11,3.6818181818181817
+-Libraries-Public Services & Government,11,4.181818181818182
+-Arts & Entertainment-Performing Arts,11,4.409090909090909
+-Food-Bagels,10,3.6
+-Hawaiian-Restaurants,10,3.45
+-Health & Medical-Dentists-General Dentistry,10,4.55
+-Thrift Stores-Shopping,10,3.75
+-Wine Bars-Bars-American (New)-Nightlife-Restaurants,10,3.9
+-Fast Food-Mexican-Restaurants,10,3.5
+-Pets-Pet Stores,10,4.35
+-Food-Desserts,10,3.7
+-Shopping,9,3.6666666666666665
+-Breakfast & Brunch-Diners-Restaurants,9,3.611111111111111
+-Bars-American (Traditional)-Sports Bars-Nightlife-Chicken Wings-Restaurants,9,2.9444444444444446
+-Skin Care-Day Spas-Massage-Beauty & Spas,9,3.6666666666666665
+-Middle Eastern-Restaurants,9,3.8333333333333335
+"-Music & DVDs-Books, Mags, Music & Video-Shopping",9,4.055555555555555
+-Food-Food Delivery Services-Delis-Sandwiches-Restaurants,9,3.5
+-Home Services-Real Estate-Apartments,9,2.388888888888889
+-Active Life-Dog Parks-Parks,9,3.6666666666666665
+-Local Services-Sewing & Alterations,9,3.8333333333333335
+-Food-Farmers Market,9,4.055555555555555
+-Bars-American (Traditional)-Nightlife-Restaurants,9,3.4444444444444446
+-Hardware Stores-Shopping-Home & Garden,9,3.8333333333333335
+-Shopping-Antiques,9,4.055555555555555
+-Fast Food-Sandwiches-Restaurants,9,3.0
+-Vegetarian-American (New)-Mediterranean-Restaurants,9,3.9444444444444446
+-Nightlife-Bars-American (Traditional)-Sports Bars-Restaurants,8,3.25
+"-Used, Vintage & Consignment-Fashion-Shopping",8,3.6875
+-Women's Clothing-Men's Clothing-Fashion-Shopping,8,3.6875
+-Breakfast & Brunch-Sandwiches-Restaurants,8,3.6875
+-Auto Repair-Automotive-Car Dealers,8,3.1875
+-Day Spas-Beauty & Spas,8,4.0
+-Sporting Goods-Bikes-Shopping,8,4.375
+-Food-Ice Cream & Frozen Yogurt-Desserts,8,4.3125
+-Arts & Entertainment-Nightlife-Music Venues,8,3.75
+-Arts & Crafts-Shopping,8,3.4375
+-Bars-American (New)-Nightlife-Lounges-Restaurants,8,3.75
+-Hotels & Travel-Car Rental,7,2.857142857142857
+-Hotels & Travel-Airlines-Transportation,7,2.857142857142857
+-Shopping-Wholesale Stores,7,4.071428571428571
+-Asian Fusion-Mongolian-Restaurants,7,3.7142857142857144
+-Burgers-American (Traditional)-Fast Food-Restaurants,7,3.2142857142857144
+-Asian Fusion-Chinese-Restaurants,7,3.357142857142857
+-Food-Ethnic Food-Grocery-Specialty Food,7,4.142857142857143
+-Pakistani-Indian-Buffets-Restaurants,7,3.5
+-Active Life-Hiking,7,4.785714285714286
+-Building Supplies-Home Services,7,3.5
+-Museums-Arts & Entertainment,7,4.071428571428571
+-Bars-Gay Bars-Nightlife,7,3.5714285714285716
+-Arts & Entertainment-Festivals,7,3.5
+-Bars-Mexican-Nightlife-Restaurants,7,3.4285714285714284
+-Tobacco Shops-Shopping,7,4.0
+-Food-Specialty Food-Candy Stores,7,4.357142857142857
+-Caribbean-Restaurants,7,3.9285714285714284
+-Massage-Beauty & Spas,6,4.416666666666667
+-Korean-Restaurants,6,3.25
+-Car Wash-Automotive-Auto Detailing,6,4.0
+-Indian-Restaurants,6,3.6666666666666665
+-Gluten-Free-Asian Fusion-Chinese-Restaurants,6,3.4166666666666665
+-Bakeries-Food-American (Traditional)-Restaurants,6,3.0
+-Wine Bars-Bars-Restaurants-Nightlife-Italian,6,4.083333333333333
+-Seafood-American (Traditional)-Restaurants,6,3.4166666666666665
+-Cajun/Creole-Restaurants,6,3.8333333333333335
+-Bars-American (New)-Restaurants-Sports Bars-Nightlife,6,3.0
+-Nightlife,6,3.8333333333333335
+-Art Supplies-Shopping-Arts & Crafts,6,3.5833333333333335
+-French-Restaurants,6,3.9166666666666665
+-Food-Coffee & Tea-Sandwiches-Restaurants,6,3.8333333333333335
+-American (Traditional)-Fast Food-Restaurants,6,3.5
+-Korean-Japanese-Restaurants,6,3.4166666666666665
+-Food-Desserts-American (Traditional)-American (New)-Restaurants,6,3.5
+-Seafood-Steakhouses-Restaurants,6,3.75
+-Automotive-Gas & Service Stations,6,3.4166666666666665
+-Day Spas-Hotels & Travel-Beauty & Spas-Event Planning & Services-Hotels,6,3.9166666666666665
+-Arts & Crafts-Shopping-Fabric Stores,6,3.3333333333333335
+-Shopping-Home & Garden-Furniture Stores,6,4.083333333333333
+-Food-Gelato,6,4.416666666666667
+-Active Life-Sporting Goods-Bikes-Shopping-Bike Rentals,6,3.6666666666666665
+-Indian-Buffets-Restaurants,6,3.9166666666666665
+-Food,6,3.0
+-Bars-Gay Bars-Nightlife-Dance Clubs,5,3.2
+-Pakistani-Indian-Restaurants,5,3.2
+-Women's Clothing-Fashion-Shopping-Accessories,5,4.3
+-Fashion-Shopping-Shoe Stores,5,4.0
+-Health & Medical-Urgent Care,5,3.3
+-Automotive-Car Dealers,5,2.9
+-Seafood-Mexican-Restaurants,5,4.1
+-Hardware Stores-Building Supplies-Shopping-Home Services-Home & Garden,5,3.7
+-Bars-Nightlife-Restaurants,5,3.6
+-Bars-Steakhouses-Nightlife-Restaurants,5,3.6
+-American (New)-French-Restaurants,5,3.7
+-Colleges & Universities-Education,5,3.4
+-Pizza-Sandwiches-Restaurants,5,3.8
+-Pubs-Bars-American (Traditional)-Nightlife-Restaurants,5,3.6
+-Optometrists-Health & Medical,5,4.7
+-Women's Clothing-Men's Clothing-Fashion-Shopping-Accessories,5,3.4
+-Active Life,5,4.4
+-Breakfast & Brunch-American (New)-Restaurants,5,3.7
+-Filipino-Restaurants,5,3.8
+-Local Services-Shoe Repair,5,4.5
+-Wine Bars-Bars-Nightlife,5,4.0
+-American (Traditional)-American (New)-Restaurants,5,3.6
+-Health & Medical-Hospitals,5,3.4
+-Departments of Motor Vehicles-Public Services & Government,5,3.0
+-Pubs-Bars-Nightlife-Irish-Restaurants,5,3.7
+-Bars-American (Traditional)-Burgers-Nightlife-Sports Bars-Restaurants,5,3.5
+-Department Stores-Fashion-Shopping-Drugstores,5,3.7
+-Food-Specialty Food,5,4.6
+-Nightlife-Dance Clubs,5,2.8
+-Cafes-Restaurants,5,3.7
+-Mexican-Tex-Mex-Restaurants,5,3.7
+-Post Offices-Public Services & Government,5,3.3
+-Doctors-Health & Medical-Family Practice,5,3.8
+-Shopping-Home Decor-Home & Garden-Furniture Stores,5,3.8
+-Steakhouses-Sushi Bars-Japanese-Restaurants,4,3.375
+-Women's Clothing-Fashion-Shopping,4,4.5
+-Shopping-Nurseries & Gardening-Home & Garden,4,4.25
+-Active Life-Bowling,4,3.875
+-Food-Desserts-Ice Cream & Frozen Yogurt,4,4.125
+-Hair Removal-Beauty & Spas,4,4.0
+-Pet Groomers-Pet Services-Pets,4,4.875
+-Bars-Nightlife-Dance Clubs,4,3.375
+-Shopping-Toy Stores,4,4.125
+-Day Spas-Massage-Beauty & Spas,4,4.125
+-Kitchen & Bath-Shopping-Home & Garden,4,3.875
+-Food-Desserts-Bakeries,4,4.0
+-Photographers-Event Planning & Services,4,5.0
+-Wine Bars-Bars-Steakhouses-Nightlife-Restaurants,4,4.25
+-Hotels & Travel-Airports,4,3.25
+-Seafood-Restaurants-Italian,4,3.5
+-Shopping-Mobile Phones,4,2.75
+-Burgers-Hot Dogs-American (New)-Restaurants,4,3.875
+-Active Life-Amusement Parks-Nightlife-Bowling,4,2.875
+-Dermatologists-Doctors-Health & Medical,4,3.625
+-Day Spas-Beauty & Spas-Nail Salons,4,4.0
+-American (Traditional)-Sandwiches-Restaurants,4,3.375
+-Pet Services-Veterinarians-Pet Boarding/Pet Sitting-Pets,4,4.125
+-Food-Coffee & Tea-American (New)-Restaurants,4,3.625
+-Cuban-Restaurants,4,3.625
+-American (Traditional)-Barbeque-Restaurants,4,3.5
+-Buffets-Salad-Restaurants,4,3.625
+-Delis-Fast Food-Sandwiches-Restaurants,4,4.0
+-Musical Instruments & Teachers-Shopping,4,4.375
+-Women's Clothing-Men's Clothing-Fashion-Shopping-Shoe Stores,4,3.375
+-Auto Repair-Automotive-Tires-Auto Parts & Supplies,4,3.125
+-Shopping-Drugstores-Beauty & Spas-Food-Convenience Stores-Cosmetics & Beauty Supply,4,3.25
+-Food-Bakeries-Delis-Bagels-Restaurants,4,3.375
+-German-Restaurants,4,3.75
+-Landscaping-Home Services,4,3.875
+-Food-Department Stores-Grocery-Fashion-Shopping,4,4.0
+-Arts & Entertainment-Art Galleries-Shopping,4,4.375
+-Event Planning & Services-Venues & Event Spaces,4,4.0
+-Burgers-American (Traditional)-Restaurants,4,3.625
+-Vietnamese-Chinese-Restaurants,4,3.75
+-Food-Street Vendors,4,4.125
+-Nightlife-Restaurants,3,4.0
+-Food-Grocery-Shopping-Wholesale Stores,3,4.166666666666667
+-Dive Bars-Bars-Mexican-Nightlife-Restaurants,3,3.1666666666666665
+-Hair Salons-Barbers-Beauty & Spas,3,4.0
+-Fashion-Shopping-Jewelry-Accessories,3,4.333333333333333
+-Mexican-Nightlife-Restaurants,3,3.3333333333333335
+-Steakhouses-Barbeque-Restaurants,3,3.5
+-Soup-Vegetarian-Buffets-Restaurants,3,3.5
+-Shopping-Photography Stores & Services,3,3.5
+-Food-American (New)-Breweries-Restaurants,3,3.6666666666666665
+-Shopping-Jewelry,3,3.8333333333333335
+-Arts & Entertainment-American (Traditional)-Arcades-Restaurants,3,3.3333333333333335
+-Shopping-Automotive-Computers-Home & Garden-Car Stereo Installation-Appliances,3,2.5
+-Soul Food-Restaurants,3,3.5
+-Fondue-Restaurants,3,3.6666666666666665
+-Bars-Dance Clubs-Nightlife-Lounges,3,3.1666666666666665
+-Fast Food-Japanese-Restaurants,3,3.5
+-Arts & Entertainment-Performing Arts-Nightlife-Music Venues,3,4.0
+-American (Traditional)-Steakhouses-Restaurants,3,3.6666666666666665
+-Pubs-Bars-Nightlife-British-Restaurants,3,3.8333333333333335
+-Food-Grocery-Farmers Market,3,4.166666666666667
+-Nightlife-Bars-Pizza-Sports Bars-Restaurants,3,3.3333333333333335
+-Burgers-Breakfast & Brunch-American (Traditional)-Restaurants,3,3.8333333333333335
+-Bakeries-Food-Coffee & Tea,3,3.8333333333333335
+-Active Life-Trainers-Fitness & Instruction,3,5.0
+-Bakeries-Food-Desserts,3,4.333333333333333
+-Burgers-Hot Dogs-Restaurants,3,3.6666666666666665
+-Seafood-Chinese-Restaurants,3,3.3333333333333335
+-Wine Bars-Bars-Pizza-Nightlife-Restaurants,3,3.8333333333333335
+-Skin Care-Beauty & Spas,3,4.666666666666667
+-Food-Breweries,3,4.0
+-Home Services-Heating & Air Conditioning/HVAC,3,4.833333333333333
+-Churches-Religious Organizations,3,4.333333333333333
+-Food-Coffee & Tea-Breakfast & Brunch-Restaurants,3,4.333333333333333
+-Nightlife-Bars-American (New)-Sports Bars-Restaurants,3,3.1666666666666665
+-Bridal-Shopping,3,2.8333333333333335
+-Gastropubs-Restaurants,3,4.0
+-Fish & Chips-Restaurants,3,3.5
+-Local Services-Shipping Centers-Printing Services,3,3.3333333333333335
+-Breakfast & Brunch-Cafes-Restaurants,3,3.8333333333333335
+-Chicken Wings-Restaurants,3,3.5
+-American (Traditional)-Mexican-Restaurants,3,2.8333333333333335
+-Food-Ice Cream & Frozen Yogurt-Coffee & Tea,3,4.333333333333333
+-Seafood-Fish & Chips-Restaurants,3,3.1666666666666665
+-Bakeries-Food-Breakfast & Brunch-Sandwiches-Restaurants,3,3.8333333333333335
+-Active Life-Amusement Parks,3,3.5
+-Public Services & Government,3,2.6666666666666665
+-Steakhouses-American (Traditional)-Restaurants,3,3.8333333333333335
+-Nightlife-Bars-Sports Bars-Restaurants,3,3.0
+-Shopping-Baby Gear & Furniture,3,3.3333333333333335
+-Arts & Entertainment-Professional Sports Teams,3,4.333333333333333
+-Health & Medical-Dentists-General Dentistry-Cosmetic Dentists,3,4.333333333333333
+-Food-Ice Cream & Frozen Yogurt-Fast Food-Restaurants,3,3.3333333333333335
+-Gastropubs-American (New)-Restaurants,3,4.333333333333333
+-American (Traditional)-Pizza-Restaurants,3,4.0
+-American (Traditional)-Steakhouses-Seafood-Restaurants,3,3.0
+-American (Traditional)-Tex-Mex-Restaurants,3,3.8333333333333335
+-Food-Donuts-Coffee & Tea,3,3.6666666666666665
+-Cheesesteaks-Sandwiches-Restaurants,3,4.0
+-Automotive-Auto Parts & Supplies,3,4.166666666666667
+-Food-Burgers-Ice Cream & Frozen Yogurt-Restaurants,3,4.0
+-Active Life-Lakes,3,4.333333333333333
+-Mediterranean-Restaurants,3,3.1666666666666665
+-Food-Breweries-American (New)-Restaurants,3,3.6666666666666665
+-American (New)-Sandwiches-Restaurants,3,3.6666666666666665
+-Active Life-Golf-Event Planning & Services-Venues & Event Spaces,3,4.166666666666667
+-Food-Specialty Food-Meat Shops,3,4.333333333333333
+-Bakeries-Food-Breakfast & Brunch-Restaurants,3,4.0
+-Food-Ethnic Food-Specialty Food,3,4.166666666666667
+-Bakeries-Food-Filipino-Restaurants,3,3.5
+-Caterers-Mexican-Event Planning & Services-Restaurants,3,3.1666666666666665
+-American (Traditional)-Buffets-Restaurants,3,3.5
+-Burgers-American (Traditional)-Hot Dogs-Restaurants,3,3.6666666666666665
+-Pet Services-Pet Stores-Pets,3,3.8333333333333335
+-Food-Breweries-American (New)-Pizza-Restaurants,3,3.6666666666666665
+-Bars-Nightlife-Karaoke,2,3.25
+-Food-Ice Cream & Frozen Yogurt-American (Traditional)-Restaurants,2,3.25
+-Restaurants-Turkish,2,3.5
+-Keys & Locksmiths-Home Services,2,4.75
+-Bars-Dive Bars-Burgers-Nightlife-Sports Bars-Restaurants,2,3.75
+-Shopping-Guns & Ammo,2,3.25
+-American (Traditional)-Sushi Bars-Restaurants,2,3.25
+"-Thrift Stores-Used, Vintage & Consignment-Fashion-Shopping",2,4.0
+-Bakeries-Food-Cafes-Restaurants,2,3.75
+-Vegetarian-American (Traditional)-Restaurants,2,3.75
+"-Videos & Video Game Rental-Books, Mags, Music & Video-Shopping",2,4.25
+-Bakeries-Food-Coffee & Tea-Sandwiches-Restaurants,2,3.5
+-Food-Bakeries-Coffee & Tea,2,4.25
+-Active Life-Resorts-Golf-Hotels & Travel,2,3.75
+-American (New)-Mexican-Restaurants,2,3.5
+-Active Life-Horseback Riding,2,4.75
+-Burgers-Fast Food-Hot Dogs-Restaurants,2,3.75
+-Hotels & Travel-Resorts-Event Planning & Services-Hotels,2,4.25
+-Soup-American (New)-Sandwiches-Restaurants,2,3.75
+-Shopping-Eyewear & Opticians,2,4.75
+-Food-Delis-Bagels-Restaurants,2,4.5
+-Mongolian-Restaurants,2,2.75
+-Local Services-Child Care & Day Care,2,4.75
+-Seafood-Dim Sum-Chinese-Restaurants,2,3.5
+-Food-Specialty Food-Candy Stores-Chocolatiers & Shops,2,4.25
+-Electronics-Shopping,2,3.5
+-Seafood-Cajun/Creole-Restaurants,2,4.5
+-Bars-Music Venues-Arts & Entertainment-Pubs-Nightlife-Irish-Restaurants,2,3.75
+-Skin Care-Hair Removal-Beauty & Spas,2,4.75
+-Active Life-Amateur Sports Teams,2,4.0
+-Pet Services-Pet Boarding/Pet Sitting-Pets,2,4.5
+-Burgers-American (Traditional)-Sandwiches-Restaurants,2,3.5
+-Breakfast & Brunch-American (New)-Sandwiches-Restaurants,2,4.25
+-Print Media-Mass Media,2,3.0
+"-Food-Wine Bars-Bars-Nightlife-Beer, Wine & Spirits",2,4.25
+-Women's Clothing-Department Stores-Fashion-Shopping-Baby Gear & Furniture,2,3.25
+-Animal Shelters-Pets,2,4.0
+-Burgers-Bars-Nightlife-Restaurants,2,3.75
+-Fast Food-Asian Fusion-Restaurants,2,3.75
+-Active Life-Landmarks & Historical Buildings-Public Services & Government-Parks,2,4.5
+-Resorts-Hotels & Travel,2,3.0
+-Local Services-Computers-Shopping-IT Services & Computer Repair,2,4.25
+"-Women's Clothing-Used, Vintage & Consignment-Fashion-Shopping-Men's Clothing",2,3.0
+-Food-Desserts-Coffee & Tea,2,4.25
+-Korean-Sushi Bars-Restaurants,2,4.0
+-Italian-Pizza-Gluten-Free-Restaurants,2,3.25
+-Auto Repair-Automotive-Auto Parts & Supplies-Car Dealers,2,3.5
+-Dive Bars-Bars-Nightlife-Restaurants,2,3.5
+-Doctors-Health & Medical-Pediatricians,2,3.5
+-American (Traditional)-Chinese-Restaurants,2,3.5
+-Shopping Centers-Fashion-Shopping-Department Stores,2,3.0
+-Sporting Goods-Fashion-Shopping-Sports Wear,2,4.75
+"-Hobby Shops-Comic Books-Toy Stores-Shopping-Books, Mags, Music & Video",2,3.5
+-Hot Dogs-Food Stands-Restaurants,2,4.0
+-Ethiopian-Restaurants,2,4.5
+-Hawaiian-Barbeque-Restaurants,2,3.25
+-Persian/Iranian-Restaurants,2,4.0
+"-Books, Mags, Music & Video-Shopping",2,3.75
+"-Food-Beer, Wine & Spirits-Bars-Nightlife-Wine Bars",2,4.0
+-Arts & Entertainment-Casinos,2,2.75
+-Food-Bagels-Breakfast & Brunch-Restaurants,2,4.25
+-Active Life-Zoos,2,4.0
+-Doctors-Health & Medical-Obstetricians & Gynecologists,2,2.75
+-Auto Repair-Automotive-Oil Change Stations,2,2.75
+-Tanning-Beauty & Spas,2,3.5
+-Food-Convenience Stores,2,5.0
+-Oil Change Stations-Automotive,2,3.75
+-Arts & Crafts-Shopping-Costumes,2,3.0
+-Food-Restaurants-Italian,2,4.0
+-Active Life-Boating-Lakes,2,4.0
+-Museums-Arts & Entertainment-Performing Arts,2,4.0
+-Food-Sandwiches-Coffee & Tea-Breakfast & Brunch-Restaurants,2,4.25
+-Arts & Entertainment-Performing Arts-Event Planning & Services-Venues & Event Spaces,2,4.0
+-Hair Salons-Nail Salons-Beauty & Spas,2,3.75
+-Food-Coffee & Tea-Art Galleries-Shopping-Arts & Entertainment,2,4.25
+-Arts & Crafts-Shopping-Hobby Shops,2,3.75
+-Steakhouses-Restaurants-Brazilian,2,3.75
+-Active Life-Dance Studios-Arts & Entertainment-Performing Arts-Fitness & Instruction,2,4.5
+-Pubs-Bars-Nightlife,2,3.5
+-Automotive-Body Shops,2,4.75
+-Japanese-Chinese-Restaurants,2,3.5
+"-Books, Mags, Music & Video-Musical Instruments & Teachers-Shopping",2,4.0
+-Food-Cheese Shops-Specialty Food,2,4.5
+-Shopping-Home & Garden,2,4.75
+-Shopping-Home Services-Internet Service Providers-Mobile Phones-Professional Services-Electronics,2,2.5
+-Home Services-Apartments-Event Planning & Services-Hotels & Travel-Real Estate-Hotels,2,3.5
+-Burgers-Mexican-Restaurants,2,3.5
+-Arts & Entertainment-Pizza-Arcades-Restaurants,2,3.25
+-Active Life-Hotels & Travel-Golf-Event Planning & Services-Hotels,2,4.0
+-Bars-Mediterranean-Nightlife-Lounges-American (New)-Restaurants,2,4.0
+-Arts & Entertainment,2,4.25
+-Breakfast & Brunch-American (Traditional)-Diners-Restaurants,2,3.25
+-Health Markets-Food-Specialty Food,2,4.75
+"-Food-Beer, Wine & Spirits-Bars-Nightlife",2,3.5
+-American (Traditional)-Chicken Wings-Restaurants,2,2.75
+-Fashion-Shopping-Mountain Biking-Sporting Goods-Bikes-Active Life-Sports Wear,2,3.25
+-Vegetarian-Vegan-Restaurants,2,4.5
+-Greek-Mediterranean-Sandwiches-Restaurants,2,3.75
+-American (New)-Buffets-Restaurants,2,3.75
+-Bakeries-Food-Delis-Restaurants,2,3.75
+-Local Services-Dry Cleaning & Laundry-Sewing & Alterations,2,4.5
+-Lounges-Bars-Nightlife-Dance Clubs,2,3.0
+-Skin Care-Nail Salons-Beauty & Spas,2,3.75
+-Men's Clothing-Fashion-Shopping,2,4.75
+-American (Traditional)-Diners-Restaurants,2,3.75
+-American (New)-Diners-Restaurants,2,3.75
+-Vegetarian-Indian-Restaurants,2,3.75
+-Mass Media-Radio Stations,2,3.75
+-Thai-Buffets-Restaurants,2,3.75
+-Cosmetology Schools-Specialty Schools-Education,2,4.5
+-Automotive-Parking,2,4.5
+-Hotels & Travel-Restaurants-Event Planning & Services-Hotels,2,3.0
+-Food-Coffee & Tea-Event Planning & Services-Caterers,2,3.5
+-Food-Donuts-Chinese-Restaurants,2,3.75
+-Pet Groomers-Pet Services-Pets-Pet Stores,2,3.5
+-Gluten-Free-Pizza-Vegan-Restaurants,2,3.5
+-Food-Ethnic Food-Specialty Food-Japanese-Restaurants,2,4.25
+-Tattoo-Beauty & Spas,2,4.75
+-Italian-Pizza-Sandwiches-Restaurants,2,4.5
+-Food-Juice Bars & Smoothies-Sandwiches-Restaurants,2,4.0
+-Delis-Pizza-Restaurants,2,4.5
+-Pet Groomers-Pet Services-Pet Stores-Pets,2,4.5
+-Burgers-Breakfast & Brunch-Restaurants,2,4.0
+-Bars-Restaurants-Sports Bars-Nightlife,2,3.75
+-Nightlife-Bars-Mexican-Sports Bars-Restaurants,2,3.5
+"-Food-Beer, Wine & Spirits-American (Traditional)-Restaurants",2,3.5
+-Arts & Entertainment-Music Venues-Bars-Nightlife-Lounges-American (New)-Restaurants,2,3.5
+-American (Traditional)-Pizza-Salad-Restaurants,2,3.0
+-Bars-Caribbean-Nightlife-Lounges-Restaurants,2,3.75
+-Event Planning & Services-Party & Event Planning,2,4.25
+-Steakhouses-American (New)-Restaurants,2,4.0
+-Active Life-Boating,2,4.0
+-Health & Medical-Chiropractors,2,5.0
+-Hobby Shops-Shopping,2,4.5
+-Food-Coffee & Tea-Internet Cafes,2,4.25
+-Active Life-Fitness & Instruction,2,3.75
+-Active Life-Yoga-Gyms-Fitness & Instruction,2,3.75
+-Food-Shopping Centers-Shopping,2,3.75
+-Mongolian-Barbeque-Restaurants,2,3.25
+-Arts & Entertainment-Local Flavor,2,3.5
+-Hotels & Travel-Public Transportation-Transportation,2,3.0
+-Electricians-Home Services,2,5.0
+-Bars-Dance Clubs-Nightlife-Lounges-American (New)-Restaurants,2,2.75
+-Bars-Food-Breweries-Pubs-Nightlife-American (New)-Restaurants,2,3.75
+-Cards & Stationery-Arts & Crafts-Flowers & Gifts-Shopping-Event Planning & Services,2,4.0
+-Nightlife-Breakfast & Brunch-American (New)-Bars-Restaurants,2,4.0
+-Middle Eastern-Mediterranean-Restaurants,2,4.0
+-Mediterranean-Middle Eastern-Restaurants,2,4.0
+-Active Life-Barre Classes-Pilates-Yoga-Fitness & Instruction,2,4.75
+-Greek-Mediterranean-Middle Eastern-Restaurants,2,3.75
+-Bars-American (Traditional)-Nightlife-Lounges-Restaurants,2,4.0
+-Fashion-Shopping-Sporting Goods-Bikes-Outdoor Gear-Sports Wear,2,4.0
+-Arts & Entertainment-Festivals-Local Flavor,2,4.5
+-Event Planning & Services-Caterers,2,4.5
+-Active Life-Gun/Rifle Ranges,2,4.25
+-Sporting Goods-Shopping-Outdoor Gear,2,4.0
+-Champagne Bars-Bars-Nightlife-Lounges,2,3.5
+-Sushi Bars-Chinese-Restaurants,2,3.25
+-Steakhouses-American (Traditional)-Barbeque-Restaurants,2,3.25
+-Women's Clothing-Fashion-Shopping-Accessories-Lingerie,2,3.75
+-Asian Fusion-Buffets-Chinese-Restaurants,2,3.5
+-Fast Food-Chicken Wings-Restaurants,2,4.0
+-Active Life-Nightlife-Bowling,2,3.75
+-Bars-Arts & Entertainment-Nightlife-Music Venues,2,4.0
+-Hair Salons-Day Spas-Beauty & Spas,2,4.75
+-Burgers-Sandwiches-Restaurants,2,3.5
+-Cheesesteaks-Pizza-Restaurants,2,3.25
+-Steakhouses-Sushi Bars-Restaurants,2,4.0
+-Banks & Credit Unions-Financial Services,2,2.75
+-Indian-Pakistani-Restaurants,2,4.25
+-Car Wash-Automotive-Auto Detailing-Auto Glass Services,2,2.25
+"-Food-Specialty Food-Beer, Wine & Spirits",2,3.75
+-Sporting Goods-Fashion-Shopping-Shoe Stores-Sports Wear,2,3.5
+-Asian Fusion-Hawaiian-Restaurants,2,4.0
+-Home & Garden-Shopping-Home Decor-Antiques,2,3.75
+-Pubs-Dive Bars-Bars-Nightlife,2,3.75
+-Southern-Barbeque-Restaurants,2,3.5
+-Local Services-Carpet Cleaning,2,5.0
+-Fast Food-Tex-Mex-Restaurants,2,3.75
+-Food-Ice Cream & Frozen Yogurt-Creperies-Restaurants,2,4.25
+-Food-Mexican-Restaurants,2,4.0
+-Dive Bars-Bars-American (Traditional)-Nightlife-Restaurants,2,3.5
+-Pubs-Irish-Nightlife-Bars-Restaurants,2,3.25
+-Afghan-Restaurants,2,3.75
+-Active Life-Swimming Pools,1,5.0
+-Women's Clothing-Fashion-Shopping-Shoe Stores-Accessories,1,1.5
+-Animal Shelters-Pet Stores-Pets,1,4.5
+-Seafood-Fish & Chips-American (Traditional)-Restaurants,1,2.5
+-Food-Tea Rooms,1,4.0
+-Burmese-Restaurants,1,4.5
+-Food-Breakfast & Brunch-Buffets-Restaurants,1,4.0
+-Breakfast & Brunch-Restaurants-Italian,1,3.0
+-Diners-Restaurants-Event Planning & Services-Caterers,1,3.5
+-African-Caribbean-Restaurants,1,4.0
+-Arts & Entertainment-Performing Arts-Music Venues-Art Galleries-Nightlife-Shopping,1,5.0
+-Bridal-Shopping-Jewelry,1,4.5
+-Active Life-Disc Golf-Bike Rentals,1,5.0
+-Active Life-Amateur Sports Teams-Parks,1,3.5
+-Burgers-American (Traditional)-Diners-Restaurants,1,3.5
+-Food-Burgers-Sandwiches-Ice Cream & Frozen Yogurt-Restaurants,1,3.5
+-Gastropubs-Cafes-Restaurants,1,2.5
+-Tours-Hotels & Travel-Mediterranean-Restaurants,1,4.0
+-Shopping-Food-Home & Garden-Specialty Food-Kitchen & Bath-Personal Shopping,1,4.0
+-Pet Services-Home Services-Pets,1,5.0
+-Burgers-American (New)-Restaurants,1,4.0
+-Dive Bars-Bars-Nightlife-Lounges-Restaurants,1,4.0
+-Seafood-Japanese-Restaurants,1,5.0
+-Car Wash-Automotive-Auto Detailing-Gas & Service Stations,1,2.5
+-Active Life-Landmarks & Historical Buildings-Public Services & Government-Local Flavor-Parks,1,4.0
+-Pet Services-Veterinarians-Pets,1,4.0
+-Bars-Pubs-Nightlife-Gastropubs-American (New)-Restaurants,1,4.0
+-Arts & Crafts-Shopping-Jewelry-Home & Garden-Home Decor,1,4.5
+-Delis-Fast Food-Chinese-Restaurants,1,3.5
+-Auto Repair-Automotive-Tires,1,4.0
+-Greek-Vegetarian-Mediterranean-Middle Eastern-Restaurants,1,4.0
+-Shopping Centers-Fashion-Shopping-Outlet Stores-Department Stores,1,3.5
+-Food Stands-Filipino-Restaurants,1,4.0
+-American (Traditional)-Sandwiches-Barbeque-Restaurants,1,3.5
+-Fashion-Shopping,1,4.0
+-Tapas Bars-Bars-Nightlife-Lounges-Restaurants,1,3.5
+-Arts & Entertainment-Amusement Parks-Arcades-Amateur Sports Teams-Active Life-Mini Golf,1,3.5
+-Pizza-Buffets-Restaurants,1,3.0
+-Thai-Sushi Bars-Japanese-Restaurants,1,4.0
+-Beauty & Spas-Tanning-Nail Salons,1,5.0
+-Bakeries-Food-Caterers-Event Planning & Services-Restaurants-Sandwiches,1,4.0
+-Burgers-Cheesesteaks-Chicken Wings-Restaurants,1,3.5
+-Health Markets-Food-Juice Bars & Smoothies-Specialty Food,1,4.5
+"-Books, Mags, Music & Video-Shopping-Adult",1,4.0
+"-Used, Vintage & Consignment-Fashion-Shopping-Discount Store",1,4.5
+-Cafes-American (New)-Restaurants,1,3.5
+-Bars-Mediterranean-Wine Bars-Nightlife-Restaurants-Sandwiches,1,3.5
+-Restaurants-French-Italian,1,4.0
+-American (Traditional)-Wedding Planning-Food-Breakfast & Brunch-Specialty Food-Sandwiches-Event Planning & Services-Fruits & Veggies-Restaurants,1,4.0
+-Tires-Automotive-Oil Change Stations,1,1.5
+-Food-Coffee & Tea-Vietnamese-Restaurants,1,4.0
+-Women's Clothing-Department Stores-Fashion-Shopping-Men's Clothing,1,3.5
+-Leather Goods-Sewing & Alterations-Fashion-Shopping-Local Services,1,1.0
+-Food-Arts & Entertainment-Wineries,1,2.5
+-Beauty & Spas-Health & Medical-Medical Spas,1,1.5
+-Fast Food-Mexican-Food Stands-Restaurants,1,5.0
+-Food-Ice Cream & Frozen Yogurt-Coffee & Tea-Juice Bars & Smoothies,1,4.5
+-Food-Shopping,1,4.0
+-Flowers & Gifts-Shopping-Florists,1,4.0
+-Food-Specialty Food-Juice Bars & Smoothies-Fruits & Veggies,1,4.5
+-Massage Therapy-Health & Medical-Massage-Beauty & Spas,1,4.5
+-Steakhouses-Sandwiches-Restaurants,1,4.0
+-Food-Specialty Food-Fruits & Veggies,1,4.5
+-Sushi Bars-Japanese-Vegan-Restaurants,1,4.0
+-Active Life-Hiking-Parks,1,4.5
+-Food-Bagels-Cafes-Restaurants,1,4.5
+-Shopping-Computers-Local Services-IT Services & Computer Repair-Electronics-Education,1,3.5
+-Food-Pizza-American (New)-Breweries-Restaurants,1,3.0
+-Bars-American (Traditional)-Mexican-Nightlife-Restaurants,1,2.5
+-Bars-Asian Fusion-Nightlife-Lounges-Restaurants,1,4.0
+-Fashion-Shopping-Sporting Goods-Active Life-Fitness & Instruction-Women's Clothing-Yoga-Sports Wear,1,4.5
+-Seafood-Sushi Bars-Japanese-Restaurants,1,4.0
+-Home Services-Flooring,1,2.0
+-Food-Desserts-Barbeque-Restaurants,1,2.5
+-American (Traditional)-Gluten-Free-Vegan-Restaurants,1,3.5
+-Food-Desserts-Vegetarian-Indian-Restaurants,1,3.5
+-Tires-Automotive-Shopping-Wholesale Stores,1,3.0
+-Electronics-Computers-Shopping,1,4.0
+-Art Schools-Specialty Schools-Education,1,2.5
+-Food-Specialty Food-Bakeries-Chocolatiers & Shops,1,4.5
+-Nightlife-Arts & Entertainment-Karaoke-Social Clubs,1,4.5
+-Specialty Schools-Education-Cooking Schools,1,4.0
+-Food-Cheese Shops-Delis-Specialty Food-Restaurants,1,4.5
+-Kosher-Vegetarian-Vegan-Restaurants,1,4.0
+-Children's Clothing-Shopping-Fashion-Maternity Wear,1,3.0
+-Polish-Scandinavian-Restaurants,1,4.5
+-Thai-Sushi Bars-Restaurants,1,3.5
+-Coffee & Tea-Food-Caterers-Sandwiches-Restaurants-Event Planning & Services,1,3.5
+-Nightlife-Bars-Gay Bars-Diners-Restaurants,1,3.0
+-Piercing-Beauty & Spas,1,5.0
+-Buffets-Dim Sum-Chinese-Restaurants,1,3.5
+-Tours-Sporting Goods-Shopping-Hotels & Travel,1,4.5
+-Food-Burgers-American (Traditional)-Ice Cream & Frozen Yogurt-Restaurants,1,4.0
+-Electronics-Musical Instruments & Teachers-Shopping,1,4.5
+-Food-Tapas Bars-Latin American-Coffee & Tea-Restaurants,1,4.0
+-Food-Ethnic Food-American (New)-Restaurants-Specialty Food,1,4.0
+-Party Supplies-Arts & Crafts-Shopping-Event Planning & Services-Costumes,1,3.0
+-Bars-Restaurants-Mexican-Sports Bars-Nightlife,1,3.0
+-Beauty & Spas-Resorts-Event Planning & Services-Hotels & Travel-Day Spas-Hotels,1,4.0
+-Jewelry-Shopping-Home & Garden-Antiques-Furniture Stores,1,4.5
+-Shopping-Home Services-Building Supplies-Home & Garden-Hardware Stores-Appliances,1,3.5
+-Bars-Pool Halls-Nightlife-Sports Bars,1,3.5
+"-Hobby Shops-Comic Books-Shopping-Books, Mags, Music & Video",1,4.5
+-Breakfast & Brunch-Caterers-Sandwiches-Event Planning & Services-Restaurants,1,4.0
+-Vegetarian-American (New)-Restaurants,1,3.5
+-Food-Tea Rooms-American (Traditional)-Restaurants,1,4.5
+"-Bars-Food-Beer, Wine & Spirits-Wine Bars-Nightlife-Restaurants-Pizza",1,3.5
+-Food-Ice Cream & Frozen Yogurt-Korean-Sandwiches-Restaurants,1,4.5
+-Jazz & Blues-Arts & Entertainment-Nightlife,1,3.0
+-Active Life-Yoga-Trainers-Fitness & Instruction,1,3.5
+-Coffee & Tea-Food-Vegetarian-Specialty Food-Health Markets-Restaurants,1,4.0
+-Pool Halls-American (New)-Nightlife-Restaurants,1,3.0
+-Food-Donuts-Coffee & Tea-Cafes-Restaurants,1,4.0
+-Soul Food-Breakfast & Brunch-Southern-Restaurants,1,4.0
+-Bars-Restaurants-American (Traditional)-Nightlife-Chicken Wings,1,3.0
+-Arts & Entertainment-American (New)-Caterers-Event Planning & Services-Cinema-Restaurants,1,4.0
+-Nightlife-Cuban-Bars-Restaurants,1,4.0
+-Bakeries-Food-Mexican-Restaurants,1,4.0
+-Automotive-Hotels & Travel-Transportation-Airport Shuttles-Parking,1,3.0
+-Bakeries-Food-Pizza-Restaurants,1,5.0
+-Active Life-Pilates-Fitness & Instruction,1,4.5
+-Bars-Breakfast & Brunch-Wine Bars-Nightlife-Restaurants-Sandwiches,1,4.0
+-Bars-Food-French-Specialty Food-Wine Bars-Nightlife-Restaurants,1,5.0
+-Food-Ice Cream & Frozen Yogurt-Restaurants-Sandwiches-Burgers,1,3.5
+-Diners-Mexican-Tex-Mex-Restaurants,1,3.5
+-Pubs-Food-Bars-Breweries-Nightlife,1,3.5
+-Food-Coffee & Tea-Cafes-Breakfast & Brunch-Restaurants,1,4.0
+-Department Stores-Fashion-Shopping-Home Decor-Home & Garden-Kitchen & Bath,1,4.0
+-Food-Grocery-Breakfast & Brunch-Restaurants,1,4.0
+-Bars-Restaurants-Nightlife-Pizza-Sports Bars-Italian,1,4.0
+-Active Life-American (New)-Golf-Restaurants,1,4.0
+-Mexican-Event Planning & Services-Venues & Event Spaces-Restaurants,1,3.5
+"-Food-Specialty Food-Meat Shops-Beer, Wine & Spirits",1,4.5
+-Breakfast & Brunch-American (New)-Cafes-Restaurants,1,3.5
+-Wine Bars-Bars-Latin American-Nightlife-Restaurants,1,4.0
+-Food-Coffee & Tea-Vegan-Restaurants,1,4.0
+-Breakfast & Brunch-American (New)-Buffets-Restaurants,1,3.0
+-Turkish-Halal-Restaurants,1,4.5
+-Food-Specialty Food-Sandwiches-Restaurants,1,4.0
+-American (New)-Chicken Wings-Restaurants,1,4.5
+-Auto Repair-Automotive-Body Shops-Auto Glass Services,1,4.5
+-Automotive-Shopping-Personal Shopping,1,5.0
+-Food-Desserts-Bakeries-Specialty Food,1,5.0
+-Hotels & Travel-Travel Services-Airlines-Transportation,1,2.5
+-Food-Coffee & Tea-Chinese-Restaurants,1,3.5
+-Fashion-Shopping-Beauty & Spas-Men's Clothing-Cosmetics & Beauty Supply-Women's Clothing,1,3.5
+-Flowers & Gifts-Shopping-Event Planning & Services-Florists,1,5.0
+-Bars-Pizza-American (Traditional)-Nightlife-Restaurants,1,3.5
+-Pizza-Italian-Sandwiches-Restaurants,1,4.5
+-Local Services,1,5.0
+-Food-Sandwiches-Breweries-Pizza-Restaurants,1,4.0
+-Fast Food-Asian Fusion-Chinese-Restaurants,1,3.5
+-Skin Care-Beauty & Spas-Hair Removal-Laser Hair Removal,1,3.0
+-Delis-Italian-Sandwiches-Restaurants,1,4.5
+-Mediterranean-Greek-Southern-Restaurants,1,3.0
+-Coffee & Tea-Hawaiian-Food-Venues & Event Spaces-Caterers-Juice Bars & Smoothies-Event Planning & Services-Restaurants,1,4.5
+-Arts & Entertainment-Shopping-Music Venues-Art Galleries-Bars-Nightlife-Lounges,1,4.0
+-Optometrists-Health & Medical-Shopping-Eyewear & Opticians,1,2.0
+-Tapas/Small Plates-Spanish-Restaurants,1,3.5
+-Wine Bars-Bars-Mediterranean-Nightlife-Restaurants,1,4.5
+-Arts & Entertainment-Venues & Event Spaces-Arcades-Event Planning & Services-Bowling-Active Life,1,4.0
+-Dive Bars-Bars-Gay Bars-Nightlife-Lounges,1,3.5
+-Hotels & Travel-American (Traditional)-Restaurants-Event Planning & Services-Hotels,1,2.5
+-Food-Specialty Food-Shopping-Candy Stores-Toy Stores,1,4.0
+-Bars-Mexican-Nightlife-Lounges-American (New)-Restaurants,1,3.0
+-Asian Fusion-Japanese-Restaurants,1,4.0
+-Pet Services-Pet Training-Pet Boarding/Pet Sitting-Pets,1,4.0
+-Coffee & Tea-Music Venues-Food-Arts & Entertainment-Nightlife-Restaurants-Italian,1,3.5
+-Asian Fusion-Italian-Japanese-Restaurants,1,4.0
+-Cheesesteaks-Restaurants,1,4.5
+"-Used, Vintage & Consignment-Fashion-Shopping-Antiques",1,4.0
+-Beauty & Spas,1,2.5
+-Coffee & Tea-Food-Breakfast & Brunch-Bars-Wine Bars-Nightlife-Restaurants,1,4.5
+-Asian Fusion-Mexican-Chinese-Restaurants,1,3.5
+-Bakeries-Food-Coffee & Tea-Desserts,1,4.0
+-Food-Weight Loss Centers-Juice Bars & Smoothies-Health & Medical,1,4.0
+-Dive Bars-Bars-Nightlife-Dance Clubs,1,3.0
+-American (Traditional)-Steakhouses-Barbeque-Restaurants,1,3.0
+-Food-Grocery-Convenience Stores,1,4.5
+-Food-Juice Bars & Smoothies-Gluten-Free-Restaurants,1,2.5
+-Soup-Taiwanese-Chinese-Restaurants,1,4.0
+-Wine Bars-Bars-Restaurants-Nightlife-Tapas/Small Plates,1,4.0
+-Hobby Shops-Shopping-Toy Stores,1,5.0
+-Burgers-American (New)-Gluten-Free-Restaurants,1,4.0
+-Music Venues-Arts & Entertainment-Event Planning & Services-Venues & Event Spaces-Nightlife,1,4.0
+-Grocery-Food-Ethnic Food-Japanese-Specialty Food-Restaurants,1,4.0
+-Caterers-Restaurants-Event Planning & Services-Italian,1,3.0
+-Active Life-Mini Golf-Amusement Parks-Event Planning & Services-Party & Event Planning,1,3.5
+-Bakeries-Food-Event Planning & Services-Caterers,1,4.5
+-Barbeque-Hawaiian-Restaurants,1,3.0
+-Tires-Automotive-Fashion-Shopping-Department Stores,1,3.5
+-Italian-American (New)-Mediterranean-Restaurants,1,4.0
+-Bakeries-Food-Delis-Middle Eastern-Restaurants,1,4.5
+-Vietnamese-Sandwiches-Restaurants,1,3.0
+-Food-Ethnic Food-Specialty Food-Restaurants,1,4.5
+-Eyelash Service-Hair Removal-Beauty & Spas,1,4.0
+-American (New)-Food Stands-Restaurants,1,4.0
+-Sushi Bars-American (New)-Restaurants,1,3.5
+-Home Services-Pool Cleaners,1,4.0
+-Modern European-American (New)-Restaurants,1,4.0
+-Skin Care-Hair Salons-Nail Salons-Beauty & Spas,1,5.0
+-Nightlife-Bars-Lounges-French-Restaurants,1,3.5
+-Musical Instruments & Teachers-Shopping-Pawn Shops,1,4.5
+-Food-American (Traditional)-Breweries-Restaurants,1,3.0
+-Wine Bars-Bars-Cafes-Nightlife-Restaurants,1,5.0
+-Pet Services-Pet Groomers-Pet Training-Pets-Pet Stores,1,2.5
+-Active Life-Skating Rinks-Amusement Parks,1,4.0
+-Food-Ice Cream & Frozen Yogurt-Vegan-Restaurants,1,4.5
+-Local Services-Keys & Locksmiths-Home Services,1,5.0
+-Food-Convenience Stores-American (New)-Cafes-Restaurants,1,4.0
+-Cafes-Mexican-Restaurants,1,3.5
+-Golf-Event Planning & Services-Active Life-Hotels & Travel-Hotels-Restaurants,1,4.0
+-Breakfast & Brunch-Cafes-American (Traditional)-Restaurants,1,3.5
+-Active Life-Hiking-Local Flavor,1,4.0
+-Department Stores-Fashion-Shopping-Discount Store,1,4.0
+-Personal Chefs-Event Planning & Services,1,5.0
+-Arts & Entertainment-Cinema-Performing Arts,1,4.0
+-Restaurants-American (New)-Italian,1,4.0
+-Active Life-Parks-Local Flavor-Playgrounds,1,4.5
+-Breakfast & Brunch-Mexican-Barbeque-Restaurants,1,3.5
+-Food-Vegetarian-Juice Bars & Smoothies-Vegan-Restaurants,1,4.0
+-Food-Ice Cream & Frozen Yogurt-Coffee & Tea-Breakfast & Brunch-Restaurants,1,4.0
+-Bars-Vietnamese-Nightlife-Lounges-Restaurants,1,2.5
+"-Food-Beer, Wine & Spirits-Bars-Nightlife-Lounges",1,3.0
+-Vietnamese-Asian Fusion-Restaurants,1,4.0
+-Active Life-Boot Camps-Gyms-Trainers-Fitness & Instruction,1,5.0
+-Shopping-Arts & Crafts-Event Planning & Services-Cards & Stationery-Art Supplies-Flowers & Gifts,1,4.5
+-Painters-Home Services,1,4.5
+"-Used, Vintage & Consignment-Fashion-Shopping-Maternity Wear",1,3.5
+-Piano Bars-Seafood-Steakhouses-Nightlife-Restaurants,1,3.5
+-Professional Services-Bankruptcy Law-Lawyers-Personal Injury Law-General Litigation,1,5.0
+-Health Markets-Food-Grocery-Ethnic Food-Specialty Food,1,3.0
+-Restaurants-Mexican-Event Planning & Services-Caterers,1,3.0
+-Specialty Schools-Massage Schools-Education-Massage-Beauty & Spas,1,3.5
+-Breakfast & Brunch-Tex-Mex-Restaurants,1,4.0
+"-Comic Books-Shopping-Books, Mags, Music & Video",1,4.0
+-Coffee & Tea-Food-Cafes-Chocolatiers & Shops-Specialty Food-Restaurants,1,5.0
+-Vietnamese-Thai-Asian Fusion-Chinese-Restaurants,1,4.0
+-Pubs-Bars-Nightlife-Lounges,1,3.0
+-Food-Do-It-Yourself Food-Buffets-Restaurants,1,3.5
+-Bars-Latin American-Mexican-Nightlife-Restaurants,1,4.0
+-Food-Ethnic Food-Grocery-Meat Shops-Specialty Food,1,3.5
+-Nightlife-Thai-Bars-Restaurants,1,4.0
+-Arts & Entertainment-Art Galleries-Shopping-Event Planning & Services-Venues & Event Spaces,1,4.5
+-Health & Medical,1,1.5
+-Pizza-Food Stands-Restaurants,1,4.5
+-Active Life-Mini Golf-Arts & Entertainment-Amusement Parks-Arcades,1,2.0
+-Bakeries-Food-Specialty Food-Ethnic Food-Desserts,1,4.5
+-Pizza-American (New)-Restaurants,1,3.0
+-Bakeries-Food-Restaurants-Sandwiches-Italian,1,4.0
+-Desserts-Food-Caterers-Specialty Food-Event Planning & Services-Chocolatiers & Shops,1,3.5
+-Active Life-Mini Golf-Arts & Entertainment-Go Karts-Arcades,1,3.0
+-Greek-American (New)-Mediterranean-Restaurants,1,3.5
+-Breakfast & Brunch-American (New)-Fast Food-Restaurants,1,4.0
+-Food-Grocery-Middle Eastern-Restaurants,1,4.0
+-Nail Salons-Hair Removal-Massage-Beauty & Spas,1,3.0
+-Massage Therapy-Health & Medical-Physical Therapy-Chiropractors,1,4.5
+-Local Services-Shopping-Bridal-Sewing & Alterations,1,5.0
+-Food-Specialty Food-Grocery,1,4.5
+-Handyman-Home Services,1,5.0
+-Food-Ice Cream & Frozen Yogurt-Juice Bars & Smoothies,1,3.5
+-Breakfast & Brunch-Cafes-Sandwiches-Restaurants,1,3.5
+-Active Life-Sports Clubs-Yoga-Fitness & Instruction,1,3.5
+-Active Life-Event Planning & Services-Party & Event Planning-Bowling,1,2.5
+-Bars-Pool Halls-Nightlife,1,3.5
+-Food-Burgers-Ice Cream & Frozen Yogurt-Sandwiches-Restaurants,1,3.5
+-Party Supplies-Arts & Crafts-Shopping-Costumes-Event Planning & Services,1,4.5
+-Car Wash-Automotive-Gas & Service Stations,1,2.5
+-Gluten-Free-Sandwiches-Vegan-Restaurants,1,4.0
+"-Used, Vintage & Consignment-Fashion-Shopping-Arts & Crafts",1,4.5
+-Women's Clothing-Lingerie-Shopping-Fashion-Accessories,1,2.5
+-Cuban-Cafes-Restaurants,1,3.5
+-Bars-Shopping-Music Venues-Art Galleries-Arts & Entertainment-Nightlife,1,4.0
+-Food-Donuts-Coffee & Tea-Fast Food-Restaurants,1,3.5
+-Delis-American (New)-Sandwiches-Restaurants,1,4.5
+-Arts & Entertainment-Venues & Event Spaces-Nightlife-Music Venues-Event Planning & Services,1,3.0
+-Food-Ethnic Food-Thai-Specialty Food-Restaurants,1,4.0
+-Bars-Food-Nightlife-Lounges-American (New)-Restaurants,1,4.0
+-Food-Ethnic Food-Specialty Food-Sandwiches-Restaurants-Hot Dogs,1,3.5
+-Vegetarian-Hawaiian-Restaurants,1,4.0
+-Pubs-Wine Bars-Bars-Nightlife,1,4.5
+-Active Life-Recreation Centers-Gyms-Fitness & Instruction,1,4.5
+-Fashion-Shopping-Beauty & Spas-Tanning-Cosmetics & Beauty Supply-Women's Clothing,1,5.0
+-Mediterranean-Sandwiches-Restaurants,1,3.0
+-Fashion-Shopping-Shoe Stores-Outlet Stores,1,3.5
+-Scandinavian-Restaurants,1,3.5
+-Pet Services-Pets-Pet Stores,1,3.5
+-Skin Care-Eyelash Service-Hair Removal-Beauty & Spas,1,5.0
+-Burgers-Bars-Hot Dogs-Nightlife-Restaurants,1,4.0
+-Active Life-Fishing,1,4.0
+"-Bars-Food-Beer, Wine & Spirits-Nightlife-American (New)-Sports Bars-Restaurants",1,3.0
+-Event Planning & Services-Pizza-Caterers-Chicken Wings-Restaurants,1,3.5
+-Do-It-Yourself Food-Health Markets-Specialty Food-Food-Gluten-Free-Restaurants,1,4.5
+-Fashion-Shopping-Jewelry-Home & Garden-Accessories,1,4.0
+-Hotels & Travel-Transportation,1,5.0
+-Burgers-Hot Dogs-Mexican-Restaurants,1,3.5
+"-Grocery-Shopping-Florists-Food-Beer, Wine & Spirits-Flowers & Gifts",1,4.0
+-Korean-Thai-Chinese-Restaurants,1,3.0
+"-Fashion-Shopping-Home Decor-Used, Vintage & Consignment-Home & Garden-Local Services-Furniture Reupholstery",1,4.5
+-Swimming Pools-Venues & Event Spaces-Event Planning & Services-Active Life-Hotels & Travel-Hotels,1,4.0
+-Bakeries-Food-Flowers & Gifts-Shopping-Florists,1,3.5
+"-Food-Beer, Wine & Spirits-Vegetarian-Sandwiches-Restaurants",1,4.0
+-Seafood-Mexican-Tex-Mex-Restaurants,1,4.0
+-Active Life-Amusement Parks-Climbing-Gyms-Fitness & Instruction,1,4.0
+-Event Planning & Services-Venues & Event Spaces-Nightlife,1,4.5
+-Bars-Music Venues-Arts & Entertainment-Dive Bars-Nightlife-Lounges,1,3.5
+"-Used, Vintage & Consignment-Kitchen & Bath-Fashion-Shopping-Home & Garden",1,4.5
+-Auto Repair-Automotive-Towing-Auto Glass Services,1,5.0
+-Food-Greek-Restaurants,1,3.0
+-Nightlife-Bars-Japanese-Restaurants,1,4.0
+-Caribbean-Hawaiian-Restaurants,1,4.0
+-Food-Desserts-Coffee & Tea-Breakfast & Brunch-Restaurants,1,4.0
+-Russian-Restaurants,1,3.5
+-Bars-Spanish-Nightlife-Lounges-Basque-Restaurants,1,4.0
+-Movers-Home Services,1,5.0
+-Korean-Hawaiian-Restaurants,1,3.5
+-Nightlife-Asian Fusion-Sushi Bars-Karaoke-Restaurants,1,3.5
+-Food-Desserts-Delis-Bakeries-Restaurants,1,4.5
+-Breakfast & Brunch-Delis-Restaurants,1,4.0
+-Greek-Delis-Restaurants,1,4.5
+-Arts & Entertainment-Botanical Gardens-Music Venues-Nightlife,1,4.5
+-Burgers-Hawaiian-Restaurants,1,3.0
+-Chicken Wings-Barbeque-Restaurants,1,3.5
+-Skin Care-Shopping-Cosmetics & Beauty Supply-Beauty & Spas,1,4.5
+-Breakfast & Brunch-American (Traditional)-Sandwiches-Restaurants,1,3.5
+-Food-Tea Rooms-British-Restaurants,1,4.5
+-Mediterranean-Middle Eastern-Halal-Restaurants,1,4.5
+-Hair Salons-Hair Stylists-Beauty & Spas,1,4.0
+-American (Traditional)-Cafes-Restaurants,1,4.5
+-Lounges-Arts & Entertainment-Bars-Nightlife-Music Venues,1,4.0
+-Polish-American (Traditional)-Restaurants,1,4.0
+-Bakeries-Food-Grocery-Health Markets-Specialty Food,1,4.0
+-Car Stereo Installation-Automotive-Electronics-Shopping,1,5.0
+-Shopping-Guns & Ammo-Pawn Shops,1,5.0
+-Nightlife-Italian-American (Traditional)-Bars-Restaurants,1,3.0
+-Shopping-Antiques-Home & Garden-Furniture Stores,1,4.5
+-Appliances-Shopping-Home Decor-Home & Garden-Kitchen & Bath,1,3.0
+-Nightlife-Bars-Chicken Wings-Sports Bars-Restaurants,1,2.5
+-Active Life-American (Traditional)-Golf-Restaurants,1,4.5
+-Reflexology-Health & Medical,1,4.5
+-Optometrists-Laser Eye Surgery/Lasik-Ophthalmologists-Health & Medical-Doctors,1,4.5
+-Skin Care-Massage-Beauty & Spas,1,4.0
+-Food-Juice Bars & Smoothies-Coffee & Tea-Vietnamese-Restaurants,1,3.5
+-Bars-Music Venues-Arts & Entertainment-Dance Clubs-Nightlife-Lounges,1,3.5
+-Shopping Centers-Fashion-Shopping-Department Stores-Venues & Event Spaces-Event Planning & Services,1,3.0
+-Dance Clubs-Event Planning & Services-Venues & Event Spaces-Nightlife,1,4.0
+"-Shopping-Home Decor-Arts & Crafts-Bookstores-Home & Garden-Event Planning & Services-Books, Mags, Music & Video-Cards & Stationery-Flowers & Gifts",1,4.5
+-Active Life-Gyms-Health & Medical-Fitness & Instruction,1,4.0
+-Food-Grocery-American (Traditional)-Breakfast & Brunch-Restaurants,1,4.0
+-Nightlife-Irish-Arts & Entertainment-Music Venues-Restaurants,1,3.5
+-Food-Bakeries-Coffee & Tea-Event Planning & Services-Caterers,1,3.5
+-Pets,1,3.5
+-Shades & Blinds-Home Services-Contractors,1,5.0
+-Bakeries-Food-Breakfast & Brunch-Delis-Restaurants,1,3.5
+-Fast Food-Southern-Restaurants,1,4.0
+-Creperies-Food Stands-French-Restaurants,1,4.5
+-Local Services-Shopping-Jewelry-Watch Repair,1,4.5
+-Active Life-Hotels & Travel-Tours-Bike Rentals,1,4.5
+"-Books, Mags, Music & Video-Bookstores-Shopping-Toy Stores",1,4.0
+-Active Life-Zoos-Kids Activities,1,3.5
+-Health & Medical-Dentists-Orthodontists-General Dentistry,1,5.0
+-Cajun/Creole-Fast Food-Southern-Restaurants,1,4.0
+-Restaurants-Mediterranean-Italian,1,4.0
+"-Hobby Shops-Comic Books-Books, Mags, Music & Video-Shopping-Toy Stores",1,3.5
+-Food-Coffee & Tea-Creperies-Cafes-Restaurants,1,4.5
+-Coffee & Tea-Music Venues-Food-Arts & Entertainment-Nightlife-Jazz & Blues,1,4.0
+-Bars-Chicken Wings-Nightlife-Karaoke-Sports Bars-Restaurants,1,3.0
+-Mexican-Food Stands-Restaurants,1,4.0
+-Museums-Art Schools-Arts & Entertainment-Specialty Schools-Education,1,3.5
+-Health & Medical-Physical Therapy-Massage-Beauty & Spas,1,4.5
+-Hair Salons-Skin Care-Nail Salons-Beauty & Spas,1,4.5
+-Doctors-Health & Medical-Internal Medicine,1,2.5
+-Restaurants-Sandwiches-Italian,1,4.0
+-Food-Grocery-Indian-Buffets-Restaurants,1,4.0
+"-Food-Cheese Shops-Beer, Wine & Spirits-Specialty Food",1,4.5
+-Plumbing-Home Services-Heating & Air Conditioning/HVAC,1,3.0
+-Dive Bars-Bars-Nightlife-Lounges,1,3.5
+-Bars-Tapas Bars-Wine Bars-Nightlife-American (New)-Restaurants,1,4.0
+-Restaurants-American (New)-Karaoke-Nightlife,1,3.0
+-Breakfast & Brunch-Spanish-American (New)-Restaurants,1,3.5
+-Food-Coffee & Tea-Cafes-Restaurants,1,4.0
+-Seafood-American (New)-Restaurants,1,3.5
+-Seafood-Sushi Bars-Restaurants,1,3.5
+-Opera & Ballet-Arts & Entertainment-Performing Arts,1,4.5
+-Handyman-Home Services-Heating & Air Conditioning/HVAC,1,5.0
+-Peruvian-Restaurants,1,3.5
+-Breakfast & Brunch-Bars-American (New)-Nightlife-Restaurants,1,3.5
+-Thai-Vietnamese-Restaurants,1,3.5
+-Bars-Restaurants-Sports Bars-Karaoke-Nightlife,1,3.0
+-Discount Store-Shopping,1,4.0
+-Bars-Nightlife-Lounges-Sports Bars,1,3.0
+-Arts & Entertainment-Bars-Nightlife-Music Venues,1,3.0
+-Active Life-Pilates-Yoga-Fitness & Instruction,1,3.5
+-Pet Services-Pets,1,5.0
+-Television Stations-Mass Media,1,4.5
+-Burgers-Hot Dogs-Sandwiches-Restaurants,1,4.5
+-Polish-Restaurants,1,4.5
+-Food-Coffee & Tea-Bikes-Shopping-Sporting Goods,1,4.0
+-Pet Services-Veterinarians-Pet Training-Pet Boarding/Pet Sitting-Pets,1,4.5
+-Bars-Mexican-Nightlife-Lounges-Restaurants,1,2.0
+-Bars-Asian Fusion-Buffets-Nightlife-Restaurants,1,4.0
+-Nightlife-Breakfast & Brunch-Mexican-Bars-Restaurants,1,4.0
+-Marketing-Professional Services,1,5.0
+-Active Life-Recreation Centers,1,4.0
+-Beauty & Spas-Hair Removal-Laser Hair Removal,1,5.0
+-Kitchen & Bath-Shopping-Home Services-Home & Garden,1,5.0
+-Bars-Food-Arts & Entertainment-Venues & Event Spaces-Wine Bars-Wineries-Event Planning & Services-Nightlife,1,4.0
+-Restaurants-Gluten-Free-Italian,1,4.0
+-Food-Specialty Food-Restaurants-Italian,1,4.5
+-Food-Specialty Food-Caterers-Meat Shops-Event Planning & Services,1,4.5
+-Museums-Hotels & Travel-Arts & Entertainment-Tours,1,4.5
+-Active Life-Shopping-Beauty & Spas-Yoga-Fitness & Instruction,1,4.5
+-Women's Clothing-Fashion-Shopping-Outlet Stores,1,3.5
+-Arts & Entertainment-Cinema-Bars-Lounges-Nightlife,1,4.5
+-Food-Arts & Entertainment-Street Vendors-Festivals,1,2.0
+-Eyelash Service-Beauty & Spas,1,5.0
+-Day Spas-Hair Removal-Massage-Beauty & Spas,1,3.5
+-Art Schools-Specialty Schools-Shopping-Jewelry-Accessories-Fashion-Education,1,5.0
+-Arts & Entertainment-Shopping-Art Galleries-Venues & Event Spaces-Event Planning & Services-Performing Arts,1,4.0
+-Food-Ice Cream & Frozen Yogurt-Coffee & Tea-Desserts,1,4.0
+-Shopping-Home Services-Home & Garden-Lighting Fixtures & Equipment-Furniture Stores-Home Decor,1,3.5
+-Women's Clothing-Shopping Centers-Fashion-Shopping-Accessories,1,4.5
+"-Women's Clothing-Used, Vintage & Consignment-Fashion-Shopping-Accessories",1,4.5
+-Allergists-Doctors-Health & Medical,1,4.5
+"-Arts & Entertainment-American (Traditional)-Food-Beer, Wine & Spirits-Cinema-Restaurants",1,4.0
+-Arts & Crafts-Shopping-Costumes-Party & Event Planning-Event Planning & Services,1,4.5
+-Local Services-Pest Control,1,5.0
+-Music Venues-Bars-Arts & Entertainment-Nightlife-Lounges,1,4.0
+-Grocery-Mexican-Food-Ethnic Food-Specialty Food-Restaurants,1,4.0
+-Active Life-Climbing-Hiking-Parks,1,4.5
+-Bars-Food-Breweries-Nightlife-American (New)-Sports Bars-Restaurants,1,3.5
+-Fashion-Shopping-Sporting Goods-Women's Clothing-Fitness & Instruction-Active Life-Yoga-Sports Wear,1,4.0
+-Soup-Seafood-Mexican-Restaurants,1,4.0
+-Arts & Entertainment-Music Venues-Dance Clubs-Nightlife-American (New)-Restaurants,1,3.5
+-Acupuncture-Doctors-Health & Medical-Naturopathic/Holistic,1,4.5
+-Bars-Hawaiian-Nightlife-Lounges-American (New)-Restaurants,1,3.5
+-Hotels & Travel-Landmarks & Historical Buildings-Tours-Public Services & Government,1,3.5
+-Bars-American (Traditional)-Arts & Entertainment-Arcades-Nightlife-Sports Bars-Restaurants,1,3.0
+-Food-Do-It-Yourself Food-Ice Cream & Frozen Yogurt-Desserts,1,4.0
+"-Food-Beer, Wine & Spirits-American (New)-Restaurants",1,3.5
+-Skin Care-Day Spas-Tanning-Beauty & Spas,1,4.5
+-Active Life-Venues & Event Spaces-Amateur Sports Teams-Event Planning & Services,1,4.5
+-Vegetarian-Gluten-Free-Vegan-Restaurants,1,5.0
+-Bakeries-Food-French-Restaurants,1,4.0
+-Hotels & Travel-Taxis-Airport Shuttles-Limos-Transportation,1,3.0
+-Latin American-Caribbean-Restaurants,1,3.5
+-Soul Food-Cajun/Creole-Southern-Restaurants,1,3.0
+-Burgers-Bars-American (New)-Nightlife-Restaurants,1,3.5
+-Nightlife-Mexican-Tex-Mex-Restaurants,1,3.0
+-Arts & Crafts-Shopping-Antiques,1,3.5
+-Delis-Breakfast & Brunch-Restaurants,1,3.5
+"-Hair Salons-Used, Vintage & Consignment-Fashion-Shopping-Beauty & Spas",1,4.5
+-Landscaping-Landscape Architects-Home Services,1,3.0
+-Vegetarian-Persian/Iranian-Mediterranean-Restaurants,1,3.5
+-Food-Specialty Food-Meat Shops-Ethnic Food-Cheese Shops,1,4.5
+-Food-Bakeries-Grocery-Delis-Restaurants,1,4.5
+-Art Galleries-Arts & Entertainment-Thrift Stores-Shopping,1,5.0
+-Active Life-Gyms-Fitness & Instruction-Tanning-Beauty & Spas,1,4.5
+-American (Traditional)-Cafes-Delis-Restaurants,1,3.5
+-Food-Burgers-American (New)-Breweries-Restaurants,1,4.0
+-Fast Food-Sushi Bars-Japanese-Restaurants,1,3.0
+-Argentine-Restaurants,1,4.0
+-Bakeries-Food-Specialty Food-Ethnic Food,1,4.5
+-Health Markets-Food-Shopping-Specialty Food,1,3.5
+-Active Life-Skating Rinks,1,3.5
+-Shopping Centers-Shopping-Outlet Stores-Chinese-Restaurants,1,4.0
+-Bakeries-Food-Sandwiches-French-Restaurants,1,3.5
+-Department Stores-Fashion-Shopping-Drugstores-Discount Store,1,2.0
+-Food-Coffee & Tea-Pizza-Sandwiches-Restaurants,1,3.5
+-Wine Bars-Bars-Nightlife-French-Restaurants,1,4.0
+-Basque-Spanish-Restaurants,1,2.5
+-Shopping-Home Decor-Food-Arts & Crafts-Home & Garden-Chocolatiers & Shops-Specialty Food-Event Planning & Services-Cards & Stationery-Flowers & Gifts,1,4.0
+-Delis-Vegetarian-Restaurants,1,4.0
+-Food-Ethnic Food-Restaurants-Vietnamese-Specialty Food,1,4.0
+-Burgers-American (Traditional)-Mexican-Restaurants,1,4.5
+-Burgers-Breakfast & Brunch-Sandwiches-Restaurants,1,4.0
+-Food-Donuts-Cafes-Juice Bars & Smoothies-Restaurants,1,4.5
+-Food-Street Vendors-Restaurants-Salad-Juice Bars & Smoothies,1,4.5
+-Automotive-Auto Parts & Supplies-Car Dealers,1,3.5
+-Health & Medical-Dentists-Orthodontists-General Dentistry-Cosmetic Dentists,1,4.0
+-Hobby Shops-Shopping-Event Planning & Services-Party & Event Planning-Arts & Crafts,1,4.5
+"-Food-Beer, Wine & Spirits-Event Planning & Services-Venues & Event Spaces",1,4.5
+"-Food-Beer, Wine & Spirits-Ice Cream & Frozen Yogurt",1,4.5
+-Vegetarian-Vegan-Chinese-Restaurants,1,3.5
+-Nightlife-Bars-Sports Bars-Barbeque-Restaurants,1,4.0
+-Art Galleries-Arts & Entertainment-Fashion-Shopping,1,5.0
+-Food-Donuts-Breakfast & Brunch-Restaurants,1,4.5
+-Taiwanese-Restaurants,1,3.5
+-Sushi Bars-Asian Fusion-Chinese-Restaurants,1,4.0
+-British-Restaurants,1,4.5
+-Nightlife-American (Traditional)-Karaoke-Bars-Restaurants,1,3.5
+-Children's Clothing-Fashion-Shopping,1,4.5
+-Bars-Nightlife-Hotels & Travel-Event Planning & Services-Hotels-Restaurants,1,2.5
+-Electricians-Lighting Fixtures & Equipment-Home Services-Home Theatre Installation,1,5.0
+-Pubs-Bars-American (New)-Nightlife-Restaurants,1,3.5
+-Shopping-Nurseries & Gardening-Home Services-Home & Garden-Landscaping,1,4.5
+-Active Life-Bars-Nightlife-Sports Bars-Bowling,1,3.5
+-Arts & Entertainment-Performing Arts-Nightlife-Comedy Clubs,1,4.0
+-Active Life-Golf-Local Flavor,1,4.5
+-Fashion-Shopping-Accessories-Home & Garden,1,4.5
+-Hotels & Travel-Tours,1,4.5
+-Food-Seafood-Seafood Markets-Specialty Food-Barbeque-Restaurants,1,3.5
+-Soup-Japanese-Restaurants,1,3.5
+-Health & Medical-Dentists-Orthodontists,1,4.5
+-Food-Desserts-Coffee & Tea-Sandwiches-Restaurants,1,3.5
+-Food-Coffee & Tea-Arts & Entertainment,1,4.5
+-Burgers-Barbeque-Restaurants,1,3.0
+-Bars-Sushi Bars-Japanese-Nightlife-Lounges-Restaurants,1,4.0
+-Fast Food-American (Traditional)-Restaurants,1,3.5
+-Active Life-Disc Golf-Parks,1,4.5
+-Bars-Burgers-Nightlife-Restaurants-Sports Bars-Pizza,1,3.0
+-Greek-Restaurants-Mediterranean-Italian,1,3.0
+-Doctors-Naturopathic/Holistic-Beauty & Spas-Health & Medical-Obstetricians & Gynecologists-Massage,1,4.5
+-Seafood-American (New)-Hawaiian-Restaurants,1,3.5
+-Greek-Middle Eastern-Restaurants,1,4.0
+-Bars-Restaurants-Wine Bars-Nightlife-Pizza-Italian,1,4.0
+-Nightlife-Asian Fusion-Karaoke-Filipino-Restaurants,1,4.0
+-Burgers-Steakhouses-Restaurants,1,4.0
+-Arts & Entertainment-American (New)-Bars-Nightlife-Lounges-Cinema-Restaurants,1,4.0
+-Burgers-American (Traditional)-Steakhouses-Restaurants,1,4.0
+-Greek-American (Traditional)-Mediterranean-Restaurants,1,3.5
+-Pizza-American (New)-Sandwiches-Restaurants,1,3.5
+-Museums-Arts & Entertainment-Nightlife-Music Venues,1,4.5
+-Active Life-Steakhouses-Amusement Parks-Restaurants,1,3.5
+-Jazz & Blues-Arts & Entertainment-Nightlife-Dance Clubs,1,3.5
+-Jazz & Blues-Arts & Entertainment-Art Galleries-Shopping-Nightlife,1,4.0
+-Active Life-Recreation Centers-Gyms-Swimming Pools-Fitness & Instruction,1,4.0
+-Art Supplies-Shopping-Framing-Arts & Crafts,1,4.0
+-Nightlife-Bars-American (Traditional)-Chicken Wings-Restaurants,1,3.5
+-Food-Juice Bars & Smoothies-Cafes-Restaurants,1,4.5
+-Bars-Wine Bars-Nightlife-Italian-Pizza-Restaurants,1,4.0
+"-Fashion-Shopping-Used, Vintage & Consignment-Home & Garden-Antiques-Furniture Stores",1,4.0
+-Pet Groomers-Pet Services-Pet Training-Pets-Pet Stores,1,3.5
+-Day Spas-Hotels & Travel-Hotels-Event Planning & Services-Beauty & Spas,1,4.0
+-Home Services-Garage Door Services,1,3.0
+-Food-Bagels-Restaurants-Coffee & Tea-Sandwiches,1,4.5
+-Nightlife-Bars-Asian Fusion-Sports Bars-Restaurants,1,4.0
+-Greek-American (New)-Restaurants,1,4.0
+-Automotive-Motorcycle Repair,1,2.5
+"-Food-Specialty Food-Grocery-Beer, Wine & Spirits",1,4.0
+-Women's Clothing-Plus Size Fashion-Fashion-Shopping,1,4.5
+-Bars-Gay Bars-Karaoke-Nightlife,1,4.0
+"-Food-Beer, Wine & Spirits-Grocery-Farmers Market",1,4.0
+-Thai-Chinese-Restaurants,1,2.5
+-Lingerie-Shopping-Fashion,1,3.5
+-Dim Sum-Chinese-Restaurants,1,4.0
+-Property Management-Home Services-Real Estate,1,5.0
+-Grocery-Food-Ethnic Food-Specialty Food-Middle Eastern-Halal-Restaurants,1,4.0
+-Bakeries-Food-Specialty Food,1,3.5
+-Indian-Buffets-Halal-Restaurants,1,4.0
+-Oral Surgeons-Health & Medical-Dentists-General Dentistry-Cosmetic Dentists,1,4.0
+-Specialty Schools-Swimming Pools-Fitness & Instruction-Active Life-Education-Swimming Lessons/Schools,1,4.5
+-Active Life-Local Flavor-Parks,1,3.0
+"-Books, Mags, Music & Video-Vinyl Records-Shopping",1,4.0
+-Sushi Bars-Nightlife-Restaurants,1,3.5
+-Soup-Vietnamese-Comfort Food-Restaurants,1,4.0
+-American (New)-Buffets-Tex-Mex-Restaurants,1,4.5
+-Eyelash Service-Nail Salons-Beauty & Spas,1,4.5
+-Thai-Vegetarian-Restaurants,1,4.0
+-Children's Clothing-Fashion-Shopping-Baby Gear & Furniture,1,4.0
+-Food-Specialty Food-Flowers & Gifts-Shopping-Fruits & Veggies,1,4.5
+-Local Services-Community Service/Non-Profit-Thrift Stores-Shopping,1,3.0
+-Bars-Restaurants-Nightlife-Italian,1,4.0
+-Event Planning & Services-American (Traditional)-Caterers-Comfort Food-Restaurants,1,3.5
+-Food-Juice Bars & Smoothies-Filipino-Restaurants,1,4.0
+-Food-Specialty Food-Grocery-Seafood Markets,1,4.0
+"-Videos & Video Game Rental-Books, Mags, Music & Video-Arts & Entertainment-Shopping-Music & DVDs",1,3.5
+-Pet Services-Pet Groomers-Pet Boarding/Pet Sitting-Pets,1,4.5
+-Ice Cream & Frozen Yogurt-Food-Restaurants-Desserts-Hot Dogs-Fast Food,1,2.5
+-Food-Tea Rooms-Coffee & Tea,1,4.5
+"-Food-Beer, Wine & Spirits-Sandwiches-Restaurants",1,4.0
+"-Food-Beer, Wine & Spirits-Bars-Sports Bars-Nightlife",1,3.0
+-Food-Desserts-Restaurants-Italian,1,2.5
+-Doctors-Health & Medical-Family Practice-Urgent Care,1,4.0
+-Active Life-Golf-Parks,1,3.0
+-Food-Desserts-Creperies-French-Restaurants,1,4.0
+-Tires-Automotive-Auto Repair-Oil Change Stations,1,4.0
+-Arts & Entertainment-Music Venues-Bars-Dive Bars-Nightlife-American (New)-Restaurants,1,4.0
+-Hot Dogs-Mexican-Gluten-Free-Restaurants,1,3.5
+-Electronics-Computers-Shopping-Office Equipment,1,3.5
+-Dive Bars-Pubs-Bars-Nightlife-Lounges,1,4.0
+"-Grocery-Shopping-Florists-Food-Beer, Wine & Spirits-Flowers & Gifts-Restaurants",1,4.0
+-Active Life-Dog Parks-Amateur Sports Teams-Parks,1,4.0
+-Landmarks & Historical Buildings-Restaurants-Public Services & Government-Tex-Mex,1,3.5
+-Fashion-Shopping-Beauty & Spas-Accessories-Tanning-Women's Clothing,1,5.0
+-Arts & Entertainment-Pizza-Nightlife-Music Venues-Restaurants,1,3.5
+-Local Services-Active Life-Gyms-Child Care & Day Care-Fitness & Instruction,1,3.5
+-Professional Services-Television Service Providers-Home Services-Internet Service Providers,1,2.5
+-Solar Installation-Windows Installation-Home Services,1,4.5
+-Day Spas-Flowers & Gifts-Shopping-Beauty & Spas,1,4.0
+"-Music & DVDs-Books, Mags, Music & Video-Electronics-Computers-Shopping",1,3.5
+-Food-Bakeries-Coffee & Tea-Vegan-Restaurants,1,4.5
+-Italian-Bars-American (Traditional)-Nightlife-Restaurants,1,5.0
+-Seafood-Steakhouses-Gluten-Free-Restaurants,1,4.0
+-American (New)-Sushi Bars-Restaurants,1,3.5
+-Real Estate Services-Home Services-Real Estate-Home Inspectors,1,5.0
+-Food-Tea Rooms-Japanese-Restaurants,1,4.5
+-Buffets-Filipino-Restaurants,1,3.0
+-Fashion-Shopping-Home Decor-Home & Garden-Baby Gear & Furniture-Furniture Stores,1,4.5
+-Buffets-Mexican-Restaurants,1,2.0
+-Adult Entertainment-Nightlife,1,3.0
+-Wine Bars-Bars-Nightlife-Lounges,1,3.5
+-Pubs-Bars-Nightlife-Sandwiches-Restaurants,1,3.5
+-Italian-Hot Dogs-Sandwiches-Restaurants,1,3.5
+-Food-Desserts-Specialty Food,1,4.5
+-Breakfast & Brunch-Fast Food-Sandwiches-Restaurants,1,3.5
+-Active Life-Parks-Hiking,1,4.5
+-Pizza-Mediterranean-Restaurants,1,4.0
+-Food-Donuts-Delis-Coffee & Tea-Restaurants,1,4.0
+-American (Traditional)-Hot Dogs-Restaurants,1,4.0
+-Food-Coffee & Tea-Breakfast & Brunch-Vegan-Restaurants,1,4.0
+-Creperies-Fondue-French-Restaurants,1,4.5
+-Bars-Sushi Bars-Nightlife-Restaurants,1,3.0
+-Nightlife-Bars-Mexican-Tex-Mex-Restaurants,1,3.5
+-Shopping-Jewelry-Home & Garden-Home Decor,1,5.0
+-Active Life-Health & Medical-Yoga-Physical Therapy-Fitness & Instruction,1,4.5
+-Nightlife-Sandwiches-Restaurants,1,4.0
+-Shopping-Home & Garden-Antiques-Furniture Stores,1,4.0
+-Food-Food Delivery Services,1,2.5
+-Food-Desserts-Pizza-Restaurants,1,4.5
+-Active Life-Amusement Parks-Event Planning & Services-Venues & Event Spaces,1,4.0
+-Arts & Entertainment-Cinema-American (New)-Restaurants,1,3.5
+-Vegetarian-Sandwiches-Restaurants,1,4.0
+-Bars-Mexican-Nightlife-Local Flavor-Restaurants,1,4.5
+-Car Stereo Installation-Automotive,1,4.5
+-Beauty & Spas-Hair Removal-Nail Salons,1,2.5
+"-Videos & Video Game Rental-Books, Mags, Music & Video-Electronics-Shopping",1,5.0
+-Nightlife-Venues & Event Spaces-Event Planning & Services,1,3.5
+-Active Life-Dog Parks-Skate Parks-Parks,1,4.0
+-Dermatologists-Doctors-Health & Medical-Skin Care-Beauty & Spas,1,3.0
+-Sandwiches-Restaurants-Pizza-Italian,1,3.5
+-Doctors-Health & Medical-Urgent Care,1,2.0
+-Food-Tea Rooms-Breakfast & Brunch-Coffee & Tea-Restaurants,1,4.5
+"-Food-Beer, Wine & Spirits-Restaurants",1,2.0
+-Bars-Music Venues-Arts & Entertainment-Dive Bars-Nightlife-Comedy Clubs,1,4.5
+-Active Life-Skating Rinks-Gyms-Fitness & Instruction,1,2.5
+-Greek-Mexican-Restaurants,1,3.0
+-Food-Venues & Event Spaces-Farmers Market-Active Life-Horseback Riding-Event Planning & Services,1,5.0
+-Reflexology-Health & Medical-Massage-Beauty & Spas,1,4.5
+-Arts & Entertainment-Shopping-Home Decor-Art Galleries-Home & Garden-Furniture Stores,1,4.5
+-Korean-Sushi Bars-Japanese-Restaurants,1,3.5
+-Mexican-Vegan-Restaurants,1,3.5
+-Mediterranean-Greek-Middle Eastern-Restaurants,1,4.0
+-Nightlife-Bars-Sushi Bars-Japanese-Restaurants,1,2.5
+-Day Spas-Beauty & Spas-Restaurants,1,4.5
+-Bars-Music Venues-Arts & Entertainment-Nightlife-American (New)-Sports Bars-Restaurants,1,3.5
+-Food-Breakfast & Brunch-Bagels-Delis-Restaurants,1,3.0
+"-Women's Clothing-Used, Vintage & Consignment-Fashion-Shopping",1,5.0
+-Seafood-Buffets-Restaurants,1,3.5
+-Hotels & Travel-Boat Charters-Tours-Event Planning & Services-Party & Event Planning,1,4.5
+-Cuban-Latin American-Restaurants,1,3.5
+-Food-Specialty Food-Farmers Market-Desserts,1,5.0
+-American (New)-Barbeque-Restaurants,1,4.5
+-Museums-Landmarks & Historical Buildings-Arts & Entertainment-Public Services & Government,1,3.0
+-Food-Burgers-Ice Cream & Frozen Yogurt-Diners-Restaurants,1,4.0
+-Shopping-Food-Gift Shops-Specialty Food-Flowers & Gifts-Local Flavor,1,4.5
+-Food-Desserts-American (New)-Pizza-Restaurants,1,4.0
+-Landmarks & Historical Buildings-Public Services & Government,1,3.5
+-Grocery-Food-Ethnic Food-Indian-Specialty Food-Restaurants,1,4.0
+-American (Traditional)-French-Restaurants,1,3.0
+-Active Life-Arts & Entertainment-Professional Sports Teams-Amateur Sports Teams,1,3.0
+-Automotive-Motorcycle Dealers,1,2.5
+-American (New)-Pizza-Restaurants,1,2.5
+-Bakeries-Food-Desserts-Event Planning & Services-Caterers,1,4.5
+-Asian Fusion-Sushi Bars-Japanese-Restaurants,1,4.5
+-Active Life-Day Spas-Beauty & Spas-Swimming Pools-Sports Clubs,1,3.5
+-Women's Clothing-Men's Clothing-Fashion-Shopping-Children's Clothing,1,4.5
+-Active Life-Rafting/Kayaking,1,3.5
+-Food-Desserts-Restaurants-Burgers,1,3.5
+-Piano Bars-Arts & Entertainment-Nightlife-Music Venues,1,3.5
+-Shopping-Arts & Crafts-Party & Event Planning-Event Planning & Services-Cards & Stationery-Wedding Planning-Flowers & Gifts,1,5.0
+"-Music & DVDs-Books, Mags, Music & Video-Shopping-Bookstores",1,3.5
+-Bars-Music Venues-Arts & Entertainment-Dance Clubs-Dive Bars-Nightlife,1,3.5
+-Day Spas-Barbers-Beauty & Spas,1,4.5
+-Hot Dogs-Mexican-Restaurants,1,4.5
+-Caterers-Event Planning & Services-Barbeque-Restaurants,1,2.5
+"-Food-Books, Mags, Music & Video-Coffee & Tea-Shopping-Bookstores",1,3.0
+-Food-Specialty Food-Grocery-Fruits & Veggies,1,4.5
+-Bars-Seafood-Irish-Pubs-Nightlife-Restaurants,1,4.0
+-Fast Food-Middle Eastern-Restaurants,1,4.0
+-Active Life-Wedding Planning-Golf-Event Planning & Services-Venues & Event Spaces,1,4.0
+-Landmarks & Historical Buildings-Public Services & Government-Local Flavor,1,4.5
+-Food-Hotels & Travel-Tours,1,5.0
+-Food-Convenience Stores-Shopping-Drugstores,1,4.0
+-Asian Fusion-Buffets-Restaurants,1,3.0
+-Active Life-Hotels & Travel-Campgrounds-Parks,1,4.5
+-Shopping-Computers-Home & Garden-Local Services-IT Services & Computer Repair-Appliances,1,3.5
+-Department Stores-Grocery-Fashion-Shopping-Food-Automotive-Tires,1,3.0
+-Seafood-Steakhouses-American (Traditional)-Restaurants,1,3.5
+-Cambodian-Restaurants,1,4.5
+-Movers-Window Washing-Home Services-Pool Cleaners,1,5.0
+-Afghan-Pakistani-Restaurants,1,4.5
+-Lingerie-Shopping-Fashion-Adult,1,3.0
+"-Videos & Video Game Rental-Books, Mags, Music & Video-Shopping-Adult",1,5.0
+-Nightlife-Seafood-Steakhouses-Bars-Restaurants,1,3.5
+-Local Services-Arts & Crafts-Shopping-Fabric Stores-Sewing & Alterations,1,4.5
+-Yoga-Beauty & Spas-Food-Juice Bars & Smoothies-Fitness & Instruction-Active Life-Massage,1,4.5
+-Gastropubs-Wine Bars-Bars-Nightlife-Restaurants,1,4.0
+-Shopping Centers-Landmarks & Historical Buildings-Shopping-Public Services & Government,1,3.5
+-Bars-Sports Bars-Nightlife-American (New)-Chicken Wings-Restaurants,1,3.0
+-Food-Delis-Coffee & Tea-Restaurants,1,4.0
+-Food-Bagels-Sandwiches-Restaurants,1,3.5
+-Food-Korean-Grocery-Restaurants,1,4.0
+-Sporting Goods-Shopping-Guns & Ammo-Outdoor Gear,1,4.0
+-Bars-American (Traditional)-Dance Clubs-Nightlife-Sports Bars-Restaurants,1,3.0
+-Hair Salons-Shopping-Cosmetics & Beauty Supply-Beauty & Spas,1,3.0
+-Caterers-American (New)-Event Planning & Services-Restaurants,1,4.0
+-Active Life-Wedding Planning-Golf-Event Planning & Services,1,3.0
+-Food-Pubs-Bars-Breweries-Nightlife,1,2.5
+-Shopping-Beauty & Spas-Arts & Crafts-Costumes-Cosmetics & Beauty Supply-Wigs,1,5.0
+-Fast Food-Restaurants-Italian,1,2.5
+-Food-Bagels-Breakfast & Brunch-Delis-Restaurants,1,4.0
+-Performing Arts-Arts & Entertainment-Art Galleries-Shopping,1,3.5
+-Soup-Sandwiches-Salad-Restaurants,1,3.5
+-Hawaiian-Barbeque-Chinese-Restaurants,1,3.5
+-Food-Grocery-Shopping-Home & Garden-Furniture Stores,1,4.5
+-Bars-Asian Fusion-Nightlife-Restaurants,1,4.0
+-Spanish-Steakhouses-Restaurants,1,3.5
+-Sushi Bars-Asian Fusion-Restaurants,1,3.5
+-Museums-Active Life-Arts & Entertainment-Parks,1,4.0
+-Day Spas-Hair Removal-Beauty & Spas,1,4.5
+-Food-Donuts-Coffee & Tea-Bakeries,1,4.5
+-Flowers & Gifts-Shopping,1,5.0
+-Home Services-Contractors,1,3.0
+-Active Life-Swimming Pools-Parks,1,4.5
+-Active Life-Yoga-Dance Studios-Fitness & Instruction,1,5.0
+-Delis-Restaurants-Event Planning & Services-Caterers,1,3.0
+-Bars-American (Traditional)-Pubs-Nightlife-Lounges-Restaurants,1,3.5
+-Active Life-Playgrounds-Parks,1,4.5
+-Food-Desserts-Sandwiches-Restaurants-Barbeque-Pizza,1,4.0
+-Delis-Restaurants-Italian,1,4.5
+-Food-Do-It-Yourself Food,1,3.5
+-Tattoo-Piercing-Beauty & Spas,1,4.5
+-Seafood-Restaurants-American (New)-Italian,1,4.0
+-American (New)-Salad-Restaurants,1,3.0
+-Vegetarian-Indian-Gluten-Free-Restaurants,1,3.5
+-Food-Desserts-Street Vendors,1,5.0
+-Sushi Bars-Hawaiian-Chinese-Restaurants,1,4.0
+-Arts & Entertainment-American (Traditional)-Nightlife-Music Venues-Restaurants,1,3.5
+-Sandwiches-Hawaiian-Restaurants,1,4.0
+-Bars-Pool Halls-Sports Bars-Nightlife,1,2.5
+-Burgers-Diners-Restaurants,1,4.0
+-Mattresses-Shopping-Home & Garden,1,2.5
+-Fashion-Shopping-Accessories-Jewelry,1,4.5
+-Day Spas-Nutritionists-Health & Medical-Beauty & Spas,1,4.5
+-Delis-Restaurants-Sandwiches-Italian,1,4.5
+-Dive Bars-Bars-Arts & Entertainment-Nightlife-Music Venues,1,4.0
+-Greek-Lebanese-Mediterranean-Middle Eastern-Restaurants,1,4.5
+-Asian Fusion-Sushi Bars-Restaurants,1,4.0
+-Tobacco Shops-Food-Convenience Stores-Shopping,1,4.0
+-Bakeries-Food-Gluten-Free-Donuts-Restaurants,1,4.5
+-Arts & Crafts-Shopping-Fabric Stores-Art Supplies,1,4.0
+-Bars-American (Traditional)-Nightlife-Sports Bars-Barbeque-Restaurants,1,3.5
+-Nightlife-Comedy Clubs,1,4.0
+-Buffets-Mongolian-Restaurants,1,3.0
+"-Fashion-Shopping-Used, Vintage & Consignment-Home & Garden-Kitchen & Bath-Women's Clothing",1,5.0
+-Hotels & Travel-Hotels-Event Planning & Services-Restaurants,1,4.0
+-Fast Food-Pizza-Restaurants,1,3.0
+-Bars-American (Traditional)-Caribbean-Nightlife-American (New)-Restaurants,1,2.5
+-Food-Active Life-Coffee & Tea-Yoga-Fitness & Instruction,1,4.5
+-Hot Dogs-Sandwiches-Restaurants,1,3.5
+-Bakeries-Food-Restaurants,1,3.0
+-Soul Food-Southern-Restaurants,1,4.5
+"-Music & DVDs-Books, Mags, Music & Video-Vinyl Records-Shopping",1,3.5
+-Shopping-Home Services-Building Supplies-Home & Garden-Hardware Stores-Lighting Fixtures & Equipment,1,3.0
+-Doctors-Ear Nose & Throat-Health & Medical-Cosmetic Surgeons,1,3.0
+-Cafes-Sandwiches-Restaurants,1,4.5
+-Food-Chinese-Restaurants,1,3.0
+-Bars-American (Traditional)-Nightlife-Steakhouses-Sports Bars-Restaurants,1,3.0
+-Fast Food-Southern-Chicken Wings-Restaurants,1,3.0
+-Dive Bars-Bars-Nightlife-Sports Bars,1,3.5
+-Window Washing-Home Services,1,5.0
+-Vietnamese-Asian Fusion-French-Restaurants,1,4.0
+-Food-Herbs & Spices-Specialty Food,1,4.5
+-Food-Burgers-Fast Food-Ice Cream & Frozen Yogurt-Restaurants,1,3.0
+-Burgers-Steakhouses-Barbeque-Restaurants,1,2.5
+-Home Cleaning-Home Services,1,3.0
+-Active Life-Arts & Entertainment-Stadiums & Arenas-Horse Racing-Restaurants,1,4.0
+-Computers-Shopping-Home & Garden-Appliances,1,3.0
+-Bars-American (New)-American (Traditional)-Nightlife-Restaurants,1,3.5
+-American (Traditional)-Mexican-Event Planning & Services-Hotels & Travel-Hotels-Restaurants,1,4.0
+-Thai-Asian Fusion-Chinese-Restaurants,1,3.0
+-Pool Halls-Nightlife,1,4.5
+-Bakeries-Food-Pet Services-Pets,1,3.5
+-Food-Ice Cream & Frozen Yogurt-Burgers-Fast Food-Restaurants,1,4.0
+-Live/Raw Food-Gluten-Free-Vegan-Restaurants,1,4.0
+"-Grocery-Shopping-Florists-Food-Beer, Wine & Spirits-Caterers-Event Planning & Services-Flowers & Gifts",1,4.0
+-Active Life-Specialty Schools-Education-Swimming Lessons/Schools-Fitness & Instruction,1,5.0
+-Specialty Schools-Shopping-Cooking Schools-Home & Garden-Kitchen & Bath-Education,1,4.0
+-Food-Hawaiian-Restaurants,1,4.5
+-Middle Eastern-Greek-Mediterranean-Restaurants,1,4.0
+-Burgers-Seafood-Restaurants,1,3.5
+-Ethiopian-Vegan-Restaurants,1,4.0
+-Wedding Planning-Event Planning & Services,1,4.5
+-Jazz & Blues-Arts & Entertainment-Soul Food-Nightlife-Restaurants,1,3.5
+-Bars-American (Traditional)-Pool Halls-Nightlife-Sports Bars-Restaurants,1,3.5
+-Plumbing-Home Services,1,5.0
+-German-Pubs-Bars-Nightlife-Restaurants,1,4.0
+-Asian Fusion-Mexican-Restaurants,1,4.0
+-Food-Grocery-Shopping-Photography Stores & Services,1,3.5
+-Burgers-American (New)-Barbeque-Restaurants,1,4.5
+-Italian-American (Traditional)-Restaurants,1,4.0
+-Food-Ethnic Food-Specialty Food-Mediterranean-Restaurants,1,4.5
+-Delis-Italian-Restaurants,1,3.5
+-Restaurants-Pizza-Gluten-Free-Italian,1,4.0
+-Food-Convenience Stores-Hot Dogs-Restaurants,1,4.0
+-Home Services-Heating & Air Conditioning/HVAC-Contractors,1,4.5
+-Vietnamese-Sushi Bars-Restaurants,1,3.0
+-Cafes-Vegan-Restaurants,1,3.5
+-Greek-Southern-Mediterranean-Restaurants,1,3.0
+-Breakfast & Brunch-Bars-American (Traditional)-Nightlife-Restaurants,1,4.0
+-Caterers-Pizza-Event Planning & Services-Restaurants,1,4.0
+-Pizza-Gluten-Free-Restaurants,1,3.5
+"-Food-Beer, Wine & Spirits-Irish-American (Traditional)-Restaurants",1,3.5
+-Food-Specialty Food-Coffee & Tea-Ice Cream & Frozen Yogurt-Chocolatiers & Shops,1,4.0
+-Food-Coffee & Tea-Creperies-Restaurants,1,4.0
+-Chicken Wings-Bars-Restaurants-Sports Bars-Nightlife,1,2.5
+-American (New)-Nightlife-Restaurants,1,4.0
+-Arts & Entertainment-Casinos-Bars-Lounges-Nightlife,1,3.0
+-Irish-Restaurants,1,3.5
+-Food-Gelato-Pizza-Restaurants,1,4.5
+-Korean-Chinese-Restaurants,1,4.5
+-Active Life-Museums-Arts & Entertainment-Amusement Parks-Parks,1,4.5
+-Active Life-Shopping Centers-Shopping-Parks-Local Flavor,1,5.0
+-Arts & Entertainment-Music Venues-Casinos-Nightlife-Hotels & Travel-Event Planning & Services-Hotels,1,3.5
+-Burgers-Hot Dogs-Mediterranean-Restaurants,1,3.5
+-Middle Schools & High Schools-Education,1,3.5
+-American (New)-Nightlife-Dance Clubs-Restaurants,1,3.0
+-Bars-American (Traditional)-Nightlife-Lounges-American (New)-Restaurants,1,4.0
+-Modern European-Delis-Restaurants,1,4.0
+-Sushi Bars-Japanese-Gluten-Free-Restaurants,1,3.5
+-Arts & Entertainment-Art Galleries-Shopping-Nightlife-Music Venues,1,4.5
+-Pubs-Bars-Nightlife-Restaurants,1,3.5
+-Arts & Entertainment-Music Venues-Bars-Nightlife-American (New)-Restaurants,1,3.5
+-Bars-Nightlife-Lounges-Restaurants,1,3.5
+-Southern-Food Stands-Restaurants,1,4.0
+-Food-Bars-Breweries-Nightlife-Lounges,1,3.5
+-Bars-Restaurants-Nightlife-Lounges-Italian,1,3.5
+-Asian Fusion-Diners-Restaurants,1,3.5
+-American (Traditional)-American (New)-Chicken Wings-Restaurants,1,4.5
+-Health & Medical-Hospitals-Urgent Care,1,2.0
+-Fashion-Shopping-Leather Goods-Arts & Crafts-Specialty Food-Food,1,4.0
+-Hair Salons-Hair Removal-Hair Stylists-Beauty & Spas,1,5.0
+-Bars-American (Traditional)-Pubs-Nightlife-Sports Bars-Restaurants,1,3.5
+-Seafood-Caribbean-Hawaiian-Restaurants,1,4.0
+-Active Life-Burgers-Golf-Restaurants,1,3.5
+-Thai-Asian Fusion-Restaurants,1,3.5
+-Skin Care-Day Spas-Beauty & Spas-Health & Medical-Medical Spas,1,4.0
+-Pubs-Bars-Sports Bars-Nightlife,1,3.0
+-Bakeries-Food-Polish-Restaurants,1,4.5
+-Coffee & Tea-Food-Bars-Nightlife-Restaurants-Sandwiches,1,4.0
+-Active Life-Dog Parks-Parks-Pets,1,3.5
